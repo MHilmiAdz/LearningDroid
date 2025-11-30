@@ -1,5 +1,5 @@
 
-![Logo](https://drive.google.com/file/d/1WKYMpcAaM49vykVt0PEZZHSHEnax4hLL/view?usp=sharing)
+![Logo](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/learningdroidbanner.png?raw=true)
 
 
 # LearningDroid
@@ -22,7 +22,9 @@ This repository is for my journey on learning Android. Hope this repo will makes
 
 ## Screenshots
 
-![App Screenshot](https://drive.google.com/file/d/1ZdsGoLdKSguqt2_hNMlnGI_jWPEmkpHG/view?usp=sharing)
+### Screenshot 1.0
+
+![App Screenshot](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/showcase1.png?raw=true)
 
 
 ## Installation
