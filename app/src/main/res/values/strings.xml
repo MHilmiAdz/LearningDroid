@@ -1,8 +1,23 @@
 <resources>
     <string name="app_name">LearningDroid</string>
-    <string name="panjang">Panjang</string>
-    <string name="lebar">Lebar</string>
-    <string name="tinggi">Tinggi</string>
-    <string name="hitung">Hitung</string>
-    <string name="hasil">Hasil</string>
+
+    <string name="move_activity">Move Activity</string>
+    <string name="move_with_data">Move Activity with Data</string>
+    <string name="move_with_object">Move Activity with Object</string>
+    <string name="dial_number">Dial a Number</string>
+    <string name="move_with_result">Move Activity for Result</string>
+
+    <string name="result_from_activity">Result from Activity</string>
+
+    <string name="choose_number">Choose a number you like</string>
+    <string name="_50">50</string>
+    <string name="_100">100</string>
+    <string name="_150">150</string>
+    <string name="_200">200</string>
+    <string name="choose">Choose</string>
+
+    <string name="data_received">Data Received</string>
+    <string name="object_received">Object Received</string>
+
+    <string name="this_is_moveactivity">This is MoveActivity</string>
 </resources>
