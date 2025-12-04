@@ -20,17 +20,37 @@ This repository is for my journey on learning Android. Hope this repo will makes
 - Basic view with textview.
 
 
-## Screenshots
+## Screenshots for 3 Latest Update
 
 ### Screenshot 0.0.1
+
+#### Main Activity
 
 ![App Screenshot 0.0.1](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss001.png?raw=true)
 
 ### Screenshot 0.0.2
 
+#### Main Actiivty
+
 ![App Screenshot 0.0.2-1](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss002_1.png?raw=true)
 
+#### Move Activity
+
 ![App Screenshot 0.0.2-2](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss002_2.png?raw=true)
+
+### Screenshot 0.0.3
+
+#### Main Activity
+
+![App Screenshot 0.0.3-1](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss003_1.png?raw=true)
+
+#### Move Activity
+
+![App Screenshot 0.0.3-2](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss003_2.png?raw=true)
+
+#### Move Activity with Data
+
+![App Screenshot 0.0.3-3](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss003_3.png?raw=true)
 
 ## Installation
 
@@ -41,7 +61,8 @@ Clone my project with Git usign this code:
 ```
     
 After that run it with Android Studio, it takes a while to compile. Enjoy My app 😊
-## Authors
+
+## Author
 
 - [@MHilmiAdz](https://www.github.com/MHilmiAdz)
 
