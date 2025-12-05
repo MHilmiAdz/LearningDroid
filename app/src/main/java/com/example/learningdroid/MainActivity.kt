@@ -19,6 +19,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         val btnMovewithData: Button = findViewById(R.id.btn_move_activity_data)
         btnMovewithData.setOnClickListener(this)
+
+        val btnMovewithObject: Button = findViewById(R.id.btn_move_activity_object)
+        btnMovewithObject.setOnClickListener(this)
+
+        val btnMovewithObjectSimple: Button = findViewById(R.id.btn_move_activity_object_simple)
+        btnMovewithObjectSimple.setOnClickListener(this)
+
     }
 
     override fun onClick(v: View?) {
@@ -33,6 +40,32 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 moveWithDataIntent.putExtra(MoveWithDataActivity.EXTRA_NAME, "Android Passing Data")
                 moveWithDataIntent.putExtra(MoveWithDataActivity.EXTRA_AGE, 2000)
                 startActivity(moveWithDataIntent)
+            }
+
+            R.id.btn_move_activity_object -> {
+                val persona = Persona(
+                    "LearningDroid",
+                    200,
+                    "Learning new Things",
+                    "person@example.com",
+                )
+
+                val moveWithObjectIntent = Intent(this@MainActivity, MoveWithObjectActivity::class.java)
+                moveWithObjectIntent.putExtra(MoveWithObjectActivity.EXTRA_PERSONA, persona)
+                startActivity(moveWithObjectIntent)
+            }
+
+            R.id.btn_move_activity_object_simple -> {
+                val simplePersona = SimplePersona(
+                    "LearningDroid",
+                    200,
+                    170,
+                    70
+                )
+
+                val moveWithParcelizeIntent = Intent(this@MainActivity, MoveWithObjectActivity::class.java)
+                moveWithParcelizeIntent.putExtra(MoveWithObjectActivity.SIMPLE_PERSONA, simplePersona)
+                startActivity(moveWithParcelizeIntent)
             }
         }
     }
