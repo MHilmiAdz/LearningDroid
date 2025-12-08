@@ -25,14 +25,14 @@ class MoveWithObjectActivity : AppCompatActivity() {
         // MOVE WITH OBJECT PARCELABLE
 
         val persona = if (Build.VERSION.SDK_INT >= 33) {
-            intent.getParcelableExtra<Persona>(EXTRA_PERSONA, Persona::class.java)
+            intent.getParcelableExtra(EXTRA_PERSONA, Persona::class.java)
         } else {
             @Suppress("DEPRECATION")
-            intent.getParcelableExtra<Persona>(EXTRA_PERSONA)
+            intent.getParcelableExtra(EXTRA_PERSONA)
         }
 
         if (persona != null) {
-            val text = "Name : ${persona.name.toString()},\nEmail : ${persona.email},\nAge : ${persona.age},\nHobby : ${persona.hobby}"
+            val text = "Name : ${persona.name},\nEmail : ${persona.email},\nAge : ${persona.age},\nHobby : ${persona.hobby}"
             tvObject.text = text
         }else{
             val text = "Text is in Parcelize."
@@ -42,14 +42,14 @@ class MoveWithObjectActivity : AppCompatActivity() {
         // MOVE WITH KOTLIN PARCELIZE
 
         val simplePersona = if (Build.VERSION.SDK_INT >= 33) {
-            intent.getParcelableExtra<SimplePersona>(SIMPLE_PERSONA, SimplePersona::class.java)
+            intent.getParcelableExtra(SIMPLE_PERSONA, SimplePersona::class.java)
         } else {
             @Suppress("DEPRECATION")
-            intent.getParcelableExtra<SimplePersona>(SIMPLE_PERSONA)
+            intent.getParcelableExtra(SIMPLE_PERSONA)
         }
 
         if (simplePersona != null) {
-            val text = "Name : ${simplePersona}.name.toString()},\nAge : ${simplePersona.age},\nHeight : ${simplePersona.height},\nWeight : ${simplePersona.weight}"
+            val text = "Name : ${simplePersona.name},\nAge : ${simplePersona.age},\nHeight : ${simplePersona.height},\nWeight : ${simplePersona.weight}"
             tvParcelize.text = text
         }else {
             val text = "Text is in Parcelable"

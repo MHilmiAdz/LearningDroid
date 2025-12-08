@@ -4,7 +4,7 @@
     <string name="move_activity">Move Activity</string>
     <string name="move_with_data">Move Activity with Data</string>
     <string name="move_with_object">Move Activity with Object</string>
-    <string name="dial_number">Dial a Number</string>
+    <string name="dial_number">Dial the Number!</string>
     <string name="move_with_result">Move Activity for Result</string>
 
     <string name="result_from_activity">Result from Activity</string>
@@ -22,4 +22,6 @@
     <string name="this_is_moveactivity">This is MoveActivity</string>
     <string name="Home">Home</string>
     <string name="kotlinParcelizeTXT">Move with Kotlin Parcelize</string>
+    <string name="this_is_banner_for_better_looks">This is Banner for better looks</string>
+    <string name="phone_a_friend">Phone a Friend!</string>
 </resources>

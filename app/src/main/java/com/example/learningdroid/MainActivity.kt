@@ -4,15 +4,21 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.net.toUri
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
+
+    private lateinit var inpnumber: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+
+        inpnumber = findViewById(R.id.editTextPhone)
 
         val btnMoveActivity: Button = findViewById(R.id.btn_move_activity)
         btnMoveActivity.setOnClickListener(this)
@@ -26,10 +32,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val btnMovewithObjectSimple: Button = findViewById(R.id.btn_move_activity_object_simple)
         btnMovewithObjectSimple.setOnClickListener(this)
 
+        val btnDialNumber: Button = findViewById(R.id.btn_dial_number)
+        btnDialNumber.setOnClickListener(this)
+
     }
 
-    override fun onClick(v: View?) {
-        when (v?.id) {
+    override fun onClick(v: View) {
+        when (v.id) {
             R.id.btn_move_activity -> {
                 val moveIntent = Intent(this@MainActivity, MoveActivity::class.java)
                 startActivity(moveIntent)
@@ -66,6 +75,16 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 val moveWithParcelizeIntent = Intent(this@MainActivity, MoveWithObjectActivity::class.java)
                 moveWithParcelizeIntent.putExtra(MoveWithObjectActivity.SIMPLE_PERSONA, simplePersona)
                 startActivity(moveWithParcelizeIntent)
+            }
+
+            R.id.btn_dial_number -> {
+                val phoneNumber = if(inpnumber.text.isNotEmpty()){
+                    inpnumber.text.toString()
+                } else {
+                    "0"
+                }
+                val dialPhoneIntent = Intent(Intent.ACTION_DIAL, "tel:$phoneNumber".toUri())
+                startActivity(dialPhoneIntent)
             }
         }
     }
