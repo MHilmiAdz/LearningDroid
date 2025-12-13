@@ -6,22 +6,34 @@
     <string name="move_with_object">Move Activity with Object</string>
     <string name="dial_number">Dial the Number!</string>
     <string name="move_with_result">Move Activity for Result</string>
-
     <string name="result_from_activity">Result from Activity</string>
-
     <string name="choose_number">Choose a number you like</string>
     <string name="_50">50</string>
     <string name="_100">100</string>
     <string name="_150">150</string>
     <string name="_200">200</string>
     <string name="choose">Choose</string>
-
     <string name="data_received">Data Received</string>
     <string name="object_received">Object Received</string>
-
     <string name="this_is_moveactivity">This is MoveActivity</string>
     <string name="Home">Home</string>
     <string name="kotlinParcelizeTXT">Move with Kotlin Parcelize</string>
     <string name="this_is_banner_for_better_looks">This is Banner for better looks</string>
     <string name="phone_a_friend">Phone a Friend!</string>
+    <string name="content_text">Google officially announced its much-anticipated Pixel phones; the Pixel and Pixel XL, on October 4. We attended Google’s London UK event, mirroring the main one taking place in San Francisco, US, where the firm unwrapped the new Android 7.1 Nougat devices which will apparently usurp Google’s long-standing Nexus series.</string>
+    <string name="content_specs_display">5.0 inches\nFHD AMOLED at 441ppi\n2.5D Corning® Gorilla® Glass 4</string>
+    <string name="content_specs_size">5.6 x 2.7 x 0.2 ~ 0.3 inches 143.8 x 69.5 x 7.3 ~ 8.5 mm</string>
+    <string name="content_specs_battery">2,770 mAh battery\nStandby time (LTE): up to 19 days\nTalk time (3g/WCDMA): up to 26 hours\nInternet use time (Wi-Fi): up to 13 hours\nInternet use time (LTE): up to 13 hours\nVideo playback: up to 13 hours\nAudio playback (via headset): up to 110 hours\nFast charging: up to 7 hours of use from only 15 minutes of charging</string>
+    <string name="title">Google Pixel</string>
+    <string name="specification">Specification</string>
+    <string name="display">Display</string>
+    <string name="size">Size</string>
+    <string name="battery">Battery</string>
+    <string name="seller">Seller</string>
+    <string name="my_name">Willy James</string>
+    <string name="buy">Beli</string>
+    <string name="dummy_value">$7350</string>
+    <string name="dummy_photos">6 photos</string>
+    <string name="go_to_other_mainactivity">Go to other MainActivity</string>
+    <string name="nothing">Lorem Ipsum</string>
 </resources>

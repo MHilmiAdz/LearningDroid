@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LearningDroid">
         <activity
+            android:name=".ScrollingActivity"
+            android:exported="false" />
+        <activity
             android:name=".MoveForResultActivity"
             android:exported="false" />
         <activity

@@ -41,8 +41,7 @@ class MoveForResultActivity : AppCompatActivity(), View.OnClickListener {
                     R.id.rb_150 -> value = 150
                     R.id.rb_200 -> value = 200
                 }
-                val resultIntent = Intent()
-                resultIntent.putExtra(EXTRA_SELECTED_VALUE, value)
+                val resultIntent = Intent().putExtra(EXTRA_SELECTED_VALUE, value)
                 setResult(RESULT_CODE, resultIntent)
                 finish()
             }

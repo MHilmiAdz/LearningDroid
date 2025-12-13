@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
@@ -12,15 +13,29 @@ import androidx.core.net.toUri
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
-    private lateinit var inpnumber: TextView
+    private lateinit var inpnumber: EditText
     private lateinit var tvResult: TextView
+
     private val resultLauncher = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
     ) { result ->
         if (result.resultCode == MoveForResultActivity.RESULT_CODE && result.data != null) {
-            val selectedValue =
-                result.data?.getIntExtra(MoveForResultActivity.EXTRA_SELECTED_VALUE, 0)
+            val selectedValue = result.data?.getIntExtra(MoveForResultActivity.EXTRA_SELECTED_VALUE, 0)
             "Result: $selectedValue".also { tvResult.text = it }
+        }
+    }
+
+    private val buyingLauncher = registerForActivityResult(
+        ActivityResultContracts.StartActivityForResult()
+    ) { result ->
+        // IMPROVEMENT: Check for RESULT_OK to ensure the user actually clicked "Buy"
+        // and didn't just press the Back button.
+        if (result.resultCode == RESULT_OK && result.data != null) {
+            // Retrieve the specific string sent from ScrollingActivity
+            val purchasedItem = result.data?.getStringExtra(ScrollingActivity.BUYING_KEY)
+
+            // Display dynamic message
+            "Thanks for buying: $purchasedItem".also { tvResult.text = it }
         }
     }
 
@@ -30,6 +45,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_main)
 
         inpnumber = findViewById(R.id.editTextPhone)
+        tvResult = findViewById(R.id.tv_result)
 
         val btnMoveActivity: Button = findViewById(R.id.btn_move_activity)
         btnMoveActivity.setOnClickListener(this)
@@ -49,7 +65,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val btnMoveForResult: Button = findViewById(R.id.btn_move_for_result)
         btnMoveForResult.setOnClickListener(this)
 
-        tvResult = findViewById(R.id.tv_result)
+        val btnOtherMainActivity: Button = findViewById(R.id.btn_other_main_activity)
+        btnOtherMainActivity.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
@@ -73,7 +90,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     "Learning new Things",
                     "person@example.com",
                 )
-
                 val moveWithObjectIntent = Intent(this@MainActivity, MoveWithObjectActivity::class.java)
                 moveWithObjectIntent.putExtra(MoveWithObjectActivity.EXTRA_PERSONA, persona)
                 startActivity(moveWithObjectIntent)
@@ -86,25 +102,31 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     170,
                     70
                 )
-
                 val moveWithParcelizeIntent = Intent(this@MainActivity, MoveWithObjectActivity::class.java)
                 moveWithParcelizeIntent.putExtra(MoveWithObjectActivity.SIMPLE_PERSONA, simplePersona)
                 startActivity(moveWithParcelizeIntent)
             }
 
             R.id.btn_dial_number -> {
-                val phoneNumber = if(inpnumber.text.isNotEmpty()){
-                    inpnumber.text.toString()
+                val phoneNumber = inpnumber.text.toString().trim()
+
+                val dialString = if (phoneNumber.isNotEmpty()) {
+                    "tel:$phoneNumber"
                 } else {
-                    "0"
+                    "tel:0"
                 }
-                val dialPhoneIntent = Intent(Intent.ACTION_DIAL, "tel:$phoneNumber".toUri())
+                val dialPhoneIntent = Intent(Intent.ACTION_DIAL, dialString.toUri())
                 startActivity(dialPhoneIntent)
             }
 
             R.id.btn_move_for_result -> {
                 val moveForResultIntent = Intent(this@MainActivity, MoveForResultActivity::class.java)
                 resultLauncher.launch(moveForResultIntent)
+            }
+
+            R.id.btn_other_main_activity -> {
+                val scrollingActivityIntent = Intent(this@MainActivity, ScrollingActivity::class.java)
+                buyingLauncher.launch(scrollingActivityIntent)
             }
         }
     }

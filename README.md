@@ -11,8 +11,9 @@ This repository is for my journey on learning Android Development. Hope this rep
  - [Android Documentation](https://kotlinlang.org/docs/android-overview.html)
  - [Activity Theory & Implementation](https://www.notion.so/healmee/Android-Activity-2b15b65c18f180d8b553dcc493a236d6?source=copy_link)
  - [Intent Theory & Implementation](https://www.notion.so/healmee/ANDROID-INTENT-2bb5b65c18f180dc9f7dce8ec8388e3e?source=copy_link)
+ - [Layout Theory & Implementation](https://www.notion.so/healmee/View-ViewGroup-2c75b65c18f1806c8dfbd8283c8d4a8c?source=copy_link]
 
-## Features v0.0.6
+## Features v0.0.7
 
 - Basic view with Button and Intent inside button to move to another view.
 - Basic view with textview.
@@ -20,18 +21,9 @@ This repository is for my journey on learning Android Development. Hope this rep
 - Intent with Kotlin Parcelize to move to another view with more data but Simpler than Parcelable.
 - Implicit intent to Calling App, Phone a Friend!
 - Intent with returned value
+- Scrolling feature
 
 ## Screenshots for 3 Latest Update
-
-### Screenshot v0.0.4
-
-#### Main Activity
-
-![App Screenshot 0.0.4-1](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss004_1.png?raw=true)
-
-#### Move with Object Activity
-
-![App Screenshot 0.0.4-2](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss004_2.png?raw=true)
 
 ### Screenshot v0.0.5
 
@@ -48,6 +40,12 @@ This repository is for my journey on learning Android Development. Hope this rep
 #### Main Flow Return Intent
 
 ![App Screenshot 0.0.6](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss006.png?raw=true)
+
+### Screenshot v0.0.7
+
+#### Scrolling Feature
+
+![App Screenshot 0.0.7](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss007.png?raw=true)
 
 ## Installation
 
