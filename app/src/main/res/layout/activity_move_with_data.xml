@@ -3,6 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/appborder"
+    android:layout_marginTop="30dp"
     android:padding="16dp">
 
     <ImageView
@@ -14,14 +16,15 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="20dp"
         android:contentDescription="@string/this_is_banner_for_better_looks"
-        app:srcCompat="@drawable/ldbanner" />
+        app:srcCompat="@drawable/ldheads" />
 
     <TextView
         android:id="@+id/tv_data_received"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView"
-        android:textSize="20dp"
+        android:textColor="?attr/colorOnPrimaryContainer"
+        android:textSize="20sp"
         android:layout_marginTop="10dp"
         android:padding="10dp"
         android:text="@string/data_received" />

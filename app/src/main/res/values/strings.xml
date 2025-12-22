@@ -36,4 +36,7 @@
     <string name="dummy_photos">6 photos</string>
     <string name="go_to_other_mainactivity">Go to other MainActivity</string>
     <string name="nothing">Lorem Ipsum</string>
+    <string name="learning_droid">Learning\nDroid</string>
+    <string name="NumberHint">(+62) 0821..</string>
+    <string name="move_to_shop">Move to Shop</string>
 </resources>

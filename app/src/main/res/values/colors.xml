@@ -3,4 +3,17 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="contrast">#8D6E63</color>
+
+<!--    DARK SURFACE    -->
+    <color name="md_theme_dark_surface">#191C1A</color>
+    <color name="md_theme_dark_onSurface">#E3E3E3</color>
+    <color name="md_theme_dark_primary">#8CD6B5</color>
+    <color name="md_theme_dark_onPrimary">#003822</color>
+
+<!--    DARK CONTAINER  -->
+    <color name="md_theme_dark_primaryContainer">#2D4B3F</color>
+    <color name="md_theme_dark_onPrimaryContainer">#C4EED0</color>
+    <color name="md_theme_dark_tertiary">#A5CCDF</color>
+    <color name="md_theme_dark_outline">#89938D</color>
+
 </resources>

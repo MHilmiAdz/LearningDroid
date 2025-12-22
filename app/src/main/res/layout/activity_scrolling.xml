@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
     android:layout_width="match_parent"
+    android:scrollbars="none"
     android:layout_height="match_parent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/appborder"
         android:orientation="vertical">
 
         <FrameLayout
@@ -173,7 +176,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="16dp"
                 android:contentDescription="@string/nothing"
-                android:src="@drawable/photo_2" />
+                android:src="@drawable/ldlogowhite" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -189,6 +192,8 @@
         <Button
             android:id="@+id/btn_buy"
             android:text="@string/buy"
+            android:backgroundTint="?attr/colorPrimaryContainer"
+            android:textColor="?attr/colorOnPrimaryContainer"
             android:layout_width="320dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
