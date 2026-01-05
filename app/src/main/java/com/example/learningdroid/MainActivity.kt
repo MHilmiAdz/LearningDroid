@@ -71,8 +71,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val btnMoveResult: Button = findViewById(R.id.btnMoveResult)
         btnMoveResult.setOnClickListener(this)
 
-        val btntoShop: Button = findViewById(R.id.btnToScrollActivity)
-        btntoShop.setOnClickListener(this)
+        val btnToShop: Button = findViewById(R.id.btnToScrollActivity)
+        btnToShop.setOnClickListener(this)
+
+        val btnToRecycleActivity: Button = findViewById(R.id.btnToRecycleActivity)
+        btnToRecycleActivity.setOnClickListener(this)
 
     }
 
@@ -136,6 +139,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btnToScrollActivity -> {
                 val scrollingActivityIntent = Intent(this@MainActivity, ScrollingActivity::class.java)
                 buyingLauncher.launch(scrollingActivityIntent)
+            }
+
+            R.id.btnToRecycleActivity -> {
+                val recycleActivityIntent = Intent(this@MainActivity, RecycleActivity::class.java)
+                startActivity(recycleActivityIntent)
             }
         }
     }

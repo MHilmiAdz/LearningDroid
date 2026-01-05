@@ -86,8 +86,13 @@
         <Button
             android:id="@+id/btnToScrollActivity"
             style="@style/Widget.LearningDroid.MenuButton"
-            android:layout_marginBottom="32dp"
             android:text="@string/move_to_shop" />
+
+        <Button
+            android:id="@+id/btnToRecycleActivity"
+            style="@style/Widget.LearningDroid.MenuButton"
+            android:layout_marginBottom="32dp"
+            android:text="@string/move_to_activity_recycle" />
 
         <TextView
             android:id="@+id/tvResult"
