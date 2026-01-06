@@ -1,11 +1,14 @@
 package com.example.learningdroid
 
 import android.os.Bundle
-import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import com.example.learningdroid.databinding.ActivityMoveWithDataBinding
 
 class MoveWithDataActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMoveWithDataBinding
+
     companion object {
         const val EXTRA_AGE = "extra_age"
         const val EXTRA_NAME = "extra_name"
@@ -14,13 +17,12 @@ class MoveWithDataActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_move_with_data)
-
-        val tvDataReceived: TextView = findViewById(R.id.tv_data_received)
+        binding = ActivityMoveWithDataBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         val name = intent.getStringExtra(EXTRA_NAME)
         val age = intent.getIntExtra(EXTRA_AGE, 0)
         val text = "Name : $name, Your Age : $age"
-        tvDataReceived.text = text
+        binding.tvDataReceived.text = text
     }
 }

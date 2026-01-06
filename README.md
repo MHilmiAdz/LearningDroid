@@ -13,9 +13,9 @@ This repository is for my journey on learning Android Development. Hope this rep
  - [Intent Theory & Implementation](https://www.notion.so/healmee/ANDROID-INTENT-2bb5b65c18f180dc9f7dce8ec8388e3e?source=copy_link)
  - [Layout Theory & Implementation](https://www.notion.so/healmee/View-ViewGroup-2c75b65c18f1806c8dfbd8283c8d4a8c?source=copy_link]
  - [Styling & Theme Theory and Implementation](https://www.notion.so/healmee/Style-and-Theme-2ca5b65c18f1801cb3bcdc33bd9a7fae?source=copy_link]
- - [Recycle View Theory and Implementation](https://www.notion.so/healmee/Recycler-View-2d45b65c18f1806fbe9ad91cb74f42fd?source=copy_link)
+ - [View Theory and Implementation](https://www.notion.so/healmee/Recycler-View-2d45b65c18f1806fbe9ad91cb74f42fd?source=copy_link)
 
-## Features v0.0.9
+## Features v0.1.0
 
 - Basic view with Button and Intent inside button to move to another view.
 - Basic view with textview.
@@ -27,6 +27,7 @@ This repository is for my journey on learning Android Development. Hope this rep
 - New Scrolling Feature in Main Activity
 - Implement Custom Style and Theme (Sage Theme)
 - Implement Recycler View with list of Indonesian Heroes
+- v0.1.0 Logic changed from using viewfinder to viewbinding and use external library from Glide to replace scrolling function.
 
 ## Screenshots for 3 Latest Update
 
@@ -47,6 +48,10 @@ This repository is for my journey on learning Android Development. Hope this rep
 #### Recycler View Feature
 
 ![App Screenshot 0.0.9](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss009.png?raw=true)
+
+## NOTES 
+
+There is no Screenshot for v0.1.0 because there is no layout change in this version, only logics.
 
 ## Installation
 

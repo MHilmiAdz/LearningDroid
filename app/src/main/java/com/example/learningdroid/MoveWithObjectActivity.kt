@@ -2,12 +2,14 @@ package com.example.learningdroid
 
 import android.os.Build
 import android.os.Bundle
-import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import com.example.learningdroid.databinding.ActivityMoveWithObjectBinding
 
 
 class MoveWithObjectActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMoveWithObjectBinding
 
     companion object {
         const val EXTRA_PERSONA = "extra_persona"
@@ -17,12 +19,8 @@ class MoveWithObjectActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_move_with_object)
-
-        val tvObject:TextView = findViewById(R.id.tv_object_received)
-        val tvParcelize:TextView = findViewById(R.id.tv_parcelize_received)
-
-        // MOVE WITH OBJECT PARCELABLE
+        binding = ActivityMoveWithObjectBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         val persona = if (Build.VERSION.SDK_INT >= 33) {
             intent.getParcelableExtra(EXTRA_PERSONA, Persona::class.java)
@@ -33,10 +31,10 @@ class MoveWithObjectActivity : AppCompatActivity() {
 
         if (persona != null) {
             val text = "Name : ${persona.name},\nEmail : ${persona.email},\nAge : ${persona.age},\nHobby : ${persona.hobby}"
-            tvObject.text = text
+            binding.tvObjectReceived.text = text
         }else{
             val text = "Text is in Parcelize."
-            tvObject.text = text
+            binding.tvObjectReceived.text = text
         }
 
         // MOVE WITH KOTLIN PARCELIZE
@@ -50,10 +48,10 @@ class MoveWithObjectActivity : AppCompatActivity() {
 
         if (simplePersona != null) {
             val text = "Name : ${simplePersona.name},\nAge : ${simplePersona.age},\nHeight : ${simplePersona.height},\nWeight : ${simplePersona.weight}"
-            tvParcelize.text = text
+            binding.tvParcelizeReceived.text = text
         }else {
             val text = "Text is in Parcelable"
-            tvParcelize.text = text
+            binding.tvParcelizeReceived.text = text
         }
     }
 }

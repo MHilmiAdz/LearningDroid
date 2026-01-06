@@ -3,7 +3,6 @@ package com.example.learningdroid
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -12,11 +11,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.net.toUri
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.learningdroid.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var etInput: EditText
     private lateinit var tvResult: TextView
+    private lateinit var binding: ActivityMainBinding
 
     private val resultLauncher = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
@@ -40,42 +41,26 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        val mainLayout = findViewById<View>(R.id.mainLayout)
-
-        ViewCompat.setOnApplyWindowInsetsListener(mainLayout) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(binding.root) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-        etInput = findViewById(R.id.etInput)
-        tvResult = findViewById(R.id.tvResult)
+        etInput = binding.etInput
+        tvResult = binding.tvResult
 
-        val btnMoveActivity: Button = findViewById(R.id.btnMoveActivity)
-        btnMoveActivity.setOnClickListener(this)
-
-        val btnMoveWithData: Button = findViewById(R.id.btnMoveWithData)
-        btnMoveWithData.setOnClickListener(this)
-
-        val btnMoveWithObject: Button = findViewById(R.id.btnMoveWithObject)
-        btnMoveWithObject.setOnClickListener(this)
-
-        val btnMoveParcelize: Button = findViewById(R.id.btnMoveParcelize)
-        btnMoveParcelize.setOnClickListener(this)
-
-        val btnDialNumber: Button = findViewById(R.id.btnDialNumber)
-        btnDialNumber.setOnClickListener(this)
-
-        val btnMoveResult: Button = findViewById(R.id.btnMoveResult)
-        btnMoveResult.setOnClickListener(this)
-
-        val btnToShop: Button = findViewById(R.id.btnToScrollActivity)
-        btnToShop.setOnClickListener(this)
-
-        val btnToRecycleActivity: Button = findViewById(R.id.btnToRecycleActivity)
-        btnToRecycleActivity.setOnClickListener(this)
+        binding.btnMoveActivity.setOnClickListener(this)
+        binding.btnMoveWithData.setOnClickListener(this)
+        binding.btnMoveWithObject.setOnClickListener(this)
+        binding.btnMoveParcelize.setOnClickListener(this)
+        binding.btnDialNumber.setOnClickListener(this)
+        binding.btnMoveResult.setOnClickListener(this)
+        binding.btnToScrollActivity.setOnClickListener(this)
+        binding.btnToRecycleActivity.setOnClickListener(this)
 
     }
 
