@@ -1,32 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/appborder"
-    android:layout_marginTop="30dp"
-    android:padding="16dp">
+    android:background="?attr/colorSurface">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="280dp"
-        android:layout_height="70dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="20dp"
-        android:contentDescription="@string/this_is_banner_for_better_looks"
-        app:srcCompat="@drawable/ldheads" />
-
-    <TextView
-        android:id="@+id/tv_data_received"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView"
-        android:textColor="?attr/colorOnPrimaryContainer"
-        android:textSize="20sp"
-        android:layout_marginTop="10dp"
-        android:padding="10dp"
-        android:text="@string/data_received" />
+        android:layout_height="match_parent"
+        android:paddingTop="100dp"
+        android:background="@drawable/appborder">
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/tv_data_received"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/banner_header"
+            android:textColor="?attr/colorOnPrimaryContainer"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:padding="16dp"
+            android:text="@string/data_received" />
+
+    </RelativeLayout>
+    <include layout="@layout/banner_theme" />
+</FrameLayout>

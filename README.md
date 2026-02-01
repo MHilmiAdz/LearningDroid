@@ -11,11 +11,12 @@ This repository is for my journey on learning Android Development. Hope this rep
  - [Android Documentation](https://kotlinlang.org/docs/android-overview.html)
  - [Activity Theory & Implementation](https://www.notion.so/healmee/Android-Activity-2b15b65c18f180d8b553dcc493a236d6?source=copy_link)
  - [Intent Theory & Implementation](https://www.notion.so/healmee/ANDROID-INTENT-2bb5b65c18f180dc9f7dce8ec8388e3e?source=copy_link)
- - [Layout Theory & Implementation](https://www.notion.so/healmee/View-ViewGroup-2c75b65c18f1806c8dfbd8283c8d4a8c?source=copy_link]
- - [Styling & Theme Theory and Implementation](https://www.notion.so/healmee/Style-and-Theme-2ca5b65c18f1801cb3bcdc33bd9a7fae?source=copy_link]
+ - [Layout Theory & Implementation](https://www.notion.so/healmee/View-ViewGroup-2c75b65c18f1806c8dfbd8283c8d4a8c?source=copy_link)
+ - [Styling & Theme Theory and Implementation](https://www.notion.so/healmee/Style-and-Theme-2ca5b65c18f1801cb3bcdc33bd9a7fae?source=copy_link)
  - [View Theory and Implementation](https://www.notion.so/healmee/Recycler-View-2d45b65c18f1806fbe9ad91cb74f42fd?source=copy_link)
+ - [Fragment Theory and Implementation](https://www.notion.so/healmee/Fragments-App-architecture-Android-DevelopersFRAGMENTS-2f65b65c18f180d4b794dd36e35b993f?source=copy_link)
 
-## Features v0.1.0
+## Features v0.1.1
 
 - Basic view with Button and Intent inside button to move to another view.
 - Basic view with textview.
@@ -28,14 +29,11 @@ This repository is for my journey on learning Android Development. Hope this rep
 - Implement Custom Style and Theme (Sage Theme)
 - Implement Recycler View with list of Indonesian Heroes
 - v0.1.0 Logic changed from using viewfinder to viewbinding and use external library from Glide to replace scrolling function.
+- v0.1.1 - New Banner Update, Added new fragments implementation
+- Implement Resume, Paused, and Stopped fragments
+- Implement back stack logic to fragments
 
 ## Screenshots for 3 Latest Update
-
-### Screenshot v0.0.7
-
-#### Scrolling Feature
-
-![App Screenshot 0.0.7](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss007.png?raw=true)
 
 ### Screenshot v0.0.8
 
@@ -47,7 +45,13 @@ This repository is for my journey on learning Android Development. Hope this rep
 
 #### Recycler View Feature
 
-![App Screenshot 0.0.9](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss009.png?raw=true)
+![App Screenshot 0.1.1](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss009.png?raw=true)
+
+### Screenshot v0.1.1
+
+#### Fragments Feature
+
+![App Screenshot 0.1.1](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss011.png?raw=true)
 
 ## NOTES 
 
@@ -55,7 +59,7 @@ There is no Screenshot for v0.1.0 because there is no layout change in this vers
 
 ## Installation
 
-Clone my project with Git usign this code:
+Clone my project with Git using this code:
 
 ```bash
   git clone https://github.com/MHilmiAdz/LearningDroid.git

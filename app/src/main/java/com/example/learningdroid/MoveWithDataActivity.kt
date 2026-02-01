@@ -3,6 +3,8 @@ package com.example.learningdroid
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import com.example.learningdroid.databinding.ActivityMoveWithDataBinding
 
 class MoveWithDataActivity : AppCompatActivity() {
@@ -20,9 +22,15 @@ class MoveWithDataActivity : AppCompatActivity() {
         binding = ActivityMoveWithDataBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        ViewCompat.setOnApplyWindowInsetsListener(binding.root) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
+
         val name = intent.getStringExtra(EXTRA_NAME)
         val age = intent.getIntExtra(EXTRA_AGE, 0)
-        val text = "Name : $name, Your Age : $age"
+        val text = "Name : $name\nYour Age : $age"
         binding.tvDataReceived.text = text
     }
 }

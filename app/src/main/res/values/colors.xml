@@ -16,4 +16,14 @@
     <color name="md_theme_dark_tertiary">#A5CCDF</color>
     <color name="md_theme_dark_outline">#89938D</color>
 
+    <color name="md_theme_light_surface">#F5FBF7</color>
+    <color name="md_theme_light_onSurface">#171D1A</color>
+    <color name="md_theme_light_primary">#006C4C</color>
+    <color name="md_theme_light_onPrimary">#FFFFFF</color>
+
+    <color name="md_theme_light_primaryContainer">#8CD6B5</color>
+    <color name="md_theme_light_onPrimaryContainer">#002114</color>
+    <color name="md_theme_light_tertiary">#3F6373</color>
+    <color name="md_theme_light_outline">#707973</color>
+
 </resources>
