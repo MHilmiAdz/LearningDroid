@@ -96,8 +96,13 @@
         <Button
             android:id="@+id/btnToFragmentsActivity"
             style="@style/Widget.LearningDroid.MenuButton"
-            android:layout_marginBottom="32dp"
             android:text="@string/move_to_fragments_activity" />
+
+        <Button
+            android:id="@+id/btnToNavigationActivity"
+            style="@style/Widget.LearningDroid.MenuButton"
+            android:layout_marginBottom="32dp"
+            android:text="@string/move_to_navigation_activity" />
 
         <TextView
             android:id="@+id/tvResult"

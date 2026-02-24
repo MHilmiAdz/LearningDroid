@@ -62,6 +62,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.btnToScrollActivity.setOnClickListener(this)
         binding.btnToRecycleActivity.setOnClickListener(this)
         binding.btnToFragmentsActivity.setOnClickListener(this)
+        binding.btnToNavigationActivity.setOnClickListener(this)
 
     }
 
@@ -135,6 +136,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btnToFragmentsActivity -> {
                 val flexFragmentsIntent = Intent(this@MainActivity, FlexFragments::class.java)
                 startActivity(flexFragmentsIntent)
+            }
+
+            R.id.btnToNavigationActivity -> {
+                val navigationActivityIntent = Intent(this@MainActivity, NavigationActivity::class.java)
+                startActivity(navigationActivityIntent)
             }
         }
     }

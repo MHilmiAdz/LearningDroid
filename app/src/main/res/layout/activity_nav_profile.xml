@@ -6,11 +6,14 @@
     android:background="?attr/colorSurface">
 
     <RelativeLayout
-        android:id="@+id/mainLayout2"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="60dp"
-        android:background="@drawable/appborder">
+        android:layout_marginTop="40dp"
+        android:padding="24dp"
+        android:background="@drawable/appborder"
+        tools:context=".NavProfileActivity">
 
         <TextView
             android:id="@+id/textView"
@@ -18,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:padding="10dp"
-            android:text="@string/this_is_moveactivity"
+            android:text="@string/this_profile"
             android:textAlignment="center"
             android:textColor="?attr/colorOnSurface"
             android:textSize="20sp" />

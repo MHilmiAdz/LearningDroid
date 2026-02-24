@@ -101,5 +101,7 @@
     <string name="david_moyes">David Mores</string>
     <string name="close">Close</string>
     <string name="move_to_fragments_activity">Move to Fragments Activity</string>
+    <string name="to_home">To Home Fragment</string>
+    <string name="move_to_navigation_activity">Move to Navigation Activity</string>
 
 </resources>
