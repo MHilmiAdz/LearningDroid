@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="?attr/colorSurface">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -13,7 +13,7 @@
         android:background="@drawable/appborder"
         android:paddingTop="100dp"
         android:paddingHorizontal="24dp"
-        tools:context=".HomeFragments">
+        tools:context=".fragment.HomeFragments">
 
         <TextView
             android:layout_width="match_parent"

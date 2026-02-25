@@ -13,34 +13,34 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LearningDroid">
         <activity
-            android:name=".NavProfileActivity"
+            android:name=".navigation.NavProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".NavigationActivity"
+            android:name=".navigation.NavigationActivity"
             android:exported="false" />
         <activity
-            android:name=".ProfileActivity"
+            android:name=".datapass.ProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".FlexFragments"
+            android:name=".fragment.FlexFragments"
             android:exported="false" />
         <activity
-            android:name=".RecycleActivity"
+            android:name=".recycle.RecycleActivity"
             android:exported="false" />
         <activity
-            android:name=".ScrollingActivity"
+            android:name=".recycle.ScrollingActivity"
             android:exported="false" />
         <activity
-            android:name=".MoveForResultActivity"
+            android:name=".datapass.MoveForResultActivity"
             android:exported="false" />
         <activity
-            android:name=".MoveWithObjectActivity"
+            android:name=".datapass.MoveWithObjectActivity"
             android:exported="false" />
         <activity
-            android:name=".MoveWithDataActivity"
+            android:name=".datapass.MoveWithDataActivity"
             android:exported="false" />
         <activity
-            android:name=".MoveActivity"
+            android:name=".datapass.MoveActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

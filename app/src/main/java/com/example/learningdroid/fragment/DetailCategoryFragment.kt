@@ -1,4 +1,4 @@
-package com.example.learningdroid
+package com.example.learningdroid.fragment
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,6 +9,8 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
+import com.example.learningdroid.datapass.ProfileActivity
+import com.example.learningdroid.R
 
 //
 class DetailCategoryFragment : Fragment(){

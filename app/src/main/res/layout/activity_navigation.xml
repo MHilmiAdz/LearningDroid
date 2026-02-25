@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:background="@drawable/appborder"
         android:layout_marginTop="40dp"
-        tools:context=".NavigationActivity">
+        tools:context=".navigation.NavigationActivity">
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/container"

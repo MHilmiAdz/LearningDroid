@@ -15,8 +15,9 @@ This repository is for my journey on learning Android Development. Hope this rep
  - [Styling & Theme Theory and Implementation](https://www.notion.so/healmee/Style-and-Theme-2ca5b65c18f1801cb3bcdc33bd9a7fae?source=copy_link)
  - [View Theory and Implementation](https://www.notion.so/healmee/Recycler-View-2d45b65c18f1806fbe9ad91cb74f42fd?source=copy_link)
  - [Fragment Theory and Implementation](https://www.notion.so/healmee/Fragments-App-architecture-Android-DevelopersFRAGMENTS-2f65b65c18f180d4b794dd36e35b993f?source=copy_link)
+ - [Navigation Theory and Implementation](https://www.notion.so/healmee/NAVIGATION-2fe5b65c18f1801dab5ce29e901e95fc?source=copy_link)
 
-## Features v0.1.1
+## Features v0.1.2
 
 - Basic view with Button and Intent inside button to move to another view.
 - Basic view with textview.
@@ -32,14 +33,9 @@ This repository is for my journey on learning Android Development. Hope this rep
 - v0.1.1 - New Banner Update, Added new fragments implementation
 - Implement Resume, Paused, and Stopped fragments
 - Implement back stack logic to fragments
+- Implement Navigation with SafeArgs & Animation
 
 ## Screenshots for 3 Latest Update
-
-### Screenshot v0.0.8
-
-#### Style and Theme
-
-![App Screenshot 0.0.8](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss008.png?raw=true)
 
 ### Screenshot v0.0.9
 
@@ -52,6 +48,12 @@ This repository is for my journey on learning Android Development. Hope this rep
 #### Fragments Feature
 
 ![App Screenshot 0.1.1](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss011.png?raw=true)
+
+### Screenshot v0.1.1
+
+#### Navigation and Animation Feature
+
+![App Screenshot 0.1.2](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss012.png?raw=true)
 
 ## NOTES 
 

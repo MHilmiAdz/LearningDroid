@@ -1,4 +1,4 @@
-package com.example.learningdroid
+package com.example.learningdroid.navigation
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge

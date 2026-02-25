@@ -1,4 +1,4 @@
-package com.example.learningdroid
+package com.example.learningdroid.fragment
 
 import android.content.Context
 import android.os.Bundle
@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.RadioButton
 import android.widget.RadioGroup
 import androidx.fragment.app.DialogFragment
+import com.example.learningdroid.R
 
 class OptionDialogFragment : DialogFragment() {
 

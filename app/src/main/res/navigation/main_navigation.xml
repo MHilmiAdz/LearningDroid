@@ -7,24 +7,56 @@
 
     <fragment
         android:id="@+id/navigationFragment"
-        android:name="com.example.learningdroid.NavigationFragment"
+        android:name="com.example.learningdroid.navigation.NavigationFragment"
         android:label="fragment_navigation"
         tools:layout="@layout/fragment_navigation" >
         <action
             android:id="@+id/action_navigationFragment_to_navCategoryFragment"
-            app:destination="@id/navCategoryFragment" />
+            app:destination="@id/navCategoryFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
         <action
             android:id="@+id/action_navigationFragment_to_navProfileActivity"
-            app:destination="@id/navProfileActivity" />
+            app:destination="@id/navProfileActivity"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
     </fragment>
+
     <fragment
         android:id="@+id/navCategoryFragment"
-        android:name="com.example.learningdroid.NavCategoryFragment"
+        android:name="com.example.learningdroid.navigation.NavCategoryFragment"
         android:label="fragment_nav_category"
-        tools:layout="@layout/fragment_nav_category" />
+        tools:layout="@layout/fragment_nav_category" >
+        <action
+            android:id="@+id/action_navCategoryFragment_to_navDetailCategory"
+            app:destination="@id/navDetailCategory" />
+    </fragment>
+
     <activity
         android:id="@+id/navProfileActivity"
-        android:name="com.example.learningdroid.NavProfileActivity"
+        android:name="com.example.learningdroid.navigation.NavProfileActivity"
         android:label="activity_nav_profile"
         tools:layout="@layout/activity_nav_profile" />
+    <fragment
+        android:id="@+id/navDetailCategory"
+        android:name="com.example.learningdroid.navigation.NavDetailCategory"
+        android:label="fragment_nav_detail_category"
+        tools:layout="@layout/fragment_nav_detail_category" >
+        <argument
+            android:name="name"
+            app:argType="string"
+            android:defaultValue="default name" />
+        <argument
+            android:name="stock"
+            app:argType="long"
+            android:defaultValue="0L" />
+        <action
+            android:id="@+id/action_navDetailCategory_to_navigationFragment"
+            app:destination="@id/navigationFragment"
+            app:popUpTo="@id/navigationFragment"
+            app:popUpToInclusive="true"
+            app:launchSingleTop="true" />
+    </fragment>
 </navigation>

@@ -13,7 +13,7 @@
         android:layout_marginTop="40dp"
         android:padding="24dp"
         android:background="@drawable/appborder"
-        tools:context=".NavProfileActivity">
+        tools:context=".navigation.NavProfileActivity">
 
         <TextView
             android:id="@+id/textView"

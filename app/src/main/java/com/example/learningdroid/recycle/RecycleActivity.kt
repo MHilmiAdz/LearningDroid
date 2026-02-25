@@ -1,4 +1,4 @@
-package com.example.learningdroid
+package com.example.learningdroid.recycle
 
 import android.os.Bundle
 import android.widget.Toast
@@ -6,7 +6,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.learningdroid.R
 import com.example.learningdroid.databinding.ActivityRecycleBinding
+import com.example.learningdroid.datapass.Hero
 
 class RecycleActivity: AppCompatActivity() {
     private val list = ArrayList<Hero>()
@@ -51,7 +53,7 @@ class RecycleActivity: AppCompatActivity() {
         })
     }
 
-    private fun showSelectedHero(hero:Hero) {
+    private fun showSelectedHero(hero: Hero) {
         Toast.makeText(this, "You choose " + hero.name, Toast.LENGTH_SHORT).show()
     }
 }

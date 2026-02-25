@@ -12,6 +12,16 @@ import androidx.core.net.toUri
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.learningdroid.databinding.ActivityMainBinding
+import com.example.learningdroid.datapass.MoveActivity
+import com.example.learningdroid.datapass.MoveForResultActivity
+import com.example.learningdroid.datapass.MoveWithDataActivity
+import com.example.learningdroid.datapass.MoveWithObjectActivity
+import com.example.learningdroid.datapass.Persona
+import com.example.learningdroid.datapass.SimplePersona
+import com.example.learningdroid.fragment.FlexFragments
+import com.example.learningdroid.navigation.NavigationActivity
+import com.example.learningdroid.recycle.RecycleActivity
+import com.example.learningdroid.recycle.ScrollingActivity
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 

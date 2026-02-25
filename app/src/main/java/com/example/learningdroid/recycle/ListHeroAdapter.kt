@@ -1,10 +1,11 @@
-package com.example.learningdroid
+package com.example.learningdroid.recycle
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.learningdroid.datapass.Hero
 import com.example.learningdroid.databinding.ItemRowHeroBinding
 
 class ListHeroAdapter(private val listHero: ArrayList<Hero>) : RecyclerView.Adapter<ListHeroAdapter.ListViewHolder>() {

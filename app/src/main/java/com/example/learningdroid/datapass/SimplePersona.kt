@@ -1,4 +1,4 @@
-package com.example.learningdroid
+package com.example.learningdroid.datapass
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
