@@ -17,7 +17,7 @@ This repository is for my journey on learning Android Development. Hope this rep
  - [Fragment Theory and Implementation](https://www.notion.so/healmee/Fragments-App-architecture-Android-DevelopersFRAGMENTS-2f65b65c18f180d4b794dd36e35b993f?source=copy_link)
  - [Navigation Theory and Implementation](https://www.notion.so/healmee/NAVIGATION-2fe5b65c18f1801dab5ce29e901e95fc?source=copy_link)
 
-## Features v0.1.2
+## All Features from v0.0.1 to v0.1.3
 
 - Basic view with Button and Intent inside button to move to another view.
 - Basic view with textview.
@@ -34,14 +34,9 @@ This repository is for my journey on learning Android Development. Hope this rep
 - Implement Resume, Paused, and Stopped fragments
 - Implement back stack logic to fragments
 - Implement Navigation with SafeArgs & Animation
+- Implement AppBar with 2 Menu.
 
 ## Screenshots for 3 Latest Update
-
-### Screenshot v0.0.9
-
-#### Recycler View Feature
-
-![App Screenshot 0.1.1](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss009.png?raw=true)
 
 ### Screenshot v0.1.1
 
@@ -49,11 +44,17 @@ This repository is for my journey on learning Android Development. Hope this rep
 
 ![App Screenshot 0.1.1](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss011.png?raw=true)
 
-### Screenshot v0.1.1
+### Screenshot v0.1.2
 
 #### Navigation and Animation Feature
 
 ![App Screenshot 0.1.2](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss012.png?raw=true)
+
+### Screenshot v0.1.3
+
+#### AppBar Feature
+
+![App Screenshot 0.1.3](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss013.png?raw=true)
 
 ## NOTES 
 

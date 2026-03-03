@@ -13,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LearningDroid">
         <activity
+            android:name=".appbar.MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".appbar.AppBarActivity"
+            android:exported="false" />
+        <activity
             android:name=".navigation.NavProfileActivity"
             android:exported="false" />
         <activity

@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.net.toUri
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.learningdroid.appbar.AppBarActivity
 import com.example.learningdroid.databinding.ActivityMainBinding
 import com.example.learningdroid.datapass.MoveActivity
 import com.example.learningdroid.datapass.MoveForResultActivity
@@ -73,6 +74,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.btnToRecycleActivity.setOnClickListener(this)
         binding.btnToFragmentsActivity.setOnClickListener(this)
         binding.btnToNavigationActivity.setOnClickListener(this)
+        binding.btnToAppBarActivity.setOnClickListener(this)
 
     }
 
@@ -151,6 +153,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btnToNavigationActivity -> {
                 val navigationActivityIntent = Intent(this@MainActivity, NavigationActivity::class.java)
                 startActivity(navigationActivityIntent)
+            }
+
+            R.id.btnToAppBarActivity -> {
+                val appBarActivityIntent = Intent(this@MainActivity, AppBarActivity::class.java)
+                startActivity(appBarActivityIntent)
             }
         }
     }
