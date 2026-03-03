@@ -17,7 +17,7 @@ This repository is for my journey on learning Android Development. Hope this rep
  - [Fragment Theory and Implementation](https://www.notion.so/healmee/Fragments-App-architecture-Android-DevelopersFRAGMENTS-2f65b65c18f180d4b794dd36e35b993f?source=copy_link)
  - [Navigation Theory and Implementation](https://www.notion.so/healmee/NAVIGATION-2fe5b65c18f1801dab5ce29e901e95fc?source=copy_link)
 
-## All Features from v0.0.1 to v0.1.3
+## All Features from v0.0.1 to v0.1.4
 
 - Basic view with Button and Intent inside button to move to another view.
 - Basic view with textview.
@@ -35,14 +35,9 @@ This repository is for my journey on learning Android Development. Hope this rep
 - Implement back stack logic to fragments
 - Implement Navigation with SafeArgs & Animation
 - Implement AppBar with 2 Menu.
+- Implement SearchBar with Material Components
 
 ## Screenshots for 3 Latest Update
-
-### Screenshot v0.1.1
-
-#### Fragments Feature
-
-![App Screenshot 0.1.1](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss011.png?raw=true)
 
 ### Screenshot v0.1.2
 
@@ -55,6 +50,12 @@ This repository is for my journey on learning Android Development. Hope this rep
 #### AppBar Feature
 
 ![App Screenshot 0.1.3](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss013.png?raw=true)
+
+### Screenshot v0.1.4
+
+#### SearchBar Feature
+
+![App Screenshot 0.1.4](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss014.png?raw=true)
 
 ## NOTES 
 

@@ -104,7 +104,7 @@
     <string name="to_home">To Home Fragment</string>
     <string name="move_to_navigation_activity">Move to Navigation Activity</string>
 
-    <string name="this_activity">Ini adalah menu activity</string>
+    <string name="this_activity">This is Search Bar Activity</string>
     <string name="menu_1">Menu 1</string>
     <string name="menu_2">Menu 2</string>
     <string name="large_text">
@@ -180,5 +180,7 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="move_to_appbar_activity">Move to AppBar Activity</string>
+    <string name="searchbar_hint">Input Word</string>
+    <string name="move_to_searchbar_activity">Move to SearchBar Activity</string>
 
 </resources>

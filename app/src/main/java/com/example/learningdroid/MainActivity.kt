@@ -23,6 +23,7 @@ import com.example.learningdroid.fragment.FlexFragments
 import com.example.learningdroid.navigation.NavigationActivity
 import com.example.learningdroid.recycle.RecycleActivity
 import com.example.learningdroid.recycle.ScrollingActivity
+import com.example.learningdroid.searchbar.SearchBarActivity
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -75,6 +76,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.btnToFragmentsActivity.setOnClickListener(this)
         binding.btnToNavigationActivity.setOnClickListener(this)
         binding.btnToAppBarActivity.setOnClickListener(this)
+        binding.btnToSearchBarActivity.setOnClickListener(this)
 
     }
 
@@ -158,6 +160,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btnToAppBarActivity -> {
                 val appBarActivityIntent = Intent(this@MainActivity, AppBarActivity::class.java)
                 startActivity(appBarActivityIntent)
+            }
+
+            R.id.btnToSearchBarActivity -> {
+                val searchBarActivityIntent = Intent(this@MainActivity, SearchBarActivity::class.java)
+                startActivity(searchBarActivityIntent)
             }
         }
     }
