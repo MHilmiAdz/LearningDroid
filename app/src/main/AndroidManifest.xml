@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LearningDroid">
         <activity
+            android:name=".drawer.DrawerActivity"
+            android:exported="false" />
+        <activity
             android:name=".searchbar.SearchBarActivity"
             android:exported="false" />
         <activity

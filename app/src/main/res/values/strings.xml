@@ -183,4 +183,7 @@
     <string name="searchbar_hint">Input Word</string>
     <string name="move_to_searchbar_activity">Move to SearchBar Activity</string>
 
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
 </resources>

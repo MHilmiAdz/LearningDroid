@@ -19,6 +19,7 @@ import com.example.learningdroid.datapass.MoveWithDataActivity
 import com.example.learningdroid.datapass.MoveWithObjectActivity
 import com.example.learningdroid.datapass.Persona
 import com.example.learningdroid.datapass.SimplePersona
+import com.example.learningdroid.drawer.DrawerActivity
 import com.example.learningdroid.fragment.FlexFragments
 import com.example.learningdroid.navigation.NavigationActivity
 import com.example.learningdroid.recycle.RecycleActivity
@@ -77,6 +78,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.btnToNavigationActivity.setOnClickListener(this)
         binding.btnToAppBarActivity.setOnClickListener(this)
         binding.btnToSearchBarActivity.setOnClickListener(this)
+        binding.btnToDrawerActivity.setOnClickListener(this)
 
     }
 
@@ -165,6 +167,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btnToSearchBarActivity -> {
                 val searchBarActivityIntent = Intent(this@MainActivity, SearchBarActivity::class.java)
                 startActivity(searchBarActivityIntent)
+            }
+
+            R.id.btnToDrawerActivity -> {
+                val drawerActivityIntent = Intent(this@MainActivity, DrawerActivity::class.java)
+                startActivity(drawerActivityIntent)
             }
         }
     }

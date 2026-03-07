@@ -111,8 +111,13 @@
         <Button
             android:id="@+id/btnToSearchBarActivity"
             style="@style/Widget.LearningDroid.MenuButton"
-            android:layout_marginBottom="32dp"
             android:text="@string/move_to_searchbar_activity" />
+
+        <Button
+            android:id="@+id/btnToDrawerActivity"
+            style="@style/Widget.LearningDroid.MenuButton"
+            android:layout_marginBottom="32dp"
+            android:text="Move to Drawer Activity" />
 
         <TextView
             android:id="@+id/tvResult"

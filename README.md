@@ -36,14 +36,9 @@ This repository is for my journey on learning Android Development. Hope this rep
 - Implement Navigation with SafeArgs & Animation
 - Implement AppBar with 2 Menu.
 - Implement SearchBar with Material Components
+- Implement DrawerBar Feature
 
 ## Screenshots for 3 Latest Update
-
-### Screenshot v0.1.2
-
-#### Navigation and Animation Feature
-
-![App Screenshot 0.1.2](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss012.png?raw=true)
 
 ### Screenshot v0.1.3
 
@@ -56,6 +51,12 @@ This repository is for my journey on learning Android Development. Hope this rep
 #### SearchBar Feature
 
 ![App Screenshot 0.1.4](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss014.png?raw=true)
+
+### Screenshot v0.1.5
+
+#### DrawerBar Feature
+
+![App Screenshot 0.1.5](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss015.png?raw=true)
 
 ## NOTES 
 
