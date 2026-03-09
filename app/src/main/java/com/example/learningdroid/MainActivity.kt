@@ -12,6 +12,7 @@ import androidx.core.net.toUri
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.learningdroid.appbar.AppBarActivity
+import com.example.learningdroid.bottomnav.BottomNavActivity
 import com.example.learningdroid.databinding.ActivityMainBinding
 import com.example.learningdroid.datapass.MoveActivity
 import com.example.learningdroid.datapass.MoveForResultActivity
@@ -79,6 +80,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.btnToAppBarActivity.setOnClickListener(this)
         binding.btnToSearchBarActivity.setOnClickListener(this)
         binding.btnToDrawerActivity.setOnClickListener(this)
+        binding.btnToBottomNavActivity.setOnClickListener(this)
 
     }
 
@@ -172,6 +174,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btnToDrawerActivity -> {
                 val drawerActivityIntent = Intent(this@MainActivity, DrawerActivity::class.java)
                 startActivity(drawerActivityIntent)
+            }
+
+            R.id.btnToBottomNavActivity -> {
+                val bottomNavActivityIntent = Intent(this@MainActivity, BottomNavActivity::class.java)
+                startActivity(bottomNavActivityIntent)
             }
         }
     }

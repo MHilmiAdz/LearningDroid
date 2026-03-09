@@ -4,7 +4,7 @@
 
 # LearningDroid
 
-This repository is for my journey on learning Android Development. Hope this repo will makes me master at Android
+This repository is for my journey on learning Android Development. Hope this repo will make me master at Android
 
 ## Learned Lesson
 
@@ -17,7 +17,7 @@ This repository is for my journey on learning Android Development. Hope this rep
  - [Fragment Theory and Implementation](https://www.notion.so/healmee/Fragments-App-architecture-Android-DevelopersFRAGMENTS-2f65b65c18f180d4b794dd36e35b993f?source=copy_link)
  - [Navigation Theory and Implementation](https://www.notion.so/healmee/NAVIGATION-2fe5b65c18f1801dab5ce29e901e95fc?source=copy_link)
 
-## All Features from v0.0.1 to v0.1.4
+## All Features from v0.0.1 to v0.1.6
 
 - Basic view with Button and Intent inside button to move to another view.
 - Basic view with textview.
@@ -29,7 +29,7 @@ This repository is for my journey on learning Android Development. Hope this rep
 - New Scrolling Feature in Main Activity
 - Implement Custom Style and Theme (Sage Theme)
 - Implement Recycler View with list of Indonesian Heroes
-- v0.1.0 Logic changed from using viewfinder to viewbinding and use external library from Glide to replace scrolling function.
+- v0.1.0 Logic changed from using viewfinder to view-binding and use external library from Glide to replace scrolling function.
 - v0.1.1 - New Banner Update, Added new fragments implementation
 - Implement Resume, Paused, and Stopped fragments
 - Implement back stack logic to fragments
@@ -37,14 +37,9 @@ This repository is for my journey on learning Android Development. Hope this rep
 - Implement AppBar with 2 Menu.
 - Implement SearchBar with Material Components
 - Implement DrawerBar Feature
+- Implement BottomNav Feature
 
 ## Screenshots for 3 Latest Update
-
-### Screenshot v0.1.3
-
-#### AppBar Feature
-
-![App Screenshot 0.1.3](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss013.png?raw=true)
 
 ### Screenshot v0.1.4
 
@@ -58,6 +53,11 @@ This repository is for my journey on learning Android Development. Hope this rep
 
 ![App Screenshot 0.1.5](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss015.png?raw=true)
 
+### Screenshot v0.1.6
+
+#### DrawerBar Feature
+
+![App Screenshot 0.1.6](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss016.gif?raw=true)
 ## NOTES 
 
 There is no Screenshot for v0.1.0 because there is no layout change in this version, only logics.

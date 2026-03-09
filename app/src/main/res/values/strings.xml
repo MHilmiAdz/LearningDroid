@@ -185,5 +185,14 @@
 
     <string name="nav_open">Open</string>
     <string name="nav_close">Close</string>
+    <string name="move_to_drawer_activity">Move to Drawer Activity</string>
+    <string name="notification">Notification</string>
+    <string name="this_is_profile_fragment">This is profile fragment</string>
+    <string name="profile">Profile</string>
+    <string name="title_home">This is Home Fragment</string>
+    <string name="title_dashboard">This is Dashboard Fragment</string>
+    <string name="title_notifications">This is Notifications Fragment</string>
+    <string name="title_profile">This is Profile Fragment</string>
+    <string name="move_to_bottomnav_activity">Move to BottomNav Activity</string>
 
 </resources>

@@ -116,8 +116,13 @@
         <Button
             android:id="@+id/btnToDrawerActivity"
             style="@style/Widget.LearningDroid.MenuButton"
+            android:text="@string/move_to_drawer_activity" />
+
+        <Button
+            android:id="@+id/btnToBottomNavActivity"
+            style="@style/Widget.LearningDroid.MenuButton"
             android:layout_marginBottom="32dp"
-            android:text="Move to Drawer Activity" />
+            android:text="@string/move_to_bottomnav_activity" />
 
         <TextView
             android:id="@+id/tvResult"
