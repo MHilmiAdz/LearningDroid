@@ -26,6 +26,7 @@ import com.example.learningdroid.navigation.NavigationActivity
 import com.example.learningdroid.recycle.RecycleActivity
 import com.example.learningdroid.recycle.ScrollingActivity
 import com.example.learningdroid.searchbar.SearchBarActivity
+import com.example.learningdroid.tablayout.TabLayoutActivity
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -81,6 +82,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.btnToSearchBarActivity.setOnClickListener(this)
         binding.btnToDrawerActivity.setOnClickListener(this)
         binding.btnToBottomNavActivity.setOnClickListener(this)
+        binding.btnTpTabLayoutActivity.setOnClickListener(this)
 
     }
 
@@ -180,6 +182,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 val bottomNavActivityIntent = Intent(this@MainActivity, BottomNavActivity::class.java)
                 startActivity(bottomNavActivityIntent)
             }
+
+            R.id.btnTpTabLayoutActivity -> {
+                val tabLayoutActivityIntent = Intent(this@MainActivity, TabLayoutActivity::class.java)
+                startActivity(tabLayoutActivityIntent)
+            }
+
         }
     }
 }

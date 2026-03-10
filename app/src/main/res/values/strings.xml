@@ -194,5 +194,12 @@
     <string name="title_notifications">This is Notifications Fragment</string>
     <string name="title_profile">This is Profile Fragment</string>
     <string name="move_to_bottomnav_activity">Move to BottomNav Activity</string>
+    <string name="tab_text_1">Home</string>
+    <string name="tab_text_2">Profile</string>
+    <string name="tab_text_3">Setting</string>
+    <string name="content_tab_home">Welcome Home</string>
+    <string name="content_tab_profile">Change your Profile here</string>
+    <string name="content_tab_text">This is Tab %1$d</string>
+    <string name="move_to_tablayout_activity">Move to TabLayout Activity</string>
 
 </resources>

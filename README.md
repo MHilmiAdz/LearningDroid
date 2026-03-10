@@ -17,7 +17,7 @@ This repository is for my journey on learning Android Development. Hope this rep
  - [Fragment Theory and Implementation](https://www.notion.so/healmee/Fragments-App-architecture-Android-DevelopersFRAGMENTS-2f65b65c18f180d4b794dd36e35b993f?source=copy_link)
  - [Navigation Theory and Implementation](https://www.notion.so/healmee/NAVIGATION-2fe5b65c18f1801dab5ce29e901e95fc?source=copy_link)
 
-## All Features from v0.0.1 to v0.1.6
+## All Features from v0.0.1 to v0.1.7
 
 - Basic view with Button and Intent inside button to move to another view.
 - Basic view with textview.
@@ -38,14 +38,9 @@ This repository is for my journey on learning Android Development. Hope this rep
 - Implement SearchBar with Material Components
 - Implement DrawerBar Feature
 - Implement BottomNav Feature
+- Implement TabLayout Navigation Feature
 
 ## Screenshots for 3 Latest Update
-
-### Screenshot v0.1.4
-
-#### SearchBar Feature
-
-![App Screenshot 0.1.4](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss014.png?raw=true)
 
 ### Screenshot v0.1.5
 
@@ -55,9 +50,16 @@ This repository is for my journey on learning Android Development. Hope this rep
 
 ### Screenshot v0.1.6
 
-#### DrawerBar Feature
+#### BottomNavigation Feature
 
-![App Screenshot 0.1.6](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss016.gif?raw=true)
+![App Screenshot 0.1.6](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss016.png?raw=true)
+
+### Screenshot v0.1.7
+
+#### TabLayout Navigation Feature
+
+![App Screenshot 0.1.7](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss017.png?raw=true)
+
 ## NOTES 
 
 There is no Screenshot for v0.1.0 because there is no layout change in this version, only logics.

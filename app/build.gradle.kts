@@ -59,4 +59,5 @@ dependencies {
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.material.v130alpha03)
+    implementation(libs.androidx.viewpager2)
 }
