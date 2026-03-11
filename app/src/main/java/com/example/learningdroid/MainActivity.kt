@@ -12,6 +12,7 @@ import androidx.core.net.toUri
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.learningdroid.appbar.AppBarActivity
+import com.example.learningdroid.asynchronous.AsynchronousActivity
 import com.example.learningdroid.bottomnav.BottomNavActivity
 import com.example.learningdroid.databinding.ActivityMainBinding
 import com.example.learningdroid.datapass.MoveActivity
@@ -83,6 +84,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.btnToDrawerActivity.setOnClickListener(this)
         binding.btnToBottomNavActivity.setOnClickListener(this)
         binding.btnTpTabLayoutActivity.setOnClickListener(this)
+        binding.btnToAsynchronousActivity.setOnClickListener(this)
 
     }
 
@@ -187,6 +189,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 val tabLayoutActivityIntent = Intent(this@MainActivity, TabLayoutActivity::class.java)
                 startActivity(tabLayoutActivityIntent)
             }
+
+            R.id.btnToAsynchronousActivity -> {
+                val asynchronousActivityIntent = Intent(this@MainActivity, AsynchronousActivity::class.java)
+                startActivity(asynchronousActivityIntent)
+            }
+
 
         }
     }

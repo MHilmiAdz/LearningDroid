@@ -16,6 +16,7 @@ This repository is for my journey on learning Android Development. Hope this rep
  - [View Theory and Implementation](https://www.notion.so/healmee/Recycler-View-2d45b65c18f1806fbe9ad91cb74f42fd?source=copy_link)
  - [Fragment Theory and Implementation](https://www.notion.so/healmee/Fragments-App-architecture-Android-DevelopersFRAGMENTS-2f65b65c18f180d4b794dd36e35b993f?source=copy_link)
  - [Navigation Theory and Implementation](https://www.notion.so/healmee/NAVIGATION-2fe5b65c18f1801dab5ce29e901e95fc?source=copy_link)
+ - [Background Thread & Networking Theory and Implementation](https://www.notion.so/healmee/BACKGROUND-THREAD-NETWORKING-3205b65c18f18038a1dcfa8a49379eec?source=copy_link)
 
 ## All Features from v0.0.1 to v0.1.7
 
@@ -39,14 +40,9 @@ This repository is for my journey on learning Android Development. Hope this rep
 - Implement DrawerBar Feature
 - Implement BottomNav Feature
 - Implement TabLayout Navigation Feature
+- Implement Asynchronous Feature
 
 ## Screenshots for 3 Latest Update
-
-### Screenshot v0.1.5
-
-#### DrawerBar Feature
-
-![App Screenshot 0.1.5](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss015.png?raw=true)
 
 ### Screenshot v0.1.6
 
@@ -59,6 +55,13 @@ This repository is for my journey on learning Android Development. Hope this rep
 #### TabLayout Navigation Feature
 
 ![App Screenshot 0.1.7](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss017.png?raw=true)
+
+### Screenshot v0.1.8
+
+#### TabLayout Navigation Feature
+
+![App Screenshot 0.1.8](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss018.png?raw=true)
+
 
 ## NOTES 
 
