@@ -131,8 +131,13 @@
         <Button
             android:id="@+id/btnToAsynchronousActivity"
             style="@style/Widget.LearningDroid.MenuButton"
-            android:layout_marginBottom="32dp"
             android:text="@string/move_to_asynchronous_activity" />
+
+        <Button
+            android:id="@+id/btnToAPIActivity"
+            style="@style/Widget.LearningDroid.MenuButton"
+            android:layout_marginBottom="32dp"
+            android:text="@string/move_to_api_activity" />
 
         <TextView
             android:id="@+id/tvResult"

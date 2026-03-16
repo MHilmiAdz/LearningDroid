@@ -13,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LearningDroid">
         <activity
+            android:name=".apicall.ListQuotesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".apicall.APIQuoteActivity"
+            android:exported="false" />
+        <activity
             android:name=".asynchronous.AsynchronousActivity"
             android:exported="false" />
         <activity

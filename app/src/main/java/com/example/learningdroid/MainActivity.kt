@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.net.toUri
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.learningdroid.apicall.APIQuoteActivity
 import com.example.learningdroid.appbar.AppBarActivity
 import com.example.learningdroid.asynchronous.AsynchronousActivity
 import com.example.learningdroid.bottomnav.BottomNavActivity
@@ -85,6 +86,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.btnToBottomNavActivity.setOnClickListener(this)
         binding.btnTpTabLayoutActivity.setOnClickListener(this)
         binding.btnToAsynchronousActivity.setOnClickListener(this)
+        binding.btnToAPIActivity.setOnClickListener(this)
 
     }
 
@@ -195,7 +197,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(asynchronousActivityIntent)
             }
 
-
+            R.id.btnToAPIActivity -> {
+                val apiActivityIntent = Intent(this@MainActivity, APIQuoteActivity::class.java)
+                startActivity(apiActivityIntent)
+            }
         }
     }
 }

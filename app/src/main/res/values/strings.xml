@@ -207,5 +207,9 @@
     <string name="task_completed">Task Completed</string>
     <string name="compressing">Compresssing %d %%</string>
     <string name="move_to_asynchronous_activity">Move to Asynchronous Activity</string>
+    <string name="move_to_api_activity">Move to API Activity</string>
+    <string name="quote">When do you think people die? When they are shot through the heart by the bullet of a pistol? No. When they are ravaged by an incurable disease? No. When they drink a soup made from a poisonous mushroom!? No! It’s when… they are FORGOTTEN.</string>
+    <string name="author">- Dr. Hiluluk</string>
+    <string name="show_list_quotes">Show me list of quotes</string>
 
 </resources>

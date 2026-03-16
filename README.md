@@ -18,7 +18,7 @@ This repository is for my journey on learning Android Development. Hope this rep
  - [Navigation Theory and Implementation](https://www.notion.so/healmee/NAVIGATION-2fe5b65c18f1801dab5ce29e901e95fc?source=copy_link)
  - [Background Thread & Networking Theory and Implementation](https://www.notion.so/healmee/BACKGROUND-THREAD-NETWORKING-3205b65c18f18038a1dcfa8a49379eec?source=copy_link)
 
-## All Features from v0.0.1 to v0.1.7
+## All Features from v0.0.1 to v0.1.9
 
 - Basic view with Button and Intent inside button to move to another view.
 - Basic view with textview.
@@ -41,14 +41,9 @@ This repository is for my journey on learning Android Development. Hope this rep
 - Implement BottomNav Feature
 - Implement TabLayout Navigation Feature
 - Implement Asynchronous Feature
+- Implement Web API Call Feature
 
 ## Screenshots for 3 Latest Update
-
-### Screenshot v0.1.6
-
-#### BottomNavigation Feature
-
-![App Screenshot 0.1.6](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss016.png?raw=true)
 
 ### Screenshot v0.1.7
 
@@ -62,6 +57,11 @@ This repository is for my journey on learning Android Development. Hope this rep
 
 ![App Screenshot 0.1.8](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss018.png?raw=true)
 
+### Screenshot v0.1.9
+
+#### Web API Call Feature
+
+![App Screenshot 0.1.9](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss019.png?raw=true)
 
 ## NOTES 
 
