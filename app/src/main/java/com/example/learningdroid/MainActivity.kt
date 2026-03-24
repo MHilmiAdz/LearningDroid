@@ -24,6 +24,7 @@ import com.example.learningdroid.datapass.Persona
 import com.example.learningdroid.datapass.SimplePersona
 import com.example.learningdroid.drawer.DrawerActivity
 import com.example.learningdroid.fragment.FlexFragments
+import com.example.learningdroid.frost.FrostActivity
 import com.example.learningdroid.navigation.NavigationActivity
 import com.example.learningdroid.recycle.RecycleActivity
 import com.example.learningdroid.recycle.ScrollingActivity
@@ -87,6 +88,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.btnTpTabLayoutActivity.setOnClickListener(this)
         binding.btnToAsynchronousActivity.setOnClickListener(this)
         binding.btnToAPIActivity.setOnClickListener(this)
+        binding.btnToFrostActivity.setOnClickListener(this)
 
     }
 
@@ -200,6 +202,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btnToAPIActivity -> {
                 val apiActivityIntent = Intent(this@MainActivity, APIQuoteActivity::class.java)
                 startActivity(apiActivityIntent)
+            }
+
+            R.id.btnToFrostActivity -> {
+                val frostActivityIntent = Intent(this@MainActivity, FrostActivity::class.java)
+                startActivity(frostActivityIntent)
             }
         }
     }

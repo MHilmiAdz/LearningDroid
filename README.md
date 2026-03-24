@@ -18,7 +18,7 @@ This repository is for my journey on learning Android Development. Hope this rep
  - [Navigation Theory and Implementation](https://www.notion.so/healmee/NAVIGATION-2fe5b65c18f1801dab5ce29e901e95fc?source=copy_link)
  - [Background Thread & Networking Theory and Implementation](https://www.notion.so/healmee/BACKGROUND-THREAD-NETWORKING-3205b65c18f18038a1dcfa8a49379eec?source=copy_link)
 
-## All Features from v0.0.1 to v0.1.9
+## All Features from v0.0.1 to v0.2.0
 
 - Basic view with Button and Intent inside button to move to another view.
 - Basic view with textview.
@@ -30,8 +30,8 @@ This repository is for my journey on learning Android Development. Hope this rep
 - New Scrolling Feature in Main Activity
 - Implement Custom Style and Theme (Sage Theme)
 - Implement Recycler View with list of Indonesian Heroes
-- v0.1.0 Logic changed from using viewfinder to view-binding and use external library from Glide to replace scrolling function.
-- v0.1.1 - New Banner Update, Added new fragments implementation
+- Logic changed from using viewfinder to view-binding and use external library from Glide to replace scrolling function.
+- New Banner Update, Added new fragments implementation
 - Implement Resume, Paused, and Stopped fragments
 - Implement back stack logic to fragments
 - Implement Navigation with SafeArgs & Animation
@@ -42,14 +42,9 @@ This repository is for my journey on learning Android Development. Hope this rep
 - Implement TabLayout Navigation Feature
 - Implement Asynchronous Feature
 - Implement Web API Call Feature
+- Implement AI Feature called **F.R.O.S.T** that request to Local-hosted LLM Model 
 
 ## Screenshots for 3 Latest Update
-
-### Screenshot v0.1.7
-
-#### TabLayout Navigation Feature
-
-![App Screenshot 0.1.7](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss017.png?raw=true)
 
 ### Screenshot v0.1.8
 
@@ -63,9 +58,18 @@ This repository is for my journey on learning Android Development. Hope this rep
 
 ![App Screenshot 0.1.9](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss019.png?raw=true)
 
+### Screenshot v0.2.0
+
+#### F.R.O.S.T AI Feature
+
+![App Screenshot 0.2.0](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss020.png?raw=true)
+
 ## NOTES 
 
-There is no Screenshot for v0.1.0 because there is no layout change in this version, only logics.
+- There is no Screenshot for v0.1.0 because there is no layout change in this version, only logics.
+- Update v0.2.0 F.R.O.S.T added to Learning Droid.
+- LLM Model: Olmo2:latest
+- This AI **MIGHT NOT WORK FOR YOU** Because it's local-hosted to my network. 
 
 ## Installation
 

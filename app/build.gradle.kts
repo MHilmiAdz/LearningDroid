@@ -16,9 +16,11 @@ android {
         minSdk = 24
         targetSdk = 36
         versionCode = 1
-        versionName = "1.0"
+        versionName = "2.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        val ollamaUrl = System.getProperty("OLLAMA_URL") ?: "\"http://192.168.0.121:11434/api/chat\""
+        buildConfigField("String", "OLLAMA_URL", ollamaUrl)
     }
 
     buildTypes {
@@ -33,6 +35,7 @@ android {
 
     buildFeatures {
         viewBinding = true
+        buildConfig = true
     }
 
     compileOptions {
@@ -64,4 +67,6 @@ dependencies {
     implementation(libs.kotlinx.coroutines.android)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.android.async.http)
+    implementation(libs.retrofit)
+    implementation(libs.retrofit2.converter.gson)
 }

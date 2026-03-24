@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mainLayout"
     android:layout_width="match_parent"
@@ -136,8 +137,13 @@
         <Button
             android:id="@+id/btnToAPIActivity"
             style="@style/Widget.LearningDroid.MenuButton"
-            android:layout_marginBottom="32dp"
             android:text="@string/move_to_api_activity" />
+
+        <Button
+            android:id="@+id/btnToFrostActivity"
+            style="@style/Widget.LearningDroid.MenuButton"
+            android:layout_marginBottom="32dp"
+            android:text="@string/move_to_ai_chat" />
 
         <TextView
             android:id="@+id/tvResult"
