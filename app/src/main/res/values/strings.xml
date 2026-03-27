@@ -216,5 +216,8 @@
     <string name="send">Send</string>
     <string name="message_ollama">Message Ollama…</string>
     <string name="move_to_ai_chat">Move to AI Chat</string>
-
+    <string name="review">Review</string>
+    <string name="write_your_review_here">Write your review here..</string>
+    <string name="move_to_api_retrofit">Move to API Retrofit</string>
+    <string name="review_format">%1$s\n- %2$s</string>
 </resources>

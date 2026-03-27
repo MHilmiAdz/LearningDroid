@@ -28,6 +28,7 @@ import com.example.learningdroid.frost.FrostActivity
 import com.example.learningdroid.navigation.NavigationActivity
 import com.example.learningdroid.recycle.RecycleActivity
 import com.example.learningdroid.recycle.ScrollingActivity
+import com.example.learningdroid.restoreview.RestoReviewActivity
 import com.example.learningdroid.searchbar.SearchBarActivity
 import com.example.learningdroid.tablayout.TabLayoutActivity
 
@@ -89,6 +90,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.btnToAsynchronousActivity.setOnClickListener(this)
         binding.btnToAPIActivity.setOnClickListener(this)
         binding.btnToFrostActivity.setOnClickListener(this)
+        binding.btnToRestoReviewActivity.setOnClickListener(this)
 
     }
 
@@ -208,6 +210,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 val frostActivityIntent = Intent(this@MainActivity, FrostActivity::class.java)
                 startActivity(frostActivityIntent)
             }
+
+            R.id.btnToRestoReviewActivity -> {
+                val restoReviewActivityIntent = Intent(this@MainActivity, RestoReviewActivity::class.java)
+                startActivity(restoReviewActivityIntent)
+            }
+
         }
     }
 }
