@@ -43,14 +43,9 @@ This repository is for my journey on learning Android Development. Hope this rep
 - Implement Asynchronous Feature
 - Implement Web API Call Feature
 - Implement AI Feature called **F.R.O.S.T** that request to Local-hosted LLM Model 
+- Implement Web API Call with Retrofit
 
 ## Screenshots for 3 Latest Update
-
-### Screenshot v0.1.8
-
-#### TabLayout Navigation Feature
-
-![App Screenshot 0.1.8](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss018.png?raw=true)
 
 ### Screenshot v0.1.9
 
@@ -63,6 +58,12 @@ This repository is for my journey on learning Android Development. Hope this rep
 #### F.R.O.S.T AI Feature
 
 ![App Screenshot 0.2.0](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss020.png?raw=true)
+
+### Screenshot v0.2.1
+
+#### Web API Call Retrofit Feature
+
+![App Screenshot 0.2.1](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss021.png?raw=true)
 
 ## NOTES 
 
