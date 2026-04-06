@@ -220,4 +220,11 @@
     <string name="write_your_review_here">Write your review here..</string>
     <string name="move_to_api_retrofit">Move to API Retrofit</string>
     <string name="review_format">%1$s\n- %2$s</string>
+    <string name="width">Width</string>
+    <string name="result">Result</string>
+    <string name="calculate">Calculate</string>
+    <string name="height">Height</string>
+    <string name="length">Length</string>
+    <string name="move_to_viewmodel_activity">Move to ViewModel Activity</string>
+    <string name="hundred">100</string>
 </resources>

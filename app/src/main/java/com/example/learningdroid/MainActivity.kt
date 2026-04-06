@@ -31,6 +31,7 @@ import com.example.learningdroid.recycle.ScrollingActivity
 import com.example.learningdroid.restoreview.RestoReviewActivity
 import com.example.learningdroid.searchbar.SearchBarActivity
 import com.example.learningdroid.tablayout.TabLayoutActivity
+import com.example.learningdroid.viewmodel.ViewModelActivity
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -91,6 +92,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.btnToAPIActivity.setOnClickListener(this)
         binding.btnToFrostActivity.setOnClickListener(this)
         binding.btnToRestoReviewActivity.setOnClickListener(this)
+        binding.btnToViewModelActivity.setOnClickListener(this)
 
     }
 
@@ -214,6 +216,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btnToRestoReviewActivity -> {
                 val restoReviewActivityIntent = Intent(this@MainActivity, RestoReviewActivity::class.java)
                 startActivity(restoReviewActivityIntent)
+            }
+
+            R.id.btnToViewModelActivity -> {
+                val viewModelActivityIntent = Intent(this@MainActivity, ViewModelActivity::class.java)
+                startActivity(viewModelActivityIntent)
             }
 
         }

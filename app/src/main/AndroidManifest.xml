@@ -15,6 +15,9 @@
         android:theme="@style/Theme.LearningDroid"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".viewmodel.ViewModelActivity"
+            android:exported="false" />
+        <activity
             android:name=".restoreview.RestoReviewActivity"
             android:exported="false" />
         <activity

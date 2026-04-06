@@ -147,8 +147,13 @@
         <Button
             android:id="@+id/btnToRestoReviewActivity"
             style="@style/Widget.LearningDroid.MenuButton"
-            android:layout_marginBottom="32dp"
             android:text="@string/move_to_api_retrofit" />
+
+        <Button
+            android:id="@+id/btnToViewModelActivity"
+            style="@style/Widget.LearningDroid.MenuButton"
+            android:layout_marginBottom="32dp"
+            android:text="@string/move_to_viewmodel_activity" />
 
         <TextView
             android:id="@+id/tvResult"

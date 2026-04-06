@@ -17,8 +17,9 @@ This repository is for my journey on learning Android Development. Hope this rep
  - [Fragment Theory and Implementation](https://www.notion.so/healmee/Fragments-App-architecture-Android-DevelopersFRAGMENTS-2f65b65c18f180d4b794dd36e35b993f?source=copy_link)
  - [Navigation Theory and Implementation](https://www.notion.so/healmee/NAVIGATION-2fe5b65c18f1801dab5ce29e901e95fc?source=copy_link)
  - [Background Thread & Networking Theory and Implementation](https://www.notion.so/healmee/BACKGROUND-THREAD-NETWORKING-3205b65c18f18038a1dcfa8a49379eec?source=copy_link)
+ - [MAD (Modern Android Development) Theory and Implementation](https://www.notion.so/healmee/Android-Architecture-Component-3305b65c18f18001a8d4de1d3931f06e?source=copy_link)
 
-## All Features from v0.0.1 to v0.2.0
+## All Features from v0.0.1 to v0.2.2
 
 - Basic view with Button and Intent inside button to move to another view.
 - Basic view with textview.
@@ -44,14 +45,9 @@ This repository is for my journey on learning Android Development. Hope this rep
 - Implement Web API Call Feature
 - Implement AI Feature called **F.R.O.S.T** that request to Local-hosted LLM Model 
 - Implement Web API Call with Retrofit
+- Implement ViewModel
 
 ## Screenshots for 3 Latest Update
-
-### Screenshot v0.1.9
-
-#### Web API Call Feature
-
-![App Screenshot 0.1.9](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss019.png?raw=true)
 
 ### Screenshot v0.2.0
 
@@ -64,6 +60,12 @@ This repository is for my journey on learning Android Development. Hope this rep
 #### Web API Call Retrofit Feature
 
 ![App Screenshot 0.2.1](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss021.png?raw=true)
+
+### Screenshot v0.2.2
+
+#### ViewModel Implementation
+
+![App Screenshot 0.2.2](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss022.png?raw=true)
 
 ## NOTES 
 
