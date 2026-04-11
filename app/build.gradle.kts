@@ -72,4 +72,5 @@ dependencies {
     implementation(libs.logging.interceptor)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.activity.ktx)
+    implementation(libs.androidx.lifecycle.livedata.ktx)
 }

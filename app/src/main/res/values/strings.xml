@@ -227,4 +227,6 @@
     <string name="length">Length</string>
     <string name="move_to_viewmodel_activity">Move to ViewModel Activity</string>
     <string name="hundred">100</string>
+    <string name="seconds">%d seconds elapsed</string>
+    <string name="move_to_livedata_activity">Move to LiveData Activity</string>
 </resources>

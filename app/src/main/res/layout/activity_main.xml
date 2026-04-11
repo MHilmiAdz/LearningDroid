@@ -152,8 +152,13 @@
         <Button
             android:id="@+id/btnToViewModelActivity"
             style="@style/Widget.LearningDroid.MenuButton"
-            android:layout_marginBottom="32dp"
             android:text="@string/move_to_viewmodel_activity" />
+
+        <Button
+            android:id="@+id/btnToLiveDataActivity"
+            style="@style/Widget.LearningDroid.MenuButton"
+            android:layout_marginBottom="32dp"
+            android:text="@string/move_to_livedata_activity" />
 
         <TextView
             android:id="@+id/tvResult"

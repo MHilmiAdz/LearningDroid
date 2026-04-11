@@ -25,6 +25,7 @@ import com.example.learningdroid.datapass.SimplePersona
 import com.example.learningdroid.drawer.DrawerActivity
 import com.example.learningdroid.fragment.FlexFragments
 import com.example.learningdroid.frost.FrostActivity
+import com.example.learningdroid.livedata.LiveDataActivity
 import com.example.learningdroid.navigation.NavigationActivity
 import com.example.learningdroid.recycle.RecycleActivity
 import com.example.learningdroid.recycle.ScrollingActivity
@@ -93,6 +94,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.btnToFrostActivity.setOnClickListener(this)
         binding.btnToRestoReviewActivity.setOnClickListener(this)
         binding.btnToViewModelActivity.setOnClickListener(this)
+        binding.btnToLiveDataActivity.setOnClickListener(this)
 
     }
 
@@ -220,6 +222,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
             R.id.btnToViewModelActivity -> {
                 val viewModelActivityIntent = Intent(this@MainActivity, ViewModelActivity::class.java)
+                startActivity(viewModelActivityIntent)
+            }
+
+            R.id.btnToLiveDataActivity -> {
+                val viewModelActivityIntent = Intent(this@MainActivity, LiveDataActivity::class.java)
                 startActivity(viewModelActivityIntent)
             }
 
