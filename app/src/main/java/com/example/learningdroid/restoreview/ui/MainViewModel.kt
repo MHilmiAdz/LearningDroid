@@ -9,6 +9,7 @@ import com.example.learningdroid.restoreview.data.response.PostReviewResponse
 import com.example.learningdroid.restoreview.data.response.Restaurant
 import com.example.learningdroid.restoreview.data.response.RestaurantResponse
 import com.example.learningdroid.restoreview.data.retrofit.ApiConfig
+import com.example.learningdroid.restoreview.util.Event
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -19,6 +20,11 @@ class MainViewModel : ViewModel() {
     private val _listReview = MutableLiveData<List<CustomerReviewsItem>>()
     val listReview: LiveData<List<CustomerReviewsItem>> = _listReview
     private val _isLoading = MutableLiveData<Boolean>()
+
+
+    private val _snackbarText = MutableLiveData<Event<String>>()
+    val snackbarText: LiveData<Event<String>> = _snackbarText
+
     val isLoading: LiveData<Boolean> = _isLoading
     companion object{
         private const val TAG = "MainViewModel"
@@ -40,7 +46,7 @@ class MainViewModel : ViewModel() {
                 _isLoading.value = false
                 if (response.isSuccessful) {
                     _restaurant.value = response.body()?.restaurant
-                    _listReview.value = response.body()?.restaurant?.customerReviews
+                    _snackbarText.value = Event(response.body()?.message.toString())
                 } else {
                     Log.e(TAG, "onFailure: ${response.message()}")
                 }
@@ -60,6 +66,7 @@ class MainViewModel : ViewModel() {
                 _isLoading.value = false
                 if (response.isSuccessful) {
                     _listReview.value = response.body()?.customerReviews
+                    _snackbarText.value = response.body()?.message as Event<String>?
                 } else {
                     Log.e(TAG, "onFailure: ${response.message()}")
                 }

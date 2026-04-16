@@ -13,6 +13,7 @@ import com.example.learningdroid.restoreview.data.response.CustomerReviewsItem
 import com.example.learningdroid.restoreview.data.response.Restaurant
 import com.example.learningdroid.restoreview.ui.MainViewModel
 import com.example.learningdroid.restoreview.ui.ReviewAdapter
+import com.google.android.material.snackbar.Snackbar
 
 class RestoReviewActivity : AppCompatActivity() {
 
@@ -39,6 +40,17 @@ class RestoReviewActivity : AppCompatActivity() {
         mainViewModel.listReview.observe(this) { consumerReviews ->
             setReviewData(consumerReviews)
         }
+
+        mainViewModel.snackbarText.observe(this, {
+            it.getContentIfNotHandled()?.let { snackBarText ->
+                Snackbar.make(
+                    window.decorView.rootView,
+                    snackBarText,
+                    Snackbar.LENGTH_SHORT
+                ).show()
+            }
+        })
+
         mainViewModel.isLoading.observe(this) {
             showLoading(it)
         }
