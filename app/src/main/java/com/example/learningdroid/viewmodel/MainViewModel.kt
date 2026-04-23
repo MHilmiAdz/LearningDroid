@@ -1,10 +1,11 @@
 package com.example.learningdroid.viewmodel
 
-import androidx.lifecycle.ViewModel
-class MainViewModel : ViewModel() {
-    var result = 0
+internal class MainViewModel(private val cuboidModel: CuboidModel) {
 
-    fun calculate(width: String, height: String, length: String) {
-        result = width.toInt() * height.toInt() * length.toInt()
+    fun getCircumference() = cuboidModel.getCircumference()
+    fun getSurfaceArea() = cuboidModel.getSurfaceArea()
+    fun getVolume() = cuboidModel.getVolume()
+    fun save(w: Double, l: Double, h: Double) {
+        cuboidModel.save(w, l, h)
     }
 }

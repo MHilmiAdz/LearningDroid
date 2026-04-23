@@ -229,4 +229,8 @@
     <string name="hundred">100</string>
     <string name="seconds">%d seconds elapsed</string>
     <string name="move_to_livedata_activity">Move to LiveData Activity</string>
+    <string name="save">Save</string>
+    <string name="volume">Volume</string>
+    <string name="circumference">Circumference</string>
+    <string name="area">Surface Area</string>
 </resources>

@@ -66,7 +66,28 @@
             android:layout_width="300dp"
             android:layout_gravity="center"
             android:layout_height="wrap_content"
-            android:text="@string/calculate" />
+            android:text="@string/save" />
+
+        <Button
+            android:id="@+id/btn_calculate_volume"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/volume"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_calculate_circumference"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/circumference"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_calculate_surface_area"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/area"
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/tv_result"

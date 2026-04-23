@@ -1,43 +1,82 @@
 package com.example.learningdroid.viewmodel
 
 import android.os.Bundle
-import androidx.activity.viewModels
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.example.learningdroid.R
 import com.example.learningdroid.databinding.ActivityViewModelBinding
 
 
-class ViewModelActivity : AppCompatActivity() {
+class ViewModelActivity : AppCompatActivity(), View.OnClickListener {
     lateinit var binding: ActivityViewModelBinding
-    private val viewModel: MainViewModel by viewModels()
-    
+    private lateinit var viewModel: MainViewModel
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityViewModelBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        displayResult()
-        binding.btnCalculate.setOnClickListener {
-            val width = binding.edtWidth.text.toString()
-            val height = binding.edtHeight.text.toString()
-            val length = binding.edtLength.text.toString()
-            when {
-                width.isEmpty() -> {
-                    binding.edtWidth.error = "Width is Empty"
-                }
-                height.isEmpty() -> {
-                    binding.edtHeight.error = "Height is Empty"
-                }
-                length.isEmpty() -> {
-                    binding.edtLength.error = "Length is Empty"
-                }
-                else -> {
-                    viewModel.calculate(width, height, length)
-                    displayResult()
+
+        viewModel = MainViewModel(CuboidModel())
+
+        binding.btnCalculate.setOnClickListener(this)
+        binding.btnCalculateSurfaceArea.setOnClickListener(this)
+        binding.btnCalculateCircumference.setOnClickListener(this)
+        binding.btnCalculateVolume.setOnClickListener(this)
+    }
+
+    override fun onClick(v: View?) {
+        val length = binding.edtLength.text.toString().trim()
+        val width = binding.edtWidth.text.toString().trim()
+        val height = binding.edtHeight.text.toString().trim()
+
+        when {
+            width.isEmpty() -> {
+                binding.edtWidth.error = "Width is Empty"
+            }
+            height.isEmpty() -> {
+                binding.edtHeight.error = "Height is Empty"
+            }
+            length.isEmpty() -> {
+                binding.edtLength.error = "Length is Empty"
+            }
+            else -> {
+                val valueLength = length.toDoubleOrNull() ?: 0.0
+                val valueWidth = width.toDoubleOrNull() ?: 0.0
+                val valueHeight = height.toDoubleOrNull() ?: 0.0
+
+                when (v?.id) {
+                    R.id.btn_calculate -> {
+                        viewModel.save(valueLength, valueWidth, valueHeight)
+                        visible()
+                    }
+                    R.id.btn_calculate_circumference -> {
+                        ("Circumference: " + viewModel.getCircumference().toString()).also { binding.tvResult.text = it }
+                        gone()
+                    }
+                    R.id.btn_calculate_surface_area -> {
+                        ("Surface Area: " + viewModel.getSurfaceArea().toString()).also { binding.tvResult.text = it }
+                        gone()
+                    }
+                    R.id.btn_calculate_volume -> {
+                        ("Volume: " + viewModel.getVolume().toString()).also { binding.tvResult.text = it }
+                        gone()
+                    }
                 }
             }
         }
     }
 
-    private fun displayResult() {
-        binding.tvResult.text = viewModel.result.toString()
+    private fun visible() {
+        binding.btnCalculateVolume.visibility = View.VISIBLE
+        binding.btnCalculateCircumference.visibility = View.VISIBLE
+        binding.btnCalculateSurfaceArea.visibility = View.VISIBLE
+        binding.btnCalculate.visibility = View.GONE
+    }
+
+    private fun gone() {
+        binding.btnCalculateVolume.visibility = View.GONE
+        binding.btnCalculateCircumference.visibility = View.GONE
+        binding.btnCalculateSurfaceArea.visibility = View.GONE
+        binding.btnCalculate.visibility = View.VISIBLE
     }
 }

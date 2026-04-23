@@ -18,8 +18,9 @@ This repository is for my journey on learning Android Development. Hope this rep
  - [Navigation Theory and Implementation](https://www.notion.so/healmee/NAVIGATION-2fe5b65c18f1801dab5ce29e901e95fc?source=copy_link)
  - [Background Thread & Networking Theory and Implementation](https://www.notion.so/healmee/BACKGROUND-THREAD-NETWORKING-3205b65c18f18038a1dcfa8a49379eec?source=copy_link)
  - [MAD (Modern Android Development) Theory and Implementation](https://www.notion.so/healmee/Android-Architecture-Component-3305b65c18f18001a8d4de1d3931f06e?source=copy_link)
+ - [Testing Unit](https://www.notion.so/healmee/Testing-34b5b65c18f180d8882fc6c698b32622?source=copy_link)
 
-## All Features from v0.0.1 to v0.2.3
+## All Features from v0.0.1 to v0.2.4
 
 - Basic view with Button and Intent inside button to move to another view.
 - Basic view with textview.
@@ -46,14 +47,9 @@ This repository is for my journey on learning Android Development. Hope this rep
 - Implement AI Feature called **F.R.O.S.T** that request to Local-hosted LLM Model 
 - Implement Web API Call with Retrofit
 - Implement ViewModel & LiveData Lifecycle
+- Implement Unit Testing
 
 ## Screenshots for 3 Latest Update
-
-### Screenshot v0.2.1
-
-#### Web API Call Retrofit Feature
-
-![App Screenshot 0.2.1](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss021.png?raw=true)
 
 ### Screenshot v0.2.2
 
@@ -66,6 +62,12 @@ This repository is for my journey on learning Android Development. Hope this rep
 #### LiveData Implementation
 
 ![App Screenshot 0.2.3](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss023.png?raw=true)
+
+### Screenshot v0.2.4
+
+#### Unit Testing Implementation
+
+![App Screenshot 0.2.4](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss024.png?raw=true)
 
 ## NOTES 
 
