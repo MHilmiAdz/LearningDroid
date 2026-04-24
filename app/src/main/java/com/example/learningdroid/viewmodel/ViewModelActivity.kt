@@ -5,6 +5,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.learningdroid.R
 import com.example.learningdroid.databinding.ActivityViewModelBinding
+import cz.msebera.android.httpclient.util.TextUtils
 
 
 class ViewModelActivity : AppCompatActivity(), View.OnClickListener {
@@ -30,15 +31,16 @@ class ViewModelActivity : AppCompatActivity(), View.OnClickListener {
         val height = binding.edtHeight.text.toString().trim()
 
         when {
-            width.isEmpty() -> {
-                binding.edtWidth.error = "Width is Empty"
-            }
-            height.isEmpty() -> {
-                binding.edtHeight.error = "Height is Empty"
-            }
-            length.isEmpty() -> {
+            TextUtils.isEmpty(length) -> {
                 binding.edtLength.error = "Length is Empty"
             }
+            TextUtils.isEmpty(width)-> {
+                binding.edtWidth.error = "Width is Empty"
+            }
+            TextUtils.isEmpty(height) -> {
+                binding.edtHeight.error = "Height is Empty"
+            }
+            
             else -> {
                 val valueLength = length.toDoubleOrNull() ?: 0.0
                 val valueWidth = width.toDoubleOrNull() ?: 0.0

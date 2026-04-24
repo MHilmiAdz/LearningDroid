@@ -35,7 +35,6 @@ import com.example.learningdroid.tablayout.TabLayoutActivity
 import com.example.learningdroid.viewmodel.ViewModelActivity
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
-
     private lateinit var etInput: EditText
     private lateinit var tvResult: TextView
     private lateinit var binding: ActivityMainBinding
@@ -95,7 +94,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.btnToRestoReviewActivity.setOnClickListener(this)
         binding.btnToViewModelActivity.setOnClickListener(this)
         binding.btnToLiveDataActivity.setOnClickListener(this)
-
     }
 
     override fun onClick(v: View) {

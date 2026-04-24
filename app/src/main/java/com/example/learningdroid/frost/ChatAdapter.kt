@@ -44,7 +44,6 @@ class ChatAdapter(private val messages: MutableList<Message>) :
     }
 
     override fun getItemCount() = messages.size
-
     fun addMessage(message: Message) {
         messages.add(message)
         notifyItemInserted(messages.size - 1)

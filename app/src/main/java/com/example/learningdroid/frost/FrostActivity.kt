@@ -29,7 +29,6 @@ class FrostActivity : AppCompatActivity() {
     private val messages = mutableListOf<Message>()
     private val chatHistory = JSONArray()
     private lateinit var adapter: ChatAdapter
-
     private val client = OkHttpClient.Builder()
         .connectTimeout(30, TimeUnit.SECONDS)
         .readTimeout(180, TimeUnit.SECONDS)
@@ -97,10 +96,10 @@ class FrostActivity : AppCompatActivity() {
     private suspend fun callOllama(): String? = withContext(Dispatchers.IO) {
         try {
             val optionsObject = JSONObject().apply {
-                put("num_predict", 100)  // Limit the output length
-                put("num_ctx", 1024)    // Shrink the memory buffer (Default is 2048+). Less reading = faster.
-                put("temperature", 0.0) // Zero creativity. It will instantly pick the most obvious word.
-                put("top_k", 1)         // Stop evaluating alternate words completely.
+                put("num_predict", 100)
+                put("num_ctx", 1024)
+                put("temperature", 0.0)
+                put("top_k", 1)
             }
 
             val bodyObject = JSONObject().apply {
@@ -124,7 +123,7 @@ class FrostActivity : AppCompatActivity() {
 
             if (!response.isSuccessful) return@withContext null
 
-            val responseBodyString = response.body?.string() ?: return@withContext null
+            val responseBodyString = response.body.string()
             val jsonResponse = JSONObject(responseBodyString)
             jsonResponse.getJSONObject("message").getString("content")
 
@@ -139,7 +138,6 @@ class FrostActivity : AppCompatActivity() {
             .setTitle("Welcome to F.R.O.S.T \u2744\uFE0F")
             .setMessage("F.R.O.S.T is running locally on MY device. So, it might be not work for you.")
             .setPositiveButton("Got it!") { dialog, _ ->
-
                 dialog.dismiss()
             }
             .setCancelable(false)

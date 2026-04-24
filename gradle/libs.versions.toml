@@ -23,6 +23,7 @@ mockitoInline = "5.2.0"
 navigationFragmentKtx = "2.9.8"
 recyclerview = "1.4.0"
 retrofit = "3.0.0"
+runner = "1.7.0"
 viewpager2 = "1.1.0"
 
 [libraries]
@@ -35,6 +36,8 @@ androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-view
 androidx-navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
 androidx-navigation-safe-args-gradle-plugin = { module = "androidx.navigation:navigation-safe-args-gradle-plugin", version.ref = "navigationFragmentKtx" }
 androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigationFragmentKtx" }
+androidx-rules = { module = "androidx.test:rules", version.ref = "runner" }
+androidx-runner = { module = "androidx.test:runner", version.ref = "runner" }
 androidx-viewpager2 = { module = "androidx.viewpager2:viewpager2", version.ref = "viewpager2" }
 glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
