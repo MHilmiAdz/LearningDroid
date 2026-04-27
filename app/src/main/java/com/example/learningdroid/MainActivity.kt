@@ -23,6 +23,7 @@ import com.example.learningdroid.datapass.MoveWithObjectActivity
 import com.example.learningdroid.datapass.Persona
 import com.example.learningdroid.datapass.SimplePersona
 import com.example.learningdroid.drawer.DrawerActivity
+import com.example.learningdroid.fileaccess.ReadWriteActivity
 import com.example.learningdroid.fragment.FlexFragments
 import com.example.learningdroid.frost.FrostActivity
 import com.example.learningdroid.livedata.LiveDataActivity
@@ -94,6 +95,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.btnToRestoReviewActivity.setOnClickListener(this)
         binding.btnToViewModelActivity.setOnClickListener(this)
         binding.btnToLiveDataActivity.setOnClickListener(this)
+        binding.btnToReadWriteActivity.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
@@ -228,6 +230,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(viewModelActivityIntent)
             }
 
+            R.id.btnToReadWriteActivity -> {
+                val readWriteActivityIntent = Intent(this@MainActivity, ReadWriteActivity::class.java)
+                startActivity(readWriteActivityIntent)
+            }
         }
     }
 }

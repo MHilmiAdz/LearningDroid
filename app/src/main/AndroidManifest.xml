@@ -15,6 +15,9 @@
         android:theme="@style/Theme.LearningDroid"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".fileaccess.ReadWriteActivity"
+            android:exported="false" />
+        <activity
             android:name=".livedata.LiveDataActivity"
             android:exported="false" />
         <activity
