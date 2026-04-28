@@ -15,6 +15,12 @@
         android:theme="@style/Theme.LearningDroid"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".sharedpref.FormUserPreferenceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sharedpref.SharedPrefActivity"
+            android:exported="false" />
+        <activity
             android:name=".fileaccess.ReadWriteActivity"
             android:exported="false" />
         <activity

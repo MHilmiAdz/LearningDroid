@@ -235,9 +235,26 @@
     <string name="area">Surface Area</string>
 
     <string name="file_new">File New</string>
+    <string name="name">Name</string>
     <string name="file_open">File Open</string>
     <string name="file_save">File Save</string>
     <string name="move_to_read_write_activity">Move to Read Write Activity</string>
     <string name="title_file">Title</string>
     <string name="lorem_ipsum_medium">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</string>
+    <string name="email">Email</string>
+    <string name="phone_number">No Handphone</string>
+    <string name="age">Age</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="favorite_food">Favorite Food</string>"
+    <string name="change">Change Info</string>
+    <string name="dummy_name">Healme Frost</string>
+    <string name="dummy_email">healme@frost.com</string>
+    <string name="dummynumber">123456</string>
+    <string name="dummyage">30</string>
+    <string name="dummyfavfood">Pizza</string>
+    <string name="move_to_shared_pref_activity">Move to Shared Pref Activity</string>
+    <string name="is_your_favorite_food_is_pizza">Is your favorite food is pizza?</string>
+
+
 </resources>

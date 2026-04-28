@@ -21,7 +21,7 @@ This repository is for my journey on learning Android Development. Hope this rep
  - [Testing Unit](https://www.notion.so/healmee/Testing-34b5b65c18f180d8882fc6c698b32622?source=copy_link)
  - [Local Data Persistent](https://www.notion.so/healmee/Local-Data-Persistent-34d5b65c18f1802298fed60a0ea47304?source=copy_link)
 
-## All Features from v0.0.1 to v0.2.5
+## All Features from v0.0.1 to v0.2.6
 
 - Basic view with Button and Intent inside button to move to another view.
 - Basic view with textview.
@@ -50,14 +50,9 @@ This repository is for my journey on learning Android Development. Hope this rep
 - Implement ViewModel & LiveData Lifecycle
 - Implement Unit Testing
 - Implement Local Data Persistent
+- Implement Shared Preference
 
 ## Screenshots for 3 Latest Update
-
-### Screenshot v0.2.3
-
-#### LiveData Implementation
-
-![App Screenshot 0.2.3](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss023.png?raw=true)
 
 ### Screenshot v0.2.4
 
@@ -70,6 +65,12 @@ This repository is for my journey on learning Android Development. Hope this rep
 #### File Read and Write Implementation
 
 ![App Screenshot 0.2.5](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss025.png?raw=true)
+
+### Screenshot v0.2.6
+
+#### Shared Preference Implementation
+
+![App Screenshot 0.2.6](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss026.png?raw=true)
 
 ## NOTES 
 

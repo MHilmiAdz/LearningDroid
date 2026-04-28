@@ -32,6 +32,7 @@ import com.example.learningdroid.recycle.RecycleActivity
 import com.example.learningdroid.recycle.ScrollingActivity
 import com.example.learningdroid.restoreview.RestoReviewActivity
 import com.example.learningdroid.searchbar.SearchBarActivity
+import com.example.learningdroid.sharedpref.SharedPrefActivity
 import com.example.learningdroid.tablayout.TabLayoutActivity
 import com.example.learningdroid.viewmodel.ViewModelActivity
 
@@ -96,6 +97,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.btnToViewModelActivity.setOnClickListener(this)
         binding.btnToLiveDataActivity.setOnClickListener(this)
         binding.btnToReadWriteActivity.setOnClickListener(this)
+        binding.btnToSharedPrefActivity.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
@@ -233,6 +235,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btnToReadWriteActivity -> {
                 val readWriteActivityIntent = Intent(this@MainActivity, ReadWriteActivity::class.java)
                 startActivity(readWriteActivityIntent)
+            }
+
+            R.id.btnToSharedPrefActivity -> {
+                val sharedPrefActivityIntent = Intent(this@MainActivity, SharedPrefActivity::class.java)
+                startActivity(sharedPrefActivityIntent)
             }
         }
     }
