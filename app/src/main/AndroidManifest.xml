@@ -15,6 +15,9 @@
         android:theme="@style/Theme.LearningDroid"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".settingpref.SettingPreferenceActivity"
+            android:exported="false" />
+        <activity
             android:name=".sharedpref.FormUserPreferenceActivity"
             android:exported="false" />
         <activity

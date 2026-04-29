@@ -256,5 +256,14 @@
     <string name="move_to_shared_pref_activity">Move to Shared Pref Activity</string>
     <string name="is_your_favorite_food_is_pizza">Is your favorite food is pizza?</string>
 
+    <string name="is_love">Do you like Pizza? </string>
+    <string name="key_email">email</string>
+    <string name="key_age">age</string>
+    <string name="key_phone">phone</string>
+    <string name="key_love">love</string>
+    <string name="key_name">name</string>
+    <string name="empty">Empty</string>
+    <string name="move_to_settingpref_activity">Move to SettingPref Activity</string>
+
 
 </resources>

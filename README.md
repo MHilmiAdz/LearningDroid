@@ -54,12 +54,6 @@ This repository is for my journey on learning Android Development. Hope this rep
 
 ## Screenshots for 3 Latest Update
 
-### Screenshot v0.2.4
-
-#### Unit Testing Implementation
-
-![App Screenshot 0.2.4](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss024.png?raw=true)
-
 ### Screenshot v0.2.5
 
 #### File Read and Write Implementation
@@ -70,7 +64,14 @@ This repository is for my journey on learning Android Development. Hope this rep
 
 #### Shared Preference Implementation
 
-![App Screenshot 0.2.6](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss026.png?raw=true)
+![App Screenshot 0.2.6](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss026.png?raw=true
+
+### Screenshot v0.2.7
+
+#### Setting Preference Implementation
+
+![App Screenshot 0.2.7](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss027.png?raw=true)
+
 
 ## NOTES 
 

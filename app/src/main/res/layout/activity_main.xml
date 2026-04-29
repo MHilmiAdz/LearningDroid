@@ -167,8 +167,13 @@
         <Button
             android:id="@+id/btnToSharedPrefActivity"
             style="@style/Widget.LearningDroid.MenuButton"
-            android:layout_marginBottom="32dp"
             android:text="@string/move_to_shared_pref_activity" />
+
+        <Button
+            android:id="@+id/btnToSettingPreferenceActivity"
+            style="@style/Widget.LearningDroid.MenuButton"
+            android:layout_marginBottom="32dp"
+            android:text="@string/move_to_settingpref_activity" />
 
         <TextView
             android:id="@+id/tvResult"
