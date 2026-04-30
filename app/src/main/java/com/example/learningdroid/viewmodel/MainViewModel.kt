@@ -1,6 +1,8 @@
 package com.example.learningdroid.viewmodel
 
-internal class MainViewModel(private val cuboidModel: CuboidModel) {
+import androidx.lifecycle.ViewModel
+
+internal class MainViewModel(private val cuboidModel: CuboidModel) : ViewModel() {
 
     fun getCircumference() = cuboidModel.getCircumference()
     fun getSurfaceArea() = cuboidModel.getSurfaceArea()

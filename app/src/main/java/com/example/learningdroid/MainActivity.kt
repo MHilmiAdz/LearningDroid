@@ -3,14 +3,17 @@ package com.example.learningdroid
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.CompoundButton
 import android.widget.EditText
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.net.toUri
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.lifecycle.ViewModelProvider
 import com.example.learningdroid.apicall.APIQuoteActivity
 import com.example.learningdroid.appbar.AppBarActivity
 import com.example.learningdroid.asynchronous.AsynchronousActivity
@@ -32,7 +35,11 @@ import com.example.learningdroid.recycle.RecycleActivity
 import com.example.learningdroid.recycle.ScrollingActivity
 import com.example.learningdroid.restoreview.RestoReviewActivity
 import com.example.learningdroid.searchbar.SearchBarActivity
+import com.example.learningdroid.settingpref.MainViewModel
+import com.example.learningdroid.settingpref.SettingPref
 import com.example.learningdroid.settingpref.SettingPreferenceActivity
+import com.example.learningdroid.settingpref.ViewModelFactory
+import com.example.learningdroid.settingpref.dataStore
 import com.example.learningdroid.sharedpref.SharedPrefActivity
 import com.example.learningdroid.tablayout.TabLayoutActivity
 import com.example.learningdroid.viewmodel.ViewModelActivity
@@ -60,7 +67,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -71,6 +77,25 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        val switchTheme = binding.switchTheme
+        val pref = SettingPref.getInstance(application.dataStore)
+
+        val mainViewModel = ViewModelProvider(this, ViewModelFactory(pref))[MainViewModel::class.java]
+
+        mainViewModel.getThemeSettings().observe(this) { isDarkModeActive: Boolean ->
+            if (isDarkModeActive) {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+                switchTheme.isChecked = true
+            } else {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+                switchTheme.isChecked = false
+            }
+        }
+
+        switchTheme.setOnCheckedChangeListener { _: CompoundButton?, isChecked: Boolean ->
+            mainViewModel.saveThemeSetting(isChecked)
         }
 
         etInput = binding.etInput

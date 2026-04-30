@@ -78,4 +78,5 @@ dependencies {
     implementation(libs.androidx.lifecycle.livedata.ktx)
     androidTestImplementation(libs.androidx.runner)
     androidTestImplementation(libs.androidx.rules)
+    implementation(libs.androidx.datastore.preferences)
 }

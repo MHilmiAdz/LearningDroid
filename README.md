@@ -21,7 +21,7 @@ This repository is for my journey on learning Android Development. Hope this rep
  - [Testing Unit](https://www.notion.so/healmee/Testing-34b5b65c18f180d8882fc6c698b32622?source=copy_link)
  - [Local Data Persistent](https://www.notion.so/healmee/Local-Data-Persistent-34d5b65c18f1802298fed60a0ea47304?source=copy_link)
 
-## All Features from v0.0.1 to v0.2.6
+## All Features from v0.0.1 to v0.2.8
 
 - Basic view with Button and Intent inside button to move to another view.
 - Basic view with textview.
@@ -51,6 +51,7 @@ This repository is for my journey on learning Android Development. Hope this rep
 - Implement Unit Testing
 - Implement Local Data Persistent
 - Implement Shared Preference
+- Implement Data Store Preference
 
 ## Screenshots for 3 Latest Update
 
@@ -72,6 +73,11 @@ This repository is for my journey on learning Android Development. Hope this rep
 
 ![App Screenshot 0.2.7](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss027.png?raw=true)
 
+### Screenshot v0.2.8
+
+#### Data Store Preference Implementation
+
+![App Screenshot 0.2.8](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss028.png?raw=true)
 
 ## NOTES 
 

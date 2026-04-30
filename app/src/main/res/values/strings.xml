@@ -264,6 +264,6 @@
     <string name="key_name">name</string>
     <string name="empty">Empty</string>
     <string name="move_to_settingpref_activity">Move to SettingPref Activity</string>
-
+    <string name="dark_mode">Dark Mode</string>
 
 </resources>
