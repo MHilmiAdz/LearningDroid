@@ -52,6 +52,7 @@ This repository is for my journey on learning Android Development. Hope this rep
 - Implement Local Data Persistent
 - Implement Shared Preference
 - Implement Data Store Preference
+- Implement SQLite CRUD
 
 ## Screenshots for 3 Latest Update
 
@@ -78,6 +79,22 @@ This repository is for my journey on learning Android Development. Hope this rep
 #### Data Store Preference Implementation
 
 ![App Screenshot 0.2.8](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss028.png?raw=true)
+
+### Screenshot v0.2.9
+
+#### SQLite Implementation
+
+#### CREATE A NOTE
+
+![App Screenshot 0.2.9 CREATE NOTE](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss029_c.png?raw=true)
+
+#### READ and UPDATE A NOTE
+
+![App Screenshot 0.2.9 READ and UPDATE NOTE](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss029_ru.png?raw=true)
+
+#### DELETE or CANCEL NOTE
+
+![App Screenshot 0.2.9 DELETE or CANCEL NOTE](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss029_d.png?raw=true)
 
 ## NOTES 
 

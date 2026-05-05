@@ -31,6 +31,7 @@ import com.example.learningdroid.fragment.FlexFragments
 import com.example.learningdroid.frost.FrostActivity
 import com.example.learningdroid.livedata.LiveDataActivity
 import com.example.learningdroid.navigation.NavigationActivity
+import com.example.learningdroid.notesapp.MyNotesApp
 import com.example.learningdroid.recycle.RecycleActivity
 import com.example.learningdroid.recycle.ScrollingActivity
 import com.example.learningdroid.restoreview.RestoReviewActivity
@@ -125,6 +126,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding.btnToReadWriteActivity.setOnClickListener(this)
         binding.btnToSharedPrefActivity.setOnClickListener(this)
         binding.btnToSettingPreferenceActivity.setOnClickListener(this)
+        binding.btnToNotesApp.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
@@ -272,6 +274,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             R.id.btnToSettingPreferenceActivity -> {
                 val settingPreferenceActivityIntent = Intent(this@MainActivity, SettingPreferenceActivity::class.java)
                 startActivity(settingPreferenceActivityIntent)
+            }
+            R.id.btnToNotesApp -> {
+                val notesAppIntent = Intent(this@MainActivity, MyNotesApp::class.java)
+                startActivity(notesAppIntent)
             }
         }
     }

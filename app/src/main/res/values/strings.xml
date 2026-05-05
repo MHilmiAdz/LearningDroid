@@ -266,4 +266,11 @@
     <string name="move_to_settingpref_activity">Move to SettingPref Activity</string>
     <string name="dark_mode">Dark Mode</string>
 
+    <string name="submit">Submit</string>
+    <string name="delete">Delete</string>
+    <string name="date">Date</string>
+    <string name="move_to_notes_app">Move to Notes App</string>
+    <string name="titel">Note Title</string>
+    <string name="cancel">Cancel</string>
+    <string name="notes_app">NOTES APP</string>
 </resources>
