@@ -1,4 +1,4 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
+// Top-level build file where you can add configuration options common to all subprojects/modules.
 buildscript{
     dependencies{
         classpath (libs.androidx.navigation.safe.args.gradle.plugin)
@@ -8,4 +8,5 @@ buildscript{
 plugins {
     alias(libs.plugins.android.application) apply false
     alias(libs.plugins.kotlin.android) apply false
+    id("com.google.devtools.ksp") version "2.3.7" apply false
 }

@@ -15,7 +15,19 @@
         android:theme="@style/Theme.LearningDroid"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".frost.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".frost.ChatSessionActivity"
+            android:exported="false" />
+        <activity
             android:name=".notesapp.NoteAddUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".roomnote.ui.main.RoomNotesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".roomnote.ui.insert.RoomNotesUpdateActivity"
             android:exported="false" />
         <activity
             android:name=".notesapp.MyNotesApp"
@@ -40,9 +52,6 @@
             android:exported="false" />
         <activity
             android:name=".restoreview.RestoReviewActivity"
-            android:exported="false" />
-        <activity
-            android:name=".frost.FrostActivity"
             android:exported="false" />
         <activity
             android:name=".apicall.ListQuotesActivity"

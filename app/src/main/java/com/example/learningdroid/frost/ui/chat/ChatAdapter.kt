@@ -1,4 +1,4 @@
-package com.example.learningdroid.frost
+package com.example.learningdroid.frost.ui.chat
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,8 +6,9 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.learningdroid.R
+import com.example.learningdroid.frost.database.Chat
 
-class ChatAdapter(private val messages: MutableList<Message>) :
+class ChatAdapter(private val chats: MutableList<Chat>) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     companion object {
@@ -24,7 +25,7 @@ class ChatAdapter(private val messages: MutableList<Message>) :
     }
 
     override fun getItemViewType(position: Int) =
-        if (messages[position].isUser) VIEW_USER else VIEW_AI
+        if (chats[position].isUser) VIEW_USER else VIEW_AI
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val inflater = LayoutInflater.from(parent.context)
@@ -36,16 +37,16 @@ class ChatAdapter(private val messages: MutableList<Message>) :
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        val msg = messages[position]
+        val msg = chats[position]
         when (holder) {
             is UserViewHolder -> holder.tvMessage.text = msg.text
             is AiViewHolder  -> holder.tvMessage.text = msg.text
         }
     }
 
-    override fun getItemCount() = messages.size
-    fun addMessage(message: Message) {
-        messages.add(message)
-        notifyItemInserted(messages.size - 1)
+    override fun getItemCount() = chats.size
+    fun addMessage(chat: Chat) {
+        chats.add(chat)
+        notifyItemInserted(chats.size - 1)
     }
 }

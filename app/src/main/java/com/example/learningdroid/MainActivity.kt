@@ -2,10 +2,7 @@ package com.example.learningdroid
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.widget.CompoundButton
-import android.widget.EditText
-import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
@@ -19,35 +16,26 @@ import com.example.learningdroid.appbar.AppBarActivity
 import com.example.learningdroid.asynchronous.AsynchronousActivity
 import com.example.learningdroid.bottomnav.BottomNavActivity
 import com.example.learningdroid.databinding.ActivityMainBinding
-import com.example.learningdroid.datapass.MoveActivity
-import com.example.learningdroid.datapass.MoveForResultActivity
-import com.example.learningdroid.datapass.MoveWithDataActivity
-import com.example.learningdroid.datapass.MoveWithObjectActivity
-import com.example.learningdroid.datapass.Persona
-import com.example.learningdroid.datapass.SimplePersona
+import com.example.learningdroid.datapass.*
 import com.example.learningdroid.drawer.DrawerActivity
 import com.example.learningdroid.fileaccess.ReadWriteActivity
 import com.example.learningdroid.fragment.FlexFragments
-import com.example.learningdroid.frost.FrostActivity
+import com.example.learningdroid.frost.ChatSessionActivity
 import com.example.learningdroid.livedata.LiveDataActivity
 import com.example.learningdroid.navigation.NavigationActivity
 import com.example.learningdroid.notesapp.MyNotesApp
 import com.example.learningdroid.recycle.RecycleActivity
 import com.example.learningdroid.recycle.ScrollingActivity
 import com.example.learningdroid.restoreview.RestoReviewActivity
+import com.example.learningdroid.roomnote.ui.main.RoomNotesActivity
 import com.example.learningdroid.searchbar.SearchBarActivity
-import com.example.learningdroid.settingpref.MainViewModel
-import com.example.learningdroid.settingpref.SettingPref
-import com.example.learningdroid.settingpref.SettingPreferenceActivity
-import com.example.learningdroid.settingpref.ViewModelFactory
-import com.example.learningdroid.settingpref.dataStore
+import com.example.learningdroid.settingpref.*
 import com.example.learningdroid.sharedpref.SharedPrefActivity
 import com.example.learningdroid.tablayout.TabLayoutActivity
 import com.example.learningdroid.viewmodel.ViewModelActivity
 
-class MainActivity : AppCompatActivity(), View.OnClickListener {
-    private lateinit var etInput: EditText
-    private lateinit var tvResult: TextView
+class MainActivity : AppCompatActivity() {
+
     private lateinit var binding: ActivityMainBinding
 
     private val resultLauncher = registerForActivityResult(
@@ -55,7 +43,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     ) { result ->
         if (result.resultCode == MoveForResultActivity.RESULT_CODE && result.data != null) {
             val selectedValue = result.data?.getIntExtra(MoveForResultActivity.EXTRA_SELECTED_VALUE, 0)
-            "Result: $selectedValue".also { tvResult.text = it }
+            binding.tvResult.text = getString(R.string.resultValue, selectedValue)
         }
     }
 
@@ -64,7 +52,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     ) { result ->
         if (result.resultCode == RESULT_OK && result.data != null) {
             val purchasedItem = result.data?.getStringExtra(ScrollingActivity.BUYING_KEY)
-            "Thanks for buying: $purchasedItem".also { tvResult.text = it }
+            binding.tvResult.text = getString(R.string.thanksforbuying, purchasedItem)
         }
     }
 
@@ -79,206 +67,87 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
-        val switchTheme = binding.switchTheme
-        val pref = SettingPref.getInstance(application.dataStore)
-
-        val mainViewModel = ViewModelProvider(this, ViewModelFactory(pref))[MainViewModel::class.java]
-
-        mainViewModel.getThemeSettings().observe(this) { isDarkModeActive: Boolean ->
-            if (isDarkModeActive) {
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-                switchTheme.isChecked = true
-            } else {
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-                switchTheme.isChecked = false
-            }
-        }
-
-        switchTheme.setOnCheckedChangeListener { _: CompoundButton?, isChecked: Boolean ->
-            mainViewModel.saveThemeSetting(isChecked)
-        }
-
-        etInput = binding.etInput
-        tvResult = binding.tvResult
-
-        binding.btnMoveActivity.setOnClickListener(this)
-        binding.btnMoveWithData.setOnClickListener(this)
-        binding.btnMoveWithObject.setOnClickListener(this)
-        binding.btnMoveParcelize.setOnClickListener(this)
-        binding.btnDialNumber.setOnClickListener(this)
-        binding.btnMoveResult.setOnClickListener(this)
-        binding.btnToScrollActivity.setOnClickListener(this)
-        binding.btnToRecycleActivity.setOnClickListener(this)
-        binding.btnToFragmentsActivity.setOnClickListener(this)
-        binding.btnToNavigationActivity.setOnClickListener(this)
-        binding.btnToAppBarActivity.setOnClickListener(this)
-        binding.btnToSearchBarActivity.setOnClickListener(this)
-        binding.btnToDrawerActivity.setOnClickListener(this)
-        binding.btnToBottomNavActivity.setOnClickListener(this)
-        binding.btnTpTabLayoutActivity.setOnClickListener(this)
-        binding.btnToAsynchronousActivity.setOnClickListener(this)
-        binding.btnToAPIActivity.setOnClickListener(this)
-        binding.btnToFrostActivity.setOnClickListener(this)
-        binding.btnToRestoReviewActivity.setOnClickListener(this)
-        binding.btnToViewModelActivity.setOnClickListener(this)
-        binding.btnToLiveDataActivity.setOnClickListener(this)
-        binding.btnToReadWriteActivity.setOnClickListener(this)
-        binding.btnToSharedPrefActivity.setOnClickListener(this)
-        binding.btnToSettingPreferenceActivity.setOnClickListener(this)
-        binding.btnToNotesApp.setOnClickListener(this)
+        setupThemeSwitch()
+        setupButtons()
     }
 
-    override fun onClick(v: View) {
-        when (v.id) {
-            R.id.btnMoveActivity -> {
-                val moveIntent = Intent(this@MainActivity, MoveActivity::class.java)
-                startActivity(moveIntent)
-            }
+    private fun setupThemeSwitch() {
+        val pref = SettingPref.getInstance(application.dataStore)
+        val mainViewModel = ViewModelProvider(this, ViewModelFactory(pref))[MainViewModel::class.java]
 
-            R.id.btnMoveWithData -> {
-                val moveWithDataIntent = Intent(this@MainActivity, MoveWithDataActivity::class.java)
-                moveWithDataIntent.putExtra(MoveWithDataActivity.EXTRA_NAME, "Android Passing Data")
-                moveWithDataIntent.putExtra(MoveWithDataActivity.EXTRA_AGE, 2000)
-                startActivity(moveWithDataIntent)
-            }
+        mainViewModel.getThemeSettings().observe(this) { isDarkModeActive ->
+            val mode = if (isDarkModeActive) AppCompatDelegate.MODE_NIGHT_YES
+            else AppCompatDelegate.MODE_NIGHT_NO
+            AppCompatDelegate.setDefaultNightMode(mode)
+            binding.switchTheme.isChecked = isDarkModeActive
+        }
 
-            R.id.btnMoveWithObject -> {
-                val persona = Persona(
-                    "LearningDroid",
-                    200,
-                    "Learning new Things",
-                    "person@example.com",
-                )
-                val moveWithObjectIntent = Intent(this@MainActivity, MoveWithObjectActivity::class.java)
-                moveWithObjectIntent.putExtra(MoveWithObjectActivity.EXTRA_PERSONA, persona)
-                startActivity(moveWithObjectIntent)
-            }
+        binding.switchTheme.setOnCheckedChangeListener { _: CompoundButton?, isChecked ->
+            mainViewModel.saveThemeSetting(isChecked)
+        }
+    }
 
-            R.id.btnMoveParcelize -> {
-                val simplePersona = SimplePersona(
-                    "LearningDroid",
-                    200,
-                    170,
-                    70
-                )
-                // Note: Ensure MoveWithObjectActivity is set up to receive this parcelable
-                val moveWithParcelizeIntent = Intent(this@MainActivity, MoveWithObjectActivity::class.java)
-                moveWithParcelizeIntent.putExtra(MoveWithObjectActivity.SIMPLE_PERSONA, simplePersona)
-                startActivity(moveWithParcelizeIntent)
-            }
+    private fun setupButtons() {
+        val simpleNavMap = mapOf(
+            binding.btnMoveActivity          to MoveActivity::class.java,
+            binding.btnToRecycleActivity     to RecycleActivity::class.java,
+            binding.btnToFragmentsActivity   to FlexFragments::class.java,
+            binding.btnToNavigationActivity  to NavigationActivity::class.java,
+            binding.btnToAppBarActivity      to AppBarActivity::class.java,
+            binding.btnToSearchBarActivity   to SearchBarActivity::class.java,
+            binding.btnToDrawerActivity      to DrawerActivity::class.java,
+            binding.btnToBottomNavActivity   to BottomNavActivity::class.java,
+            binding.btnTpTabLayoutActivity   to TabLayoutActivity::class.java,
+            binding.btnToAsynchronousActivity to AsynchronousActivity::class.java,
+            binding.btnToAPIActivity         to APIQuoteActivity::class.java,
+            binding.btnToFrostActivity       to ChatSessionActivity::class.java,
+            binding.btnToRestoReviewActivity to RestoReviewActivity::class.java,
+            binding.btnToViewModelActivity   to ViewModelActivity::class.java,
+            binding.btnToLiveDataActivity    to LiveDataActivity::class.java,
+            binding.btnToReadWriteActivity   to ReadWriteActivity::class.java,
+            binding.btnToSharedPrefActivity  to SharedPrefActivity::class.java,
+            binding.btnToSettingPreferenceActivity to SettingPreferenceActivity::class.java,
+            binding.btnToNotesApp            to MyNotesApp::class.java,
+            binding.btnToRoomNotes           to RoomNotesActivity::class.java,
+        )
 
-            R.id.btnDialNumber -> {
-                // Updated to use the new etInput variable
-                val phoneNumber = etInput.text.toString().trim()
+        simpleNavMap.forEach { (button, activity) ->
+            button.setOnClickListener { startActivity(Intent(this, activity)) }
+        }
 
-                val dialString = if (phoneNumber.isNotEmpty()) {
-                    "tel:$phoneNumber"
-                } else {
-                    "tel:0"
-                }
-                val dialPhoneIntent = Intent(Intent.ACTION_DIAL, dialString.toUri())
-                startActivity(dialPhoneIntent)
-            }
+        // Special cases with extras or launchers
+        binding.btnMoveWithData.setOnClickListener {
+            startActivity(Intent(this, MoveWithDataActivity::class.java).apply {
+                putExtra(MoveWithDataActivity.EXTRA_NAME, "Android Passing Data")
+                putExtra(MoveWithDataActivity.EXTRA_AGE, 2000)
+            })
+        }
 
-            R.id.btnMoveResult -> {
-                val moveForResultIntent = Intent(this@MainActivity, MoveForResultActivity::class.java)
-                resultLauncher.launch(moveForResultIntent)
-            }
+        binding.btnMoveWithObject.setOnClickListener {
+            startActivity(Intent(this, MoveWithObjectActivity::class.java).apply {
+                putExtra(MoveWithObjectActivity.EXTRA_PERSONA,
+                    Persona("LearningDroid", 200, "Learning new Things", "person@example.com"))
+            })
+        }
 
-            R.id.btnToScrollActivity -> {
-                val scrollingActivityIntent = Intent(this@MainActivity, ScrollingActivity::class.java)
-                buyingLauncher.launch(scrollingActivityIntent)
-            }
+        binding.btnMoveParcelize.setOnClickListener {
+            startActivity(Intent(this, MoveWithObjectActivity::class.java).apply {
+                putExtra(MoveWithObjectActivity.SIMPLE_PERSONA,
+                    SimplePersona("LearningDroid", 200, 170, 70))
+            })
+        }
 
-            R.id.btnToRecycleActivity -> {
-                val recycleActivityIntent = Intent(this@MainActivity, RecycleActivity::class.java)
-                startActivity(recycleActivityIntent)
-            }
+        binding.btnDialNumber.setOnClickListener {
+            val phone = binding.etInput.text.toString().trim().ifEmpty { "0" }
+            startActivity(Intent(Intent.ACTION_DIAL, "tel:$phone".toUri()))
+        }
 
-            R.id.btnToFragmentsActivity -> {
-                val flexFragmentsIntent = Intent(this@MainActivity, FlexFragments::class.java)
-                startActivity(flexFragmentsIntent)
-            }
+        binding.btnMoveResult.setOnClickListener {
+            resultLauncher.launch(Intent(this, MoveForResultActivity::class.java))
+        }
 
-            R.id.btnToNavigationActivity -> {
-                val navigationActivityIntent = Intent(this@MainActivity, NavigationActivity::class.java)
-                startActivity(navigationActivityIntent)
-            }
-
-            R.id.btnToAppBarActivity -> {
-                val appBarActivityIntent = Intent(this@MainActivity, AppBarActivity::class.java)
-                startActivity(appBarActivityIntent)
-            }
-
-            R.id.btnToSearchBarActivity -> {
-                val searchBarActivityIntent = Intent(this@MainActivity, SearchBarActivity::class.java)
-                startActivity(searchBarActivityIntent)
-            }
-
-            R.id.btnToDrawerActivity -> {
-                val drawerActivityIntent = Intent(this@MainActivity, DrawerActivity::class.java)
-                startActivity(drawerActivityIntent)
-            }
-
-            R.id.btnToBottomNavActivity -> {
-                val bottomNavActivityIntent = Intent(this@MainActivity, BottomNavActivity::class.java)
-                startActivity(bottomNavActivityIntent)
-            }
-
-            R.id.btnTpTabLayoutActivity -> {
-                val tabLayoutActivityIntent = Intent(this@MainActivity, TabLayoutActivity::class.java)
-                startActivity(tabLayoutActivityIntent)
-            }
-
-            R.id.btnToAsynchronousActivity -> {
-                val asynchronousActivityIntent = Intent(this@MainActivity, AsynchronousActivity::class.java)
-                startActivity(asynchronousActivityIntent)
-            }
-
-            R.id.btnToAPIActivity -> {
-                val apiActivityIntent = Intent(this@MainActivity, APIQuoteActivity::class.java)
-                startActivity(apiActivityIntent)
-            }
-
-            R.id.btnToFrostActivity -> {
-                val frostActivityIntent = Intent(this@MainActivity, FrostActivity::class.java)
-                startActivity(frostActivityIntent)
-            }
-
-            R.id.btnToRestoReviewActivity -> {
-                val restoReviewActivityIntent = Intent(this@MainActivity, RestoReviewActivity::class.java)
-                startActivity(restoReviewActivityIntent)
-            }
-
-            R.id.btnToViewModelActivity -> {
-                val viewModelActivityIntent = Intent(this@MainActivity, ViewModelActivity::class.java)
-                startActivity(viewModelActivityIntent)
-            }
-
-            R.id.btnToLiveDataActivity -> {
-                val viewModelActivityIntent = Intent(this@MainActivity, LiveDataActivity::class.java)
-                startActivity(viewModelActivityIntent)
-            }
-
-            R.id.btnToReadWriteActivity -> {
-                val readWriteActivityIntent = Intent(this@MainActivity, ReadWriteActivity::class.java)
-                startActivity(readWriteActivityIntent)
-            }
-
-            R.id.btnToSharedPrefActivity -> {
-                val sharedPrefActivityIntent = Intent(this@MainActivity, SharedPrefActivity::class.java)
-                startActivity(sharedPrefActivityIntent)
-            }
-
-            R.id.btnToSettingPreferenceActivity -> {
-                val settingPreferenceActivityIntent = Intent(this@MainActivity, SettingPreferenceActivity::class.java)
-                startActivity(settingPreferenceActivityIntent)
-            }
-            R.id.btnToNotesApp -> {
-                val notesAppIntent = Intent(this@MainActivity, MyNotesApp::class.java)
-                startActivity(notesAppIntent)
-            }
+        binding.btnToScrollActivity.setOnClickListener {
+            buyingLauncher.launch(Intent(this, ScrollingActivity::class.java))
         }
     }
 }
