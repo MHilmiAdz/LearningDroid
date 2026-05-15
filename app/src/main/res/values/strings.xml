@@ -300,4 +300,11 @@
     <string name="title_frostsession">F.R.O.S.T Sessions</string>
     <string name="new_chat_session">New Chat Session</string>
     <string name="delete_message">Are you sure you want to delete this conversation? All messages will be permanently lost.</string>
+    <string name="this_sms_receiver_app">This is SMS Receiver App</string>
+    <string name="check_sms_permission">Check SMS permission</string>
+    <string name="coming_from">Coming From</string>
+    <string name="this_play">Message Notification Text</string>
+    <string name="incoming_message">Incoming Message</string>
+    <string name="from">From: %1$s</string>
+    <string name="move_to_broadcast_activity">Move to Broadcast Activity</string>
 </resources>

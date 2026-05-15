@@ -8,7 +8,7 @@ My personal Android Development learning journal — from zero to MASTER.
 
 ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
 ![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
-![Version](https://img.shields.io/badge/version-v0.2.9-blue?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-v0.3.1-blue?style=for-the-badge)
 
 </div>
 
@@ -19,13 +19,14 @@ My personal Android Development learning journal — from zero to MASTER.
 This repository documents my hands-on journey learning Android development. Each feature is built around a specific concept, from basic intents to Room databases and local AI integration.
 
 ## Main Feature
-- **F.R.O.S.T** — an AI feature powered by a locally-hosted LLM (`olmo2:latest`)
-- **Jade Theme Application**
+- **F.R.O.S.T** — an AI feature to support your local-hosted AI model from Ollama.
+- **Learned Features from Simplest to Most Complex**
 
-### NOTES
-- This AI Feature is tested using ONLY local hosted LLM. It will not work on your machine unless you configure it to point to your own local model server.
-- This Works perfectly with olmo2:latest model.
-- Make sure you copy the right link with http:// not only the link numbers.
+> **Note on F.R.O.S.T:** 
+> This feature connects to a locally-hosted LLM on local-hosted AI Model. 
+> It will not work on your phone unless you configure your own AI Model with Ollama.
+> If you have low computing power use lighter LLM like olmo2.
+> This feature is working with olmo2 LLM.
 
 ---
 
@@ -84,9 +85,6 @@ This repository documents my hands-on journey learning Android development. Each
 
 ## 📸 Screenshots - 5 Latest Updates
 
-### v0.2.6 — Shared Preference
-![v0.2.6](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss026.png?raw=true)
-
 ### v0.2.7 — Setting Preference
 ![v0.2.7](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss027.png?raw=true)
 
@@ -102,6 +100,9 @@ This repository documents my hands-on journey learning Android development. Each
 ### v0.3.0 — F.R.O.S.T with Room Database
 ![v0.3.0](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss030.png?raw=true)
 
+### v0.3.1 — Broadcast Receiver
+![v0.3.1](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss031.png?raw=true)
+
 ---
 
 ## ⚙️ Prerequisites
@@ -110,7 +111,6 @@ This repository documents my hands-on journey learning Android development. Each
 - JDK 17+
 - Android SDK 26+
 
-> **Note on F.R.O.S.T:** This feature connects to a locally-hosted LLM on my own network. It will not work on your machine unless you configure it to point to your own local model server.
 
 ---
 

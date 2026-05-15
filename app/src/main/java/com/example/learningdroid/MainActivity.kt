@@ -15,6 +15,7 @@ import com.example.learningdroid.apicall.APIQuoteActivity
 import com.example.learningdroid.appbar.AppBarActivity
 import com.example.learningdroid.asynchronous.AsynchronousActivity
 import com.example.learningdroid.bottomnav.BottomNavActivity
+import com.example.learningdroid.broadcast.BroadcastActivity
 import com.example.learningdroid.databinding.ActivityMainBinding
 import com.example.learningdroid.datapass.*
 import com.example.learningdroid.drawer.DrawerActivity
@@ -109,6 +110,7 @@ class MainActivity : AppCompatActivity() {
             binding.btnToSettingPreferenceActivity to SettingPreferenceActivity::class.java,
             binding.btnToNotesApp            to MyNotesApp::class.java,
             binding.btnToRoomNotes           to RoomNotesActivity::class.java,
+            binding.btnToBradcastActivity    to BroadcastActivity::class.java,
         )
 
         simpleNavMap.forEach { (button, activity) ->
