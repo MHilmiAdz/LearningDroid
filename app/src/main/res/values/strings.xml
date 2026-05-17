@@ -307,4 +307,10 @@
     <string name="incoming_message">Incoming Message</string>
     <string name="from">From: %1$s</string>
     <string name="move_to_broadcast_activity">Move to Broadcast Activity</string>
+    <string name="download_file">Download My Portofolio</string>
+    <string name="send_notif">Send Notif</string>
+    <string name="notification_title">Learning Droid</string>
+    <string name="notification_message">Go Study Now</string>
+    <string name="notification_subtext">Reminder</string>
+    <string name="move_to_simple_notification">Move to Simple Notification</string>
 </resources>

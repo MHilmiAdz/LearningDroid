@@ -32,6 +32,7 @@ import com.example.learningdroid.roomnote.ui.main.RoomNotesActivity
 import com.example.learningdroid.searchbar.SearchBarActivity
 import com.example.learningdroid.settingpref.*
 import com.example.learningdroid.sharedpref.SharedPrefActivity
+import com.example.learningdroid.simplenotif.SimpleNotifActivity
 import com.example.learningdroid.tablayout.TabLayoutActivity
 import com.example.learningdroid.viewmodel.ViewModelActivity
 
@@ -111,6 +112,7 @@ class MainActivity : AppCompatActivity() {
             binding.btnToNotesApp            to MyNotesApp::class.java,
             binding.btnToRoomNotes           to RoomNotesActivity::class.java,
             binding.btnToBradcastActivity    to BroadcastActivity::class.java,
+            binding.btnToSimpleNotifActivity to SimpleNotifActivity::class.java
         )
 
         simpleNavMap.forEach { (button, activity) ->

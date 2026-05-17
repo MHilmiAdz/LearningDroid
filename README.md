@@ -46,6 +46,7 @@ This repository documents my hands-on journey learning Android development. Each
 | MAD (Modern Android Development) | [Theory & Implementation](https://www.notion.so/healmee/Android-Architecture-Component-3305b65c18f18001a8d4de1d3931f06e)                         |
 | Unit Testing                     | [Theory & Implementation](https://www.notion.so/healmee/Testing-34b5b65c18f180d8882fc6c698b32622)                                                |
 | Local Data Persistence           | [Theory & Implementation](https://www.notion.so/healmee/Local-Data-Persistent-34d5b65c18f1802298fed60a0ea47304)                                  |
+| Background Task & Scheduler      | [Theory & Implementataion](https://www.notion.so/healmee/Background-Task-Scheduler-3625b65c18f180a2b940c49f9e6fc7bd?source=copy_link)            |
 
 ---
 
@@ -85,9 +86,6 @@ This repository documents my hands-on journey learning Android development. Each
 
 ## 📸 Screenshots - 5 Latest Updates
 
-### v0.2.7 — Setting Preference
-![v0.2.7](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss027.png?raw=true)
-
 ### v0.2.8 — DataStore Preference
 ![v0.2.8](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss028.png?raw=true)
 
@@ -102,6 +100,9 @@ This repository documents my hands-on journey learning Android development. Each
 
 ### v0.3.1 — Broadcast Receiver
 ![v0.3.1](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss031.png?raw=true)
+
+### v0.3.2 — Simple Notification
+![v0.3.2](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss032.png?raw=true)
 
 ---
 

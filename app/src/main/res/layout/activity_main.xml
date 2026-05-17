@@ -196,8 +196,13 @@
         <Button
             android:id="@+id/btnToBradcastActivity"
             style="@style/Widget.LearningDroid.MenuButton"
-            android:layout_marginBottom="32dp"
             android:text="@string/move_to_broadcast_activity" />
+
+        <Button
+            android:id="@+id/btnToSimpleNotifActivity"
+            style="@style/Widget.LearningDroid.MenuButton"
+            android:layout_marginBottom="32dp"
+            android:text="@string/move_to_simple_notification" />
 
         <TextView
             android:id="@+id/tvResult"
