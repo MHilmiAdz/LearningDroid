@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-feature
         android:name="android.hardware.telephony"
         android:required="false" />
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.RECEIVE_SMS" />
-    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS"
+        tools:ignore="SmsAndCallLogPolicy" />
+    <uses-permission android:name="android.permission.READ_SMS"
+        tools:ignore="SmsAndCallLogPolicy" />
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
 
     <application
         android:allowBackup="true"
@@ -22,8 +28,27 @@
         android:theme="@style/Theme.LearningDroid"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".simplenotif.SimpleNotifActivity"
+            android:name=".customview.CustomViewActivity"
             android:exported="false" />
+
+        <receiver
+            android:name=".alarmmanager.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true"
+            tools:ignore="ExportedReceiver">
+        </receiver>
+
+        <activity
+            android:name=".alarmmanager.AlarmManagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".simplenotif.DetailActivity"
+            android:exported="false"
+            android:parentActivityName=".simplenotif.SimpleNotifActivity" />
+        <activity
+            android:name=".simplenotif.SimpleNotifActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
 
         <receiver
             android:name=".broadcast.SMSReceiver"
@@ -139,7 +164,8 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

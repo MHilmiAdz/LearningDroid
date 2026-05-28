@@ -16,10 +16,7 @@
     <string name="data_received">Data Received</string>
     <string name="object_received">Object Received</string>
     <string name="this_is_moveactivity">This is MoveActivity</string>
-    <string name="Home">Home</string>
     <string name="kotlinParcelizeTXT">Move with Kotlin Parcelize</string>
-    <string name="this_is_banner_for_better_looks">This is Banner for better looks</string>
-    <string name="phone_a_friend">Phone a Friend!</string>
     <string name="content_text">Google officially announced its much-anticipated Pixel phones; the Pixel and Pixel XL, on October 4. We attended Google’s London UK event, mirroring the main one taking place in San Francisco, US, where the firm unwrapped the new Android 7.1 Nougat devices which will apparently usurp Google’s long-standing Nexus series.</string>
     <string name="content_specs_display">5.0 inches\nFHD AMOLED at 441ppi\n2.5D Corning® Gorilla® Glass 4</string>
     <string name="content_specs_size">5.6 x 2.7 x 0.2 ~ 0.3 inches 143.8 x 69.5 x 7.3 ~ 8.5 mm</string>
@@ -34,7 +31,6 @@
     <string name="buy">Beli</string>
     <string name="dummy_value">$7350</string>
     <string name="dummy_photos">6 photos</string>
-    <string name="go_to_other_mainactivity">Go to other MainActivity</string>
     <string name="nothing">Lorem Ipsum</string>
     <string name="learning_droid">Learning\nDroid</string>
     <string name="NumberHint">(+62) 0821..</string>
@@ -43,8 +39,6 @@
     <string name="heroes_name">Nama Pahlawan</string>
     <string name="description">Deskripsi</string>
     <string name="move_to_activity_recycle">Move to Activity Recycle</string>
-    <string name="list">List</string>
-    <string name="grid">Grid</string>
 
 
     <string-array name="data_name">
@@ -84,7 +78,6 @@
         <item>https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/TanMalaka_DariPendjara_ed3.jpg/330px-TanMalaka_DariPendjara_ed3.jpg</item>
     </string-array>
 
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="this_profile">This is activity Profile</string>
     <string name="this_category">This is fragment Category</string>
     <string name="category_lifestyle">To fragment Lifestyle</string>
@@ -186,9 +179,7 @@
     <string name="nav_open">Open</string>
     <string name="nav_close">Close</string>
     <string name="move_to_drawer_activity">Move to Drawer Activity</string>
-    <string name="notification">Notification</string>
     <string name="this_is_profile_fragment">This is profile fragment</string>
-    <string name="profile">Profile</string>
     <string name="title_home">This is Home Fragment</string>
     <string name="title_dashboard">This is Dashboard Fragment</string>
     <string name="title_notifications">This is Notifications Fragment</string>
@@ -196,10 +187,6 @@
     <string name="move_to_bottomnav_activity">Move to BottomNav Activity</string>
     <string name="tab_text_1">Home</string>
     <string name="tab_text_2">Profile</string>
-    <string name="tab_text_3">Setting</string>
-    <string name="content_tab_home">Welcome Home</string>
-    <string name="content_tab_profile">Change your Profile here</string>
-    <string name="content_tab_text">This is Tab %1$d</string>
     <string name="move_to_tablayout_activity">Move to TabLayout Activity</string>
     <string name="start_task">Start Task</string>
     <string name="status">Status</string>
@@ -222,7 +209,6 @@
     <string name="review_format">%1$s\n- %2$s</string>
     <string name="width">Width</string>
     <string name="result">Result</string>
-    <string name="calculate">Calculate</string>
     <string name="height">Height</string>
     <string name="length">Length</string>
     <string name="move_to_viewmodel_activity">Move to ViewModel Activity</string>
@@ -283,10 +269,6 @@
     <string name="move_to_room_notes">Move to Room Notes</string>
     <string name="thanksforbuying">Thanks for buying: %1$s</string>
     <string name="resultValue">Result: %1$d</string>
-    <string name="Ollama_Server_Example">e.g. http://192.168.1.10:11434</string>
-    <string name="ai_server_url">AI Server URL</string>
-    <string name="change_ai_server">Change AI Server</string>
-    <string name="chat_name">Chat name</string>
     <string name="new_chat">New Chat</string>
     <string name="date_example">2026/05/11 14:00:00</string>
     <string name="connection_failed">Connection Failed</string>
@@ -313,4 +295,17 @@
     <string name="notification_message">Go Study Now</string>
     <string name="notification_subtext">Reminder</string>
     <string name="move_to_simple_notification">Move to Simple Notification</string>
+    <string name="open_detail">Open Detail</string>
+    <string name="message">Message</string>
+    <string name="one_time_alarm">One Time Alarm</string>
+    <string name="alarm_date">Alarm Date</string>
+    <string name="alarm_time">Alarm Time</string>
+    <string name="alarm_message">Alarm Message</string>
+    <string name="set_one_time_alarm">Set One Time Alarm</string>
+    <string name="repeating_alarm">Repeating Alarm</string>
+    <string name="cancel_alarm">Cancel Alarm</string>
+    <string name="set_repeating_alarm">Set Repeating Alarm</string>
+    <string name="move_to_alarm_manager">Move to Alarm Manager</string>
+    <string name="move_to_custom_view_activity">Move to Custom View Activity</string>
+    <string name="move_to_custom_view">Move to Custom View</string>
 </resources>

@@ -7,9 +7,11 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.learningdroid.databinding.ActivityProfileBinding
 
-private lateinit var binding: ActivityProfileBinding
+
 
 class ProfileActivity : AppCompatActivity(){
+    private lateinit var binding: ActivityProfileBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()

@@ -11,11 +11,13 @@ import androidx.core.net.toUri
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.ViewModelProvider
+import com.example.learningdroid.alarmmanager.AlarmManagerActivity
 import com.example.learningdroid.apicall.APIQuoteActivity
 import com.example.learningdroid.appbar.AppBarActivity
 import com.example.learningdroid.asynchronous.AsynchronousActivity
 import com.example.learningdroid.bottomnav.BottomNavActivity
 import com.example.learningdroid.broadcast.BroadcastActivity
+import com.example.learningdroid.customview.CustomViewActivity
 import com.example.learningdroid.databinding.ActivityMainBinding
 import com.example.learningdroid.datapass.*
 import com.example.learningdroid.drawer.DrawerActivity
@@ -112,7 +114,9 @@ class MainActivity : AppCompatActivity() {
             binding.btnToNotesApp            to MyNotesApp::class.java,
             binding.btnToRoomNotes           to RoomNotesActivity::class.java,
             binding.btnToBradcastActivity    to BroadcastActivity::class.java,
-            binding.btnToSimpleNotifActivity to SimpleNotifActivity::class.java
+            binding.btnToSimpleNotifActivity to SimpleNotifActivity::class.java,
+            binding.btnToAlarmManagerActivity to AlarmManagerActivity::class.java,
+            binding.btnToCustomViewActivity to CustomViewActivity::class.java,
         )
 
         simpleNavMap.forEach { (button, activity) ->
