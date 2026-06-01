@@ -104,6 +104,9 @@ This repository documents my hands-on journey learning Android development. Each
 ### v0.3.2 — Simple Notification
 ![v0.3.2](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss032.png?raw=true)
 
+### v0.3.3 — Custom View
+![v0.3.3](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss033.png?raw=true)
+
 ---
 
 ## ⚙️ Prerequisites

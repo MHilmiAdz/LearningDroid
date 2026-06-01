@@ -211,8 +211,13 @@
         <Button
             android:id="@+id/btnToCustomViewActivity"
             style="@style/Widget.LearningDroid.MenuButton"
-            android:layout_marginBottom="32dp"
             android:text="@string/move_to_custom_view" />
+
+        <Button
+            android:id="@+id/btnToTicketingActivity"
+            style="@style/Widget.LearningDroid.MenuButton"
+            android:layout_marginBottom="32dp"
+            android:text="@string/order_a_cinema_ticket" />
 
         <TextView
             android:id="@+id/tvResult"

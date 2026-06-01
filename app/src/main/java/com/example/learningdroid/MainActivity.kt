@@ -36,6 +36,7 @@ import com.example.learningdroid.settingpref.*
 import com.example.learningdroid.sharedpref.SharedPrefActivity
 import com.example.learningdroid.simplenotif.SimpleNotifActivity
 import com.example.learningdroid.tablayout.TabLayoutActivity
+import com.example.learningdroid.ticketing.TicketingActivity
 import com.example.learningdroid.viewmodel.ViewModelActivity
 
 class MainActivity : AppCompatActivity() {
@@ -117,6 +118,7 @@ class MainActivity : AppCompatActivity() {
             binding.btnToSimpleNotifActivity to SimpleNotifActivity::class.java,
             binding.btnToAlarmManagerActivity to AlarmManagerActivity::class.java,
             binding.btnToCustomViewActivity to CustomViewActivity::class.java,
+            binding.btnToTicketingActivity to TicketingActivity::class.java,
         )
 
         simpleNavMap.forEach { (button, activity) ->

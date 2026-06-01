@@ -308,4 +308,6 @@
     <string name="move_to_alarm_manager">Move to Alarm Manager</string>
     <string name="move_to_custom_view_activity">Move to Custom View Activity</string>
     <string name="move_to_custom_view">Move to Custom View</string>
+    <string name="done">Done</string>
+    <string name="order_a_cinema_ticket">Order a Cinema Ticket</string>
 </resources>
