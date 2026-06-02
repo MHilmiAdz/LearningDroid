@@ -310,4 +310,7 @@
     <string name="move_to_custom_view">Move to Custom View</string>
     <string name="done">Done</string>
     <string name="order_a_cinema_ticket">Order a Cinema Ticket</string>
+    <string name="like">Like</string>
+    <string name="dislike">Dislike</string>
+    <string name="like_or_dislike">Like or Dislike?</string>
 </resources>

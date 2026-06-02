@@ -21,6 +21,7 @@ This repository documents my hands-on journey learning Android development. Each
 ## Main Feature
 - **F.R.O.S.T** — an AI feature to support your local-hosted AI model from Ollama.
 - **Learned Features from Simplest to Most Complex**
+- **Connect your Local-hosted LLM usually it looks like this: http://{your host IP}:11434**
 
 > **Note on F.R.O.S.T:** 
 > This feature connects to a locally-hosted LLM on local-hosted AI Model. 
@@ -86,15 +87,6 @@ This repository documents my hands-on journey learning Android development. Each
 
 ## 📸 Screenshots - 5 Latest Updates
 
-### v0.2.8 — DataStore Preference
-![v0.2.8](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss028.png?raw=true)
-
-### v0.2.9 — SQLite / Room Notes
-
-| Create                                                                                                           | Read & Update                                                                                                            | Delete                                                                                                           |
-|------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| ![Create](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss029_c.png?raw=true) | ![Read & Update](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss029_ru.png?raw=true) | ![Delete](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss029_d.png?raw=true) |
-
 ### v0.3.0 — F.R.O.S.T with Room Database
 ![v0.3.0](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss030.png?raw=true)
 
@@ -107,6 +99,9 @@ This repository documents my hands-on journey learning Android development. Each
 ### v0.3.3 — Custom View
 ![v0.3.3](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss033.png?raw=true)
 
+### v0.3.4 — Canvas View
+![v0.3.4](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss034.png?raw=true)
+
 ---
 
 ## ⚙️ Prerequisites
@@ -114,7 +109,6 @@ This repository documents my hands-on journey learning Android development. Each
 - Android Studio (Hedgehog or later recommended)
 - JDK 17+
 - Android SDK 26+
-
 
 ---
 
@@ -125,6 +119,7 @@ git clone https://github.com/MHilmiAdz/LearningDroid.git
 ```
 
 Open the project in Android Studio and let Gradle sync. Build and run on an emulator or physical device.
+There is 100+ people cloning my app. If you like this please leave a star 🌟🌟🌟🌟🌟 😊
 
 ---
 

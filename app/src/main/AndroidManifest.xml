@@ -30,6 +30,9 @@
         android:theme="@style/Theme.LearningDroid"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".likesapp.LikesAppActivity"
+            android:exported="false" />
+        <activity
             android:name=".ticketing.TicketingActivity"
             android:exported="false" />
         <activity

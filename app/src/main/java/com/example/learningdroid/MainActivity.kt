@@ -24,6 +24,7 @@ import com.example.learningdroid.drawer.DrawerActivity
 import com.example.learningdroid.fileaccess.ReadWriteActivity
 import com.example.learningdroid.fragment.FlexFragments
 import com.example.learningdroid.frost.ChatSessionActivity
+import com.example.learningdroid.likesapp.LikesAppActivity
 import com.example.learningdroid.livedata.LiveDataActivity
 import com.example.learningdroid.navigation.NavigationActivity
 import com.example.learningdroid.notesapp.MyNotesApp
@@ -119,6 +120,7 @@ class MainActivity : AppCompatActivity() {
             binding.btnToAlarmManagerActivity to AlarmManagerActivity::class.java,
             binding.btnToCustomViewActivity to CustomViewActivity::class.java,
             binding.btnToTicketingActivity to TicketingActivity::class.java,
+            binding.btnToLikesAppActivity to LikesAppActivity::class.java,
         )
 
         simpleNavMap.forEach { (button, activity) ->
