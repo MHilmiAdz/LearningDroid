@@ -39,6 +39,7 @@ import com.example.learningdroid.simplenotif.SimpleNotifActivity
 import com.example.learningdroid.tablayout.TabLayoutActivity
 import com.example.learningdroid.ticketing.TicketingActivity
 import com.example.learningdroid.viewmodel.ViewModelActivity
+import com.example.learningdroid.webview.WebViewActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -121,6 +122,7 @@ class MainActivity : AppCompatActivity() {
             binding.btnToCustomViewActivity to CustomViewActivity::class.java,
             binding.btnToTicketingActivity to TicketingActivity::class.java,
             binding.btnToLikesAppActivity to LikesAppActivity::class.java,
+            binding.btnToWebViewActivity to WebViewActivity::class.java,
         )
 
         simpleNavMap.forEach { (button, activity) ->

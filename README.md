@@ -83,12 +83,14 @@ This repository documents my hands-on journey learning Android development. Each
 - Activity result contracts (returning values)
 - Implicit Intent (phone dialer)
 
+### Advanced UI
+- Custom View
+- Canvas View
+- Web View
+
 ---
 
 ## 📸 Screenshots - 5 Latest Updates
-
-### v0.3.0 — F.R.O.S.T with Room Database
-![v0.3.0](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss030.png?raw=true)
 
 ### v0.3.1 — Broadcast Receiver
 ![v0.3.1](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss031.png?raw=true)
@@ -101,6 +103,9 @@ This repository documents my hands-on journey learning Android development. Each
 
 ### v0.3.4 — Canvas View
 ![v0.3.4](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss034.png?raw=true)
+
+### v0.3.5 — Web View
+![v0.3.5](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss035.png?raw=true)
 
 ---
 
