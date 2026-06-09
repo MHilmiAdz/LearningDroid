@@ -1,22 +1,25 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="Base.Theme.LearningDroid" parent="Theme.Material3.DayNight.NoActionBar">
-
-        <item name="android:colorBackground">@color/md_theme_dark_surface</item>
-        <item name="colorSurface">@color/md_theme_dark_surface</item>
-        <item name="colorOnSurface">@color/md_theme_dark_onSurface</item> <item name="colorPrimary">@color/md_theme_dark_primary</item>
+    <style name="Theme.LearningDroid" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/md_theme_dark_primary</item>
         <item name="colorOnPrimary">@color/md_theme_dark_onPrimary</item>
-
         <item name="colorPrimaryContainer">@color/md_theme_dark_primaryContainer</item>
         <item name="colorOnPrimaryContainer">@color/md_theme_dark_onPrimaryContainer</item>
 
         <item name="colorTertiary">@color/md_theme_dark_tertiary</item>
+
+        <item name="android:colorBackground">@color/md_theme_dark_surface</item>
+        <item name="colorSurface">@color/md_theme_dark_surface</item>
+        <item name="colorOnSurface">@color/md_theme_dark_onSurface</item>
         <item name="colorOutline">@color/md_theme_dark_outline</item>
 
         <item name="android:statusBarColor">@android:color/transparent</item>
 
-        <item name="android:windowLightStatusBar">false</item>
         <item name="fontFamily">@font/notosans</item>
+
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowEnterTransition">@android:transition/explode</item>
+        <item name="android:windowExitTransition">@android:transition/explode</item>
     </style>
 
     <style name="Widget.LearningDroid.MenuButton" parent="Widget.Material3.Button">

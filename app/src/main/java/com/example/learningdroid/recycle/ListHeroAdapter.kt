@@ -2,11 +2,10 @@ package com.example.learningdroid.recycle
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.learningdroid.datapass.Hero
 import com.example.learningdroid.databinding.ItemRowHeroBinding
+import com.example.learningdroid.datapass.Hero
 
 class ListHeroAdapter(private val listHero: ArrayList<Hero>) : RecyclerView.Adapter<ListHeroAdapter.ListViewHolder>() {
 
@@ -21,25 +20,27 @@ class ListHeroAdapter(private val listHero: ArrayList<Hero>) : RecyclerView.Adap
         return ListViewHolder(binding)
     }
 
-    override fun onBindViewHolder(
-        holder: ListViewHolder,
-        position: Int
-    ) {
-        val (name, description, photo) = listHero[position]
+    override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
+        val hero = listHero[position]
+
         Glide.with(holder.itemView.context)
-            .load(photo)
+            .load(hero.photo)
             .into(holder.binding.imgItemPhoto)
-        holder.binding.tvItemName.text = name
-        holder.binding.tvItemDescription.text = description
+
+        holder.binding.tvItemName.text = hero.name
+        holder.binding.tvItemDescription.text = hero.description
+
         holder.itemView.setOnClickListener {
-            Toast.makeText(holder.itemView.context, "You choose " + listHero[holder.bindingAdapterPosition].name, Toast.LENGTH_SHORT).show()
+            if (::onItemClickCallback.isInitialized) {
+                onItemClickCallback.onItemClicked(hero, holder.binding.imgItemPhoto)
+            }
         }
     }
 
     override fun getItemCount(): Int = listHero.size
 
     class ListViewHolder(var binding: ItemRowHeroBinding) : RecyclerView.ViewHolder(binding.root)
-    interface OnItemClickCallback{
-        fun onItemClicked(data: Hero)
+    interface OnItemClickCallback {
+        fun onItemClicked(data: Hero, sharedView: android.view.View)
     }
 }

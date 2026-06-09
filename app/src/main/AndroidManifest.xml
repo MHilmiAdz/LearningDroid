@@ -155,6 +155,9 @@
             android:name=".recycle.RecycleActivity"
             android:exported="false" />
         <activity
+            android:name=".recycle.HeroDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".recycle.ScrollingActivity"
             android:exported="false" />
         <activity
