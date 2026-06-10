@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LearningDroid</string>
+    <string name="app_name" translatable="false">LearningDroid</string>
 
     <string name="move_activity">Move Activity</string>
     <string name="move_with_data">Move Activity with Data</string>
@@ -32,7 +32,7 @@
     <string name="dummy_value">$7350</string>
     <string name="dummy_photos">6 photos</string>
     <string name="nothing">Lorem Ipsum</string>
-    <string name="learning_droid">Learning\nDroid</string>
+    <string name="learning_droid" translatable="false">Learning\nDroid</string>
     <string name="NumberHint">(+62) 0821..</string>
     <string name="move_to_shop">Move to Shop</string>
 

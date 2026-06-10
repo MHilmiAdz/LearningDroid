@@ -87,13 +87,12 @@ This repository documents my hands-on journey learning Android development. Each
 - Custom View
 - Canvas View
 - Web View
+- Transition Animation
+- Motion Layout
 
 ---
 
 ## 📸 Screenshots - 5 Latest Updates
-
-### v0.3.1 — Broadcast Receiver
-![v0.3.1](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss031.png?raw=true)
 
 ### v0.3.2 — Simple Notification
 ![v0.3.2](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss032.png?raw=true)
@@ -106,6 +105,9 @@ This repository documents my hands-on journey learning Android development. Each
 
 ### v0.3.5 — Web View
 ![v0.3.5](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss035.png?raw=true)
+
+### v0.3.6 — Motion Layout and Localization
+![v0.3.6](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss036.png?raw=true)
 
 ---
 

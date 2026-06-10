@@ -1,0 +1,323 @@
+<resources>
+    <string name="app_name" translatable="false">LearningDroid</string>
+
+    <string name="move_activity">Pindah Activity</string>
+    <string name="move_with_data">Pindah Activity dengan Data</string>
+    <string name="move_with_object">Pindah Activity dengan Objek</string>
+    <string name="dial_number">Hubungi Nomor!</string>
+    <string name="move_with_result">Pindah Activity untuk Hasil</string>
+    <string name="result_from_activity">Hasil dari Activity</string>
+    <string name="choose_number">Pilih nomor yang Anda suka</string>
+    <string name="_50">50</string>
+    <string name="_100">100</string>
+    <string name="_150">150</string>
+    <string name="_200">200</string>
+    <string name="choose">Pilih</string>
+    <string name="data_received">Data Diterima</string>
+    <string name="object_received">Objek Diterima</string>
+    <string name="this_is_moveactivity">Ini adalah MoveActivity</string>
+    <string name="kotlinParcelizeTXT">Pindah dengan Kotlin Parcelize</string>
+    <string name="content_text">Google secara resmi mengumumkan ponsel Pixel yang sangat dinanti; Pixel dan Pixel XL, pada 4 Oktober. Kami menghadiri acara Google di London, Inggris, yang menggemakan acara utama di San Francisco, AS, di mana perusahaan tersebut membuka selubung perangkat Android 7.1 Nougat baru yang tampaknya akan menggantikan seri Nexus milik Google yang telah lama ada.</string>
+    <string name="content_specs_display">5,0 inci\nFHD AMOLED pada 441ppi\n2.5D Corning® Gorilla® Glass 4</string>
+    <string name="content_specs_size">5,6 x 2,7 x 0,2 ~ 0,3 inci 143,8 x 69,5 x 7,3 ~ 8,5 mm</string>
+    <string name="content_specs_battery">Baterai 2.770 mAh\nWaktu siaga (LTE): hingga 19 hari\nWaktu bicara (3g/WCDMA): hingga 26 jam\nWaktu penggunaan internet (Wi-Fi): hingga 13 jam\nWaktu penggunaan internet (LTE): hingga 13 jam\nPemutaran video: hingga 13 jam\nPemutaran audio (melalui headset): hingga 110 jam\nPengisian daya cepat: waktu penggunaan hingga 7 jam hanya dari 15 menit pengisian daya</string>
+    <string name="title">Google Pixel</string>
+    <string name="specification">Spesifikasi</string>
+    <string name="display">Layar</string>
+    <string name="size">Ukuran</string>
+    <string name="battery">Baterai</string>
+    <string name="seller">Penjual</string>
+    <string name="my_name">Willy James</string>
+    <string name="buy">Beli</string>
+    <string name="dummy_value">$7350</string>
+    <string name="dummy_photos">6 foto</string>
+    <string name="nothing">Lorem Ipsum</string>
+    <string name="learning_droid" translatable="false">Learning\nDroid</string>
+    <string name="NumberHint">(+62) 0821..</string>
+    <string name="move_to_shop">Pindah ke Toko</string>
+
+    <string name="heroes_name">Nama Pahlawan</string>
+    <string name="description">Deskripsi</string>
+    <string name="move_to_activity_recycle">Pindah ke Activity Recycle</string>
+
+
+    <string-array name="data_name">
+        <item>Ahmad Dahlan</item>
+        <item>Ahmad Yani</item>
+        <item>Sutomo</item>
+        <item>Gatot Soebroto</item>
+        <item>Ki Hadjar Dewantara</item>
+        <item>Mohammad Hatta</item>
+        <item>Soedirman</item>
+        <item>Soekarno</item>
+        <item>Soepomo</item>
+    </string-array>
+
+    <string-array name="data_description">
+        <item>Salah seorang ulama dan khatib terkemuka di Masjid Besar Kasultanan Yogyakarta pada masa itu, dan ibu dari K.H. Ahmad Dahlan adalah puteri dari H. Ibrahim yang juga menjabat penghulu Kesultanan Ngayogyakarta Hadiningrat pada masa itu. KH. Ahmad Dahlan telah mempelopori kebangkitan ummat Islam untuk menyadari nasibnya sebagai bangsa terjajah yang masih harus belajar dan berbuat. </item>
+        <item>Jenderal TNI Anumerta Ahmad Yani (juga dieja Achmad Yani; lahir di Purworejo, Jawa Tengah, 19 Juni 1922 – meninggal di Lubang Buaya, Jakarta, 1 Oktober 1965 pada umur 43 tahun) adalah komandan Tentara Nasional Indonesia Angkatan Darat, dan dibunuh oleh anggota Gerakan 30 September saat mencoba untuk menculik dia dari rumahnya.</item>
+        <item>Sutomo (lahir di Surabaya, Jawa Timur, 3 Oktober 1920 – meninggal di Padang Arafah, Arab Saudi, 7 Oktober 1981 pada umur 61 tahun) lebih dikenal dengan sapaan akrab oleh rakyat sebagai Bung Tomo, adalah pahlawan yang terkenal karena peranannya dalam membangkitkan semangat rakyat untuk melawan kembalinya penjajah Belanda melalui tentara NICA, yang berakhir dengan pertempuran 10 November 1945 yang hingga kini diperingati sebagai Hari Pahlawan.</item>
+        <item>Jenderal TNI (Purn.) Gatot Soebroto (lahir di Sumpiuh, Banyumas, Jawa Tengah, 10 Oktober 1907 – meninggal di Jakarta, 11 Juni 1962 pada umur 54 tahun) adalah tokoh perjuangan militer Indonesia dalam merebut kemerdekaan dan juga pahlawan nasional Indonesia. Ia dimakamkan di Ungaran, kabupaten Semarang.</item>
+        <item>Raden Mas Soewardi Soerjaningrat (EBI: Suwardi Suryaningrat, sejak 1922 menjadi Ki Hadjar Dewantara, EBI: Ki Hajar Dewantara, beberapa menuliskan bunyi bahasa Jawanya dengan Ki Hajar Dewantoro; lahir di Pakualaman, 2 Mei 1889 – meninggal di Yogyakarta, 26 April 1959 pada umur 69 tahun; selanjutnya disingkat sebagai "Soewardi" atau "KHD") adalah aktivis pergerakan kemerdekaan Indonesia, kolumnis, politisi, dan pelopor pendidikan bagi kaum pribumi Indonesia dari zaman penjajahan Belanda. Ia adalah pendiri Perguruan Taman Siswa, suatu lembaga pendidikan yang memberikan kesempatan bagi para pribumi untuk bisa memperoleh hak pendidikan seperti halnya para priyayi maupun orang-orang Belanda.</item>
+        <item>Dr.(HC) Drs. H. Mohammad Hatta (lahir dengan nama Mohammad Athar, dikenal sebagai Bung Hatta; lahir di Fort de Kock (sekarang Bukittinggi, Sumatera Barat), Hindia Belanda, 12 Agustus 1902 – meninggal di Jakarta, 14 Maret 1980 pada umur 77 tahun) adalah tokoh pejuang, negarawan, ekonom, dan juga Wakil Presiden Indonesia yang pertama. Ia bersama Soekarno memainkan peranan penting untuk memerdekakan bangsa Indonesia dari penjajahan Belanda sekaligus memproklamirkannya pada 17 Agustus 1945. Ia juga pernah menjabat sebagai Perdana Menteri dalam Kabinet Hatta I, Hatta II, dan RIS. Ia mundur dari jabatan wakil presiden pada tahun 1956, karena berselisih dengan Presiden Soekarno. Hatta juga dikenal sebagai Bapak Koperasi Indonesia.</item>
+        <item>Jenderal Besar Raden Soedirman (EYD: Sudirman; lahir 24 Januari 1916 – meninggal 29 Januari 1950 pada umur 34 tahun) adalah seorang perwira tinggi Indonesia pada masa Revolusi Nasional Indonesia. Menjadi panglima besar Tentara Nasional Indonesia pertama, ia secara luas terus dihormati di Indonesia. Terlahir dari pasangan rakyat biasa di Purbalingga, Hindia Belanda, Soedirman diadopsi oleh pamannya yang seorang priyayi. Setelah keluarganya pindah ke Cilacap pada tahun 1916, Soedirman tumbuh menjadi seorang siswa rajin; ia sangat aktif dalam kegiatan ekstrakurikuler, termasuk mengikuti program kepanduan yang dijalankan oleh organisasi Islam Muhammadiyah. Saat di sekolah menengah, Soedirman mulai menunjukkan kemampuannya dalam memimpin dan berorganisasi, dan dihormati oleh masyarakat karena ketaatannya pada Islam. Setelah berhenti kuliah keguruan, pada 1936 ia mulai bekerja sebagai seorang guru, dan kemudian menjadi kepala sekolah, di sekolah dasar Muhammadiyah; ia juga aktif dalam kegiatan Muhammadiyah lainnya dan menjadi pemimpin Kelompok Pemuda Muhammadiyah pada tahun 1937. Setelah Jepang menduduki Hindia Belanda pada 1942, Soedirman tetap mengajar. Pada tahun 1944, ia bergabung dengan tentara Pembela Tanah Air (PETA) yang disponsori Jepang, menjabat sebagai komandan batalion di Banyumas. Selama menjabat, Soedirman bersama rekannya sesama prajurit melakukan pemberontakan, namun kemudian diasingkan ke Bogor.</item>
+        <item>Dr.(H.C.) Ir. H. Soekarno (ER, EYD: Sukarno, nama lahir: Koesno Sosrodihardjo) (lahir di Surabaya, Jawa Timur, 6 Juni 1901 – meninggal di Jakarta, 21 Juni 1970 pada umur 69 tahun) adalah Presiden pertama Republik Indonesia yang menjabat pada periode 1945–1967. Ia memainkan peranan penting dalam memerdekakan bangsa Indonesia dari penjajahan Belanda. Ia adalah Proklamator Kemerdekaan Indonesia (bersama dengan Mohammad Hatta) yang terjadi pada tanggal 17 Agustus 1945. Soekarno adalah yang pertama kali mencetuskan konsep mengenai Pancasila sebagai dasar negara Indonesia dan ia sendiri yang menamainya.</item>
+        <item>Prof. Mr. Dr. Soepomo (Ejaan Soewandi: Supomo; lahir di Sukoharjo, Jawa Tengah, 22 Januari 1903 – meninggal di Jakarta, 12 September 1958 pada umur 55 tahun) adalah seorang pahlawan nasional Indonesia. Soepomo dikenal sebagai arsitek Undang-undang Dasar 1945, bersama dengan Muhammad Yamin dan Soekarno.</item>
+    </string-array>
+
+    <string-array name="data_photo">
+        <item>https://upload.wikimedia.org/wikipedia/commons/8/87/Ahmad_Dahlan.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/3/3f/Ahmad_Yani.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/e/ed/Bung_Tomo.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/b/be/Col_Gatot_Subroto%2C_Kenang-Kenangan_Pada_Panglima_Besar_Letnan_Djenderal_Soedirman%2C_p27.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/3/3a/Ki_Hadjar_Dewantara_Mimbar_Umum_18_October_1949_p2.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/VP_Hatta.jpg/330px-VP_Hatta.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Sudirman.jpg/486px-Sudirman.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Presiden_Sukarno.jpg/330px-Presiden_Sukarno.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/a/a6/Supomo.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/TanMalaka_DariPendjara_ed3.jpg/330px-TanMalaka_DariPendjara_ed3.jpg</item>
+    </string-array>
+
+    <string name="this_profile">Ini adalah Activity Profile</string>
+    <string name="this_category">Ini adalah Fragment Category</string>
+    <string name="category_lifestyle">Ke Fragment Lifestyle</string>
+    <string name="category_name">Nama Kategori</string>
+    <string name="category_description">Deskripsi Kategori</string>
+    <string name="to_profile">Ke Halaman Activity Profile</string>
+    <string name="show_dialog">Tampilkan dialog</string>
+    <string name="hello_home_fragment">Halo, Ini adalah Home Fragment</string>
+    <string name="to_category">Ke Fragment Category</string>
+    <string name="question_coach">Siapa pelatih tersukses di MU?</string>
+    <string name="sir_alex_ferguson">Sir Alex Ferguson</string>
+    <string name="jose_mourinho">Jose Mourinho</string>
+    <string name="louis_van_gaal">Louis Van Gaal</string>
+    <string name="david_moyes">David Moyes</string>
+    <string name="close">Tutup</string>
+    <string name="move_to_fragments_activity">Pindah ke Activity Fragment</string>
+    <string name="to_home">Ke Home Fragment</string>
+    <string name="move_to_navigation_activity">Pindah ke Activity Navigation</string>
+
+    <string name="this_activity">Ini adalah Activity Search Bar</string>
+    <string name="menu_1">Menu 1</string>
+    <string name="menu_2">Menu 2</string>
+    <string name="large_text">
+        "Material adalah metafora.\n\n"
+        "Metafora material adalah teori pemersatu dari ruang yang dirasionalisasi dan sistem gerak. "
+        "Material didasarkan pada realitas taktil, terinspirasi oleh studi tentang kertas dan tinta, "
+        "namun secara teknologi canggih dan terbuka untuk imajinasi dan keajaiban.\n"
+        "Permukaan dan tepi material memberikan isyarat visual yang didasarkan pada realitas. "
+        "Penggunaan atribut taktil yang familier membantu pengguna memahami keterjangkauan dengan cepat. Namun, "
+        "fleksibilitas material menciptakan keterjangkauan baru yang melampaui aturan di dunia fisik, tanpa melanggar hukum fisika.\n"
+        "Dasar-dasar cahaya, permukaan, dan pergerakan adalah kunci untuk menyampaikan bagaimana objek bergerak, "
+        "berinteraksi, dan ada dalam ruang dan hubungannya satu sama lain. Pencahayaan yang realistis menunjukkan "
+        "lapisan, membagi ruang, dan menunjukkan bagian yang bergerak.\n\n"
+        "Tegas, grafis, disengaja.\n\n"
+        "Elemen dasar tipografi desain berbasis cetak, kisi, ruang, skala, warna, "
+        "dan penggunaan citra memandu perlakuan visual. Elemen-elemen ini tidak sekadar memanjakan "
+        "mata. Mereka menciptakan hierarki, makna, dan fokus. Pilihan warna yang disengaja, citra "
+        "dari tepi ke tepi, tipografi skala besar, dan ruang putih yang disengaja menciptakan "
+        "antarmuka yang tegas dan grafis yang membenamkan pengguna dalam pengalaman tersebut.\n"
+        "Penekanan pada tindakan pengguna membuat fungsionalitas inti segera terlihat dan memberikan "
+        "titik acuan bagi pengguna.\n\n"
+        "Gerakan memberikan makna.\n\n"
+        "Gerakan menghormati dan memperkuat pengguna sebagai penggerak utama. Tindakan utama pengguna adalah "
+        "titik balik yang memulai gerakan, mengubah seluruh desain.\n"
+        "Semua tindakan terjadi dalam satu lingkungan. Objek disajikan kepada pengguna tanpa "
+        "merusak kelangsungan pengalaman bahkan saat objek berubah dan diatur ulang.\n"
+        "Gerakan itu bermakna dan tepat, berfungsi untuk memfokuskan perhatian dan menjaga kelangsungan. "
+        "Umpan balik yang diberikan halus namun jelas. Transisinya efisien dan koheren.\n\n"
+        "Dunia 3D.\n\n"
+        "Lingkungan material adalah ruang 3D, yang berarti semua objek memiliki dimensi x, y, dan z. "
+        "Sumbu z disejajarkan secara tegak lurus dengan bidang tampilan, dengan sumbu z positif "
+        "meluas ke arah pemirsa. Setiap lembar material menempati satu posisi di sepanjang sumbu z "
+        "dan memiliki ketebalan standar 1dp.\n"
+        "Di web, sumbu z digunakan untuk pelapisan dan bukan untuk perspektif. Dunia 3D "
+        "ditiru dengan memanipulasi sumbu y.\n\n"
+        "Cahaya dan bayangan.\n\n"
+        "Dalam lingkungan material, cahaya virtual menerangi pemandangan. Cahaya utama menciptakan "
+        "bayangan terarah, sementara cahaya sekitar menciptakan bayangan lembut dari segala sudut.\n"
+        "Bayangan di lingkungan material dihasilkan oleh kedua sumber cahaya ini. Dalam "
+        "pengembangan Android, bayangan terjadi saat sumber cahaya terhalang oleh lembaran material pada "
+        "berbagai posisi di sepanjang sumbu z. Di web, bayangan digambarkan dengan memanipulasi "
+        "sumbu y saja. Contoh berikut menunjukkan kartu dengan ketinggian 6dp.\n\n"
+        "Elevasi diam.\n\n"
+        "Semua objek material, terlepas dari ukurannya, memiliki elevasi diam, atau elevasi default "
+        "yang tidak berubah. Jika objek mengubah elevasi, objek harus kembali ke elevasi diamnya "
+        "sesegera mungkin.\n\n"
+        "Elevasi komponen.\n\n"
+        "Elevasi diam untuk jenis komponen konsisten di seluruh aplikasi (misalnya, elevasi FAB "
+        "tidak bervariasi dari 6dp di satu aplikasi menjadi 16dp di aplikasi lain).\n"
+        "Komponen dapat memiliki elevasi diam yang berbeda di berbagai platform, tergantung pada kedalaman "
+        "lingkungan (misalnya, TV memiliki kedalaman yang lebih besar daripada ponsel atau desktop).\n\n"
+        "Elevasi responsif dan offset elevasi dinamis.\n\n"
+        "Beberapa jenis komponen memiliki elevasi responsif, artinya komponen tersebut mengubah elevasi "
+        "sebagai respons terhadap input pengguna (misalnya, normal, fokus, dan ditekan) atau kejadian sistem. "
+        "Perubahan elevasi ini diterapkan secara konsisten menggunakan offset elevasi dinamis.\n"
+        "Offset elevasi dinamis adalah target elevasi yang dituju oleh suatu komponen, relatif "
+        "terhadap keadaan diam komponen tersebut. Hal ini memastikan bahwa perubahan elevasi konsisten "
+        "di semua tindakan dan jenis komponen. Misalnya, semua komponen yang terangkat saat ditekan memiliki "
+        "perubahan elevasi yang sama relatif terhadap elevasi diamnya.\n"
+        "Setelah kejadian input selesai atau dibatalkan, komponen akan kembali ke elevasi "
+        "diamnya.\n\n"
+        "Menghindari gangguan elevasi.\n\n"
+        "Komponen dengan elevasi responsif dapat berhadapan dengan komponen lain saat bergerak di antara "
+        "elevasi diam dan offset elevasi dinamisnya. Karena material tidak dapat menembus "
+        "material lain, komponen menghindari gangguan satu sama lain dengan berbagai cara, "
+        "baik berbasis per komponen maupun menggunakan seluruh tata letak aplikasi.\n"
+        "Pada tingkat komponen, komponen dapat bergerak atau dihapus sebelum menyebabkan gangguan. "
+        "Misalnya, Floating Action Button (FAB) dapat menghilang atau bergerak keluar layar sebelum "
+        "pengguna mengambil kartu, atau tombol ini dapat bergerak jika snackbar muncul.\n"
+        "Pada tingkat tata letak, rancang tata letak aplikasi Anda untuk meminimalkan peluang terjadinya gangguan. "
+        "Misalnya, posisikan FAB di salah satu sisi barisan kartu agar FAB tidak terganggu "
+        "saat pengguna mencoba mengambil salah satu kartu.\n\n"
+    </string>
+    <string name="move_to_appbar_activity">Pindah ke Activity AppBar</string>
+    <string name="searchbar_hint">Masukkan Kata</string>
+    <string name="move_to_searchbar_activity">Pindah ke Activity SearchBar</string>
+
+    <string name="nav_open">Buka</string>
+    <string name="nav_close">Tutup</string>
+    <string name="move_to_drawer_activity">Pindah ke Activity Drawer</string>
+    <string name="this_is_profile_fragment">Ini adalah Fragment Profile</string>
+    <string name="title_home">Ini adalah Home Fragment</string>
+    <string name="title_dashboard">Ini adalah Dashboard Fragment</string>
+    <string name="title_notifications">Ini adalah Notifications Fragment</string>
+    <string name="title_profile">Ini adalah Profile Fragment</string>
+    <string name="move_to_bottomnav_activity">Pindah ke Activity BottomNav</string>
+    <string name="tab_text_1">Beranda</string>
+    <string name="tab_text_2">Profil</string>
+    <string name="move_to_tablayout_activity">Pindah ke Activity TabLayout</string>
+    <string name="start_task">Mulai Tugas</string>
+    <string name="status">Status</string>
+    <string name="hidden_text">Sekarang kamu melihatku!</string>
+    <string name="task_completed">Tugas Selesai</string>
+    <string name="compressing">Mengompresi %d %%</string>
+    <string name="move_to_asynchronous_activity">Pindah ke Activity Asynchronous</string>
+    <string name="move_to_api_activity">Pindah ke Activity API</string>
+    <string name="quote">Menurutmu kapan manusia mati? Saat jantung mereka tertembak oleh peluru pistol? Bukan. Saat mereka diserang oleh penyakit yang tidak dapat disembuhkan? Bukan. Saat mereka meminum sup yang terbuat dari jamur beracun!? Bukan! Itu adalah saat… mereka DILUPAKAN.</string>
+    <string name="author">- Dr. Hiluluk</string>
+    <string name="show_list_quotes">Tampilkan daftar kutipan</string>
+    <string name="f_r_o_s_t">F.R.O.S.T</string>
+    <string name="dotdotdot">…</string>
+    <string name="send">Kirim</string>
+    <string name="message_ollama">Pesan ke Ollama…</string>
+    <string name="move_to_ai_chat">Pindah ke F.R.O.S.T AI</string>
+    <string name="review">Ulasan</string>
+    <string name="write_your_review_here">Tulis ulasan Anda di sini..</string>
+    <string name="move_to_api_retrofit">Pindah ke API Retrofit</string>
+    <string name="review_format">%1$s\n- %2$s</string>
+    <string name="width">Lebar</string>
+    <string name="result">Hasil</string>
+    <string name="height">Tinggi</string>
+    <string name="length">Panjang</string>
+    <string name="move_to_viewmodel_activity">Pindah ke Activity ViewModel</string>
+    <string name="hundred">100</string>
+    <string name="seconds">%d detik berlalu</string>
+    <string name="move_to_livedata_activity">Pindah ke Activity LiveData</string>
+    <string name="save">Simpan</string>
+    <string name="volume">Volume</string>
+    <string name="circumference">Keliling</string>
+    <string name="area">Luas Permukaan</string>
+
+    <string name="file_new">File Baru</string>
+    <string name="name">Nama</string>
+    <string name="file_open">Buka File</string>
+    <string name="file_save">Simpan File</string>
+    <string name="move_to_read_write_activity">Pindah ke Activity Read Write</string>
+    <string name="title_file">Judul</string>
+    <string name="lorem_ipsum_medium">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</string>
+    <string name="email">Email</string>
+    <string name="phone_number">No Handphone</string>
+    <string name="age">Umur</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+    <string name="favorite_food">Makanan Favorit</string>
+    <string name="change">Ubah Info</string>
+    <string name="dummy_name">Healme Frost</string>
+    <string name="dummy_email">healme@frost.com</string>
+    <string name="dummynumber">123456</string>
+    <string name="dummyage">30</string>
+    <string name="dummyfavfood">Pizza</string>
+    <string name="move_to_shared_pref_activity">Pindah ke Activity Shared Pref</string>
+    <string name="is_your_favorite_food_is_pizza">Apakah makanan favorit Anda Pizza?</string>
+
+    <string name="is_love">Apakah Anda suka Pizza?</string>
+    <string name="key_email">email</string>
+    <string name="key_age">age</string>
+    <string name="key_phone">phone</string>
+    <string name="key_love">love</string>
+    <string name="key_name">name</string>
+    <string name="empty">Kosong</string>
+    <string name="move_to_settingpref_activity">Pindah ke Activity SettingPref</string>
+    <string name="dark_mode">Mode Gelap</string>
+
+    <string name="submit">Kirim</string>
+    <string name="delete">Hapus</string>
+    <string name="date">Tanggal</string>
+    <string name="move_to_notes_app">Pindah ke Aplikasi Catatan</string>
+    <string name="titel">Judul Catatan</string>
+    <string name="cancel">Batal</string>
+    <string name="notes_app">APLIKASI CATATAN</string>
+    <string name="update">Perbarui</string>
+    <string name="add">Tambah</string>
+    <string name="changed">Diubah</string>
+    <string name="added">Ditambahkan</string>
+    <string name="message_cancel">Batalkan Catatan?</string>
+    <string name="message_delete">Hapus Catatan?</string>
+    <string name="deleted">Catatan Dihapus</string>
+    <string name="move_to_room_notes">Pindah ke Room Notes</string>
+    <string name="thanksforbuying">Terima kasih telah membeli: %1$s</string>
+    <string name="resultValue">Hasil: %1$d</string>
+    <string name="new_chat">Obrolan Baru</string>
+    <string name="date_example">2026/05/11 14:00:00</string>
+    <string name="connection_failed">Koneksi Gagal</string>
+    <string name="failed_message">F.R.O.S.T tidak dapat menjangkau URL tersebut. \n\nHarap pastikan server lokal Anda berjalan dan alamat IP-nya benar.</string>
+    <string name="try_again">Coba Lagi</string>
+    <string name="delete_session">Hapus Sesi</string>
+    <string name="setup_f_r_o_s_t_ai">Pengaturan F.R.O.S.T AI</string>
+    <string name="please_enter_your_local_ollama_or_api_link_below">Silakan masukkan tautan Ollama lokal atau API Anda di bawah ini:</string>
+    <string name="link_example">http://10.0.2.2:11434</string>
+    <string name="connect">Hubungkan</string>
+    <string name="title_frostsession">Sesi F.R.O.S.T</string>
+    <string name="new_chat_session">Sesi Obrolan Baru</string>
+    <string name="delete_message">Apakah Anda yakin ingin menghapus percakapan ini? Semua pesan akan hilang secara permanen.</string>
+    <string name="this_sms_receiver_app">Ini adalah Aplikasi Penerima SMS</string>
+    <string name="check_sms_permission">Periksa Izin SMS</string>
+    <string name="coming_from">Berasal Dari</string>
+    <string name="this_play">Teks Notifikasi Pesan</string>
+    <string name="incoming_message">Pesan Masuk</string>
+    <string name="from">Dari: %1$s</string>
+    <string name="move_to_broadcast_activity">Pindah ke Activity Broadcast</string>
+    <string name="download_file">Unduh Portofolio Saya</string>
+    <string name="send_notif">Kirim Notif</string>
+    <string name="notification_title">Learning Droid</string>
+    <string name="notification_message">Ayo Belajar Sekarang</string>
+    <string name="notification_subtext">Pengingat</string>
+    <string name="move_to_simple_notification">Pindah ke Notifikasi Sederhana</string>
+    <string name="open_detail">Buka Detail</string>
+    <string name="message">Pesan</string>
+    <string name="one_time_alarm">Alarm Sekali</string>
+    <string name="alarm_date">Tanggal Alarm</string>
+    <string name="alarm_time">Waktu Alarm</string>
+    <string name="alarm_message">Pesan Alarm</string>
+    <string name="set_one_time_alarm">Setel Alarm Sekali</string>
+    <string name="repeating_alarm">Alarm Berulang</string>
+    <string name="cancel_alarm">Batalkan Alarm</string>
+    <string name="set_repeating_alarm">Setel Alarm Berulang</string>
+    <string name="move_to_alarm_manager">Pindah ke Alarm Manager</string>
+    <string name="move_to_custom_view_activity">Pindah ke Activity Custom View</string>
+    <string name="move_to_custom_view">Pindah ke Custom View</string>
+    <string name="done">Selesai</string>
+    <string name="order_a_cinema_ticket">Pesan Tiket Bioskop</string>
+    <string name="like">Suka</string>
+    <string name="dislike">Tidak Suka</string>
+    <string name="like_or_dislike">Suka atau Tidak Suka?</string>
+    <string name="web_view_dicoding">Web View Dicoding</string>
+    <string name="hero_image">Gambar Pahlawan</string>
+    <string name="hero_name">Nama Pahlawan</string>
+    <string name="detail_hero">Deskripsi karakter secara mendetail ada di sini…</string>
+    <string name="move_to_main_menu">Pindah ke Main Menu</string>
+    <string name="journey">Perjalanan Android Anda Dimulai di Sini</string>
+    <string name="start">Mulai Sekarang</string>
+    <string name="learning_droid2">Learning Droid</string>
+</resources>

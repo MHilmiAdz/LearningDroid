@@ -1,0 +1,308 @@
+<resources>
+    <string name="app_name" translatable="false">LearningDroid</string>
+
+    <string name="move_activity">アクティビティを移動</string>
+    <string name="move_with_data">データ付きでアクティビティを移動</string>
+    <string name="move_with_object">オブジェクト付きでアクティビティを移動</string>
+    <string name="dial_number">電話をかける！</string>
+    <string name="move_with_result">結果を取得するためにアクティビティを移動</string>
+    <string name="result_from_activity">アクティビティからの結果</string>
+    <string name="choose_number">お好きな番号を選択してください</string>
+    <string name="_50">50</string>
+    <string name="_100">100</string>
+    <string name="_150">150</string>
+    <string name="_200">200</string>
+    <string name="choose">選択</string>
+    <string name="data_received">データを受信しました</string>
+    <string name="object_received">オブジェクトを受信しました</string>
+    <string name="this_is_moveactivity">これはMoveActivityです</string>
+    <string name="kotlinParcelizeTXT">Kotlin Parcelizeで移動</string>
+    <string name="content_text">Googleは10月4日、待望のスマートフォン「Pixel」および「Pixel XL」を正式に発表しました。私たちは米国サンフランシスコで開催されたメインイベントと連動した、英国ロンドンでのGoogleイベントに参加し、Googleの長年のNexusシリーズに取って代わると見られる新しいAndroid 7.1 Nougatデバイスの発表を見届けました。</string>
+    <string name="content_specs_display">5.0 インチ\n441ppiのFHD AMOLED\n2.5D Corning® Gorilla® Glass 4</string>
+    <string name="content_specs_size">5.6 x 2.7 x 0.2 ~ 0.3 インチ 143.8 x 69.5 x 7.3 ~ 8.5 mm</string>
+    <string name="content_specs_battery">2,770 mAh バッテリー\n待受時間 (LTE): 最大19日\n通話時間 (3G/WCDMA): 最大26時間\nインターネット利用時間 (Wi-Fi): 最大13時間\nインターネット利用時間 (LTE): 最大13時間\nビデオ再生: 最大13時間\nオーディオ再生 (ヘッドセット使用): 最大110時間\n急速充電: わずか15分の充電で最大7時間使用可能</string>
+    <string name="title">Google Pixel</string>
+    <string name="specification">仕様</string>
+    <string name="display">ディスプレイ</string>
+    <string name="size">サイズ</string>
+    <string name="battery">バッテリー</string>
+    <string name="seller">販売者</string>
+    <string name="my_name">Willy James</string>
+    <string name="buy">購入</string>
+    <string name="dummy_value">$7350</string>
+    <string name="dummy_photos">6枚の写真</string>
+    <string name="nothing">Lorem Ipsum</string>
+    <string name="learning_droid" translatable="false">Learning\nDroid</string>
+    <string name="NumberHint">(+62) 0821..</string>
+    <string name="move_to_shop">ショップへ移動</string>
+
+    <string name="heroes_name">英雄の名前</string>
+    <string name="description">説明</string>
+    <string name="move_to_activity_recycle">Activity Recycleへ移動</string>
+
+
+    <string-array name="data_name">
+        <item>Ahmad Dahlan</item>
+        <item>Ahmad Yani</item>
+        <item>Sutomo</item>
+        <item>Gatot Soebroto</item>
+        <item>Ki Hadjar Dewantara</item>
+        <item>Mohammad Hatta</item>
+        <item>Soedirman</item>
+        <item>Soekarno</item>
+        <item>Soepomo</item>
+    </string-array>
+
+    <string-array name="data_description">
+        <item>当時のジョグジャカルタ王国のグランドモスクの著名な学者および説教者の一人であり、K.H.アフマド・ダーランの母親は、当時のジョグジャカルタ王国の長官を務めたH.イブラヒムの娘でした。K.H.アフマド・ダーランは、依然として学び、行動しなければならない植民地化された国家としての運命を自覚するよう、イスラム教徒の目覚めを先導しました。</item>
+        <item>アフマド・ヤニ大将（1922年6月19日 - 1965年10月1日）は、インドネシア陸軍の司令官であり、自宅から彼を誘拐しようとした9月30日事件のメンバーによって暗殺されました。</item>
+        <item>ストモ（1920年10月3日 - 1981年10月7日）、通称ブン・トモは、NICA軍を通じたオランダ植民地主義の復活に立ち向かう人々の精神を鼓舞した英雄として知られています。この戦いは1945年11月10日の戦闘として結実し、今日まで英雄の日として記念されています。</item>
+        <item>ガトット・スブロト大将（退役）（1907年10月10日 - 1962年6月11日）は、インドネシアの独立闘争における軍事的指導者であり、インドネシアの国民的英雄です。スマラン県ウンガランに埋葬されています。</item>
+        <item>ラデン・マス・スワルディ・スルヤニングラット（1922年以降はキ・ハジャル・デワンタラ、1889年5月2日 - 1959年4月26日）は、インドネシアの独立運動家、コラムニスト、政治家であり、オランダ植民地時代におけるインドネシア先住民のための教育の先駆者です。彼は、先住民が貴族やオランダ人と同じように教育を受ける機会を提供する教育機関であるタマン・シスワの創設者です。</item>
+        <item>モハマッド・ハッタ博士（1902年8月12日 - 1980年3月14日）は、インドネシアの独立闘士、政治家、経済学者であり、初代副大統領です。彼はスカルノと共に、インドネシアをオランダの植民地支配から解放し、1945年8月17日に独立を宣言する重要な役割を果たしました。また、インドネシア協同組合の父としても知られています。</item>
+        <item>スディルマン大将（1916年1月24日 - 1950年1月29日）は、インドネシア独立革命期の高級将校です。インドネシア国軍の初代最高司令官となり、インドネシアで広く尊敬され続けています。1944年には日本が支援する祖国防衛義勇軍（PETA）に参加し、その後インドネシアの軍事指導者として活躍しました。</item>
+        <item>スカルノ博士（1901年6月6日 - 1970年6月21日）は、1945年から1967年まで務めたインドネシア共和国の初代大統領です。インドネシアをオランダの植民地支配から解放する上で重要な役割を果たしました。モハマッド・ハッタと共に、1945年8月17日にインドネシアの独立を宣言した人物です。また、インドネシアの国家基盤である「パンチャシラ」の概念を初めて提唱したことでも知られています。</item>
+        <item>スエポモ教授（1903年1月22日 - 1958年9月12日）は、インドネシアの国民的英雄です。ムハマド・ヤミンやスカルノと共に、1945年憲法の設計者として知られています。</item>
+    </string-array>
+
+    <string-array name="data_photo">
+        <item>https://upload.wikimedia.org/wikipedia/commons/8/87/Ahmad_Dahlan.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/3/3f/Ahmad_Yani.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/e/ed/Bung_Tomo.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/b/be/Col_Gatot_Subroto%2C_Kenang-Kenangan_Pada_Panglima_Besar_Letnan_Djenderal_Soedirman%2C_p27.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/3/3a/Ki_Hadjar_Dewantara_Mimbar_Umum_18_October_1949_p2.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/VP_Hatta.jpg/330px-VP_Hatta.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Sudirman.jpg/486px-Sudirman.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Presiden_Sukarno.jpg/330px-Presiden_Sukarno.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/a/a6/Supomo.jpg</item>
+        <item>https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/TanMalaka_DariPendjara_ed3.jpg/330px-TanMalaka_DariPendjara_ed3.jpg</item>
+    </string-array>
+
+    <string name="this_profile">これはProfileアクティビティです</string>
+    <string name="this_category">これはCategoryフラグメントです</string>
+    <string name="category_lifestyle">Lifestyleフラグメントへ</string>
+    <string name="category_name">カテゴリー名</string>
+    <string name="category_description">カテゴリーの説明</string>
+    <string name="to_profile">Profileアクティビティページへ</string>
+    <string name="show_dialog">ダイアログを表示</string>
+    <string name="hello_home_fragment">こんにちは、これはHomeフラグメントです</string>
+    <string name="to_category">Categoryフラグメントへ</string>
+    <string name="question_coach">マンチェスター・ユナイテッドで最も成功した監督は誰ですか？</string>
+    <string name="sir_alex_ferguson">サー・アレックス・ファーガソン</string>
+    <string name="jose_mourinho">ジョゼ・モウリーニョ</string>
+    <string name="louis_van_gaal">ルイス・ファン・ハール</string>
+    <string name="david_moyes">デイヴィッド・モイーズ</string>
+    <string name="close">閉じる</string>
+    <string name="move_to_fragments_activity">Fragmentsアクティビティへ移動</string>
+    <string name="to_home">Homeフラグメントへ</string>
+    <string name="move_to_navigation_activity">Navigationアクティビティへ移動</string>
+
+    <string name="this_activity">これはSearch Barアクティビティです</string>
+    <string name="menu_1">メニュー 1</string>
+    <string name="menu_2">メニュー 2</string>
+    <string name="large_text">
+        "マテリアルはメタファー（隠喩）です。\n\n"
+        "マテリアルのメタファーは、合理化された空間とモーションのシステムの統一理論です。"
+        "マテリアルは触知できる現実に基づいており、紙とインクの研究からインスピレーションを得ていますが、"
+        "技術的に進歩しており、想像力と魔法にも開かれています。\n"
+        "マテリアルの表面とエッジは、現実に基づいた視覚的な手がかりを提供します。"
+        "馴染みのある触覚的属性を使用することで、ユーザーはアフォーダンスを素早く理解できます。しかし、"
+        "マテリアルの柔軟性は、物理法則を破ることなく、物理世界のそれを超える新たなアフォーダンスを生み出します。\n"
+        "光、表面、動きの基本は、オブジェクトがどのように動き、相互作用し、空間に存在し、互いにどのように関連しているかを伝えるための鍵となります。"
+        "リアルな照明は継ぎ目を示し、空間を分割し、可動部分を強調します。\n\n"
+        "大胆で、グラフィカルで、意図的。\n\n"
+        "印刷ベースのデザイントポグラフィ、グリッド、空間、スケール、色、画像の使用といった基本要素が、視覚的表現を導きます。"
+        "これらの要素は単に目を楽しませるだけではありません。階層、意味、焦点を作り出します。意図的な色の選択、"
+        "端から端までの画像、大規模なタイポグラフィ、および意図的な余白は、大胆でグラフィカルなインターフェースを作成し、"
+        "ユーザーをその体験に没入させます。\n"
+        "ユーザーの行動を強調することで、コア機能がすぐにわかりやすくなり、ユーザーへの道しるべを提供します。\n\n"
+        "モーションが意味をもたらす。\n\n"
+        "モーションは、主な動因としてのユーザーを尊重し、強化します。ユーザーの主なアクションは、"
+        "モーションを開始し、デザイン全体を変化させる変曲点となります。\n"
+        "すべてのアクションは単一の環境で発生します。オブジェクトは変換や再編成が行われている間も、"
+        "体験の連続性を損なうことなくユーザーに提示されます。\n"
+        "モーションは意味があり適切であり、注意を集中させ、連続性を維持する役割を果たします。"
+        "フィードバックは繊細でありながら明確です。トランジションは効率的でありながら一貫性があります。\n\n"
+        "3Dの世界。\n\n"
+        "マテリアル環境は3D空間であり、すべてのオブジェクトはx、y、zの次元を持っています。"
+        "z軸はディスプレイの平面に対して垂直に配置され、正のz軸は視聴者に向かって伸びています。"
+        "マテリアルの各シートはz軸に沿って単一の位置を占め、標準の1dpの厚さを持ちます。\n"
+        "ウェブ上では、z軸はレイヤー化に使用され、遠近法には使用されません。3Dの世界は、y軸を操作することでエミュレートされます。\n\n"
+        "光と影。\n\n"
+        "マテリアル環境内では、仮想の光がシーンを照らします。キーライトは方向性のある影を作り、"
+        "アンビエントライトはあらゆる角度から柔らかな影を作ります。\n"
+        "マテリアル環境の影は、これら2つの光源によって投影されます。Android開発において、"
+        "影は光源がz軸上の様々な位置にあるマテリアルのシートによって遮られたときに発生します。"
+        "ウェブ上では、影はy軸のみを操作することで描写されます。\n\n"
+        "デフォルトのエレベーション。\n\n"
+        "すべてのマテリアルオブジェクトは、サイズに関係なく、変化しない静止エレベーション（デフォルトのエレベーション）を持ちます。"
+        "オブジェクトのエレベーションが変化した場合、できるだけ早く元の静止エレベーションに戻る必要があります。\n\n"
+        "コンポーネントのエレベーション。\n\n"
+        "コンポーネントの種類ごとの静止エレベーションは、アプリ間で一貫しています（例: FABのエレベーションは、"
+        "あるアプリで6dp、別のアプリで16dpになるようなことはありません）。\n"
+        "コンポーネントは、環境の奥行きに応じて、プラットフォーム全体で異なる静止エレベーションを持つ場合があります"
+        "（例: TVはモバイルやデスクトップよりも奥行きが大きいです）。\n\n"
+        "レスポンシブエレベーションとダイナミックエレベーションオフセット。\n\n"
+        "一部のコンポーネントの種類にはレスポンシブエレベーションがあり、ユーザーの入力"
+        "（例: 通常、フォーカス、押下）またはシステムイベントに応答してエレベーションが変化します。"
+        "これらのエレベーションの変更は、ダイナミックエレベーションオフセットを使用して一貫して実装されます。\n"
+        "ダイナミックエレベーションオフセットとは、コンポーネントの静止状態を基準として、コンポーネントが移動する目標のエレベーションです。"
+        "これにより、アクションとコンポーネントの種類全体でエレベーションの変更が一貫していることが保証されます。\n"
+        "入力イベントが完了またはキャンセルされると、コンポーネントは静止エレベーションに戻ります。\n\n"
+        "エレベーションの干渉を避ける。\n\n"
+        "レスポンシブエレベーションを持つコンポーネントは、静止エレベーションとダイナミックエレベーションオフセットの間を移動する際に、"
+        "他のコンポーネントに遭遇する可能性があります。マテリアルは他のマテリアルを通過できないため、"
+        "コンポーネントごとに、あるいはアプリのレイアウト全体を使用して、コンポーネント同士が干渉し合うのを様々な方法で回避します。\n"
+        "コンポーネントレベルでは、コンポーネントが干渉を引き起こす前に移動または削除されることがあります。\n"
+        "レイアウトレベルでは、干渉の機会を最小限に抑えるようにアプリのレイアウトを設計します。"
+    </string>
+    <string name="move_to_appbar_activity">AppBarアクティビティへ移動</string>
+    <string name="searchbar_hint">単語を入力</string>
+    <string name="move_to_searchbar_activity">SearchBarアクティビティへ移動</string>
+
+    <string name="nav_open">開く</string>
+    <string name="nav_close">閉じる</string>
+    <string name="move_to_drawer_activity">Drawerアクティビティへ移動</string>
+    <string name="this_is_profile_fragment">これはProfileフラグメントです</string>
+    <string name="title_home">これはHomeフラグメントです</string>
+    <string name="title_dashboard">これはDashboardフラグメントです</string>
+    <string name="title_notifications">これはNotificationsフラグメントです</string>
+    <string name="title_profile">これはProfileフラグメントです</string>
+    <string name="move_to_bottomnav_activity">BottomNavアクティビティへ移動</string>
+    <string name="tab_text_1">ホーム</string>
+    <string name="tab_text_2">プロフィール</string>
+    <string name="move_to_tablayout_activity">TabLayoutアクティビティへ移動</string>
+    <string name="start_task">タスクを開始</string>
+    <string name="status">ステータス</string>
+    <string name="hidden_text">見つけましたね！</string>
+    <string name="task_completed">タスク完了</string>
+    <string name="compressing">圧縮中 %d %%</string>
+    <string name="move_to_asynchronous_activity">Asynchronousアクティビティへ移動</string>
+    <string name="move_to_api_activity">APIアクティビティへ移動</string>
+    <string name="quote">人はいつ死ぬと思う？心臓をピストルで撃ち抜かれた時か？違う。不治の病に冒された時か？違う。猛毒のキノコのスープを飲んだ時か！？違う！それは…人に忘れられた時さ。</string>
+    <string name="author">- Dr. ヒルルク</string>
+    <string name="show_list_quotes">名言リストを表示</string>
+    <string name="f_r_o_s_t">F.R.O.S.T</string>
+    <string name="dotdotdot">…</string>
+    <string name="send">送信</string>
+    <string name="message_ollama">Ollamaにメッセージを送信…</string>
+    <string name="move_to_ai_chat">F.R.O.S.T AIへ移動</string>
+    <string name="review">レビュー</string>
+    <string name="write_your_review_here">ここにレビューを書いてください..</string>
+    <string name="move_to_api_retrofit">API Retrofitへ移動</string>
+    <string name="review_format">%1$s\n- %2$s</string>
+    <string name="width">幅</string>
+    <string name="result">結果</string>
+    <string name="height">高さ</string>
+    <string name="length">長さ</string>
+    <string name="move_to_viewmodel_activity">ViewModelアクティビティへ移動</string>
+    <string name="hundred">100</string>
+    <string name="seconds">%d 秒経過</string>
+    <string name="move_to_livedata_activity">LiveDataアクティビティへ移動</string>
+    <string name="save">保存</string>
+    <string name="volume">体積</string>
+    <string name="circumference">外周</string>
+    <string name="area">表面積</string>
+
+    <string name="file_new">新規ファイル</string>
+    <string name="name">名前</string>
+    <string name="file_open">ファイルを開く</string>
+    <string name="file_save">ファイルを保存</string>
+    <string name="move_to_read_write_activity">Read Writeアクティビティへ移動</string>
+    <string name="title_file">タイトル</string>
+    <string name="lorem_ipsum_medium">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</string>
+    <string name="email">メールアドレス</string>
+    <string name="phone_number">電話番号</string>
+    <string name="age">年齢</string>
+    <string name="yes">はい</string>
+    <string name="no">いいえ</string>
+    <string name="favorite_food">好きな食べ物</string>
+    <string name="change">情報を変更</string>
+    <string name="dummy_name">Healme Frost</string>
+    <string name="dummy_email">healme@frost.com</string>
+    <string name="dummynumber">123456</string>
+    <string name="dummyage">30</string>
+    <string name="dummyfavfood">Pizza</string>
+    <string name="move_to_shared_pref_activity">Shared Prefアクティビティへ移動</string>
+    <string name="is_your_favorite_food_is_pizza">あなたの好きな食べ物はピザですか？</string>
+
+    <string name="is_love">ピザは好きですか？</string>
+    <string name="key_email">email</string>
+    <string name="key_age">age</string>
+    <string name="key_phone">phone</string>
+    <string name="key_love">love</string>
+    <string name="key_name">name</string>
+    <string name="empty">空</string>
+    <string name="move_to_settingpref_activity">SettingPrefアクティビティへ移動</string>
+    <string name="dark_mode">ダークモード</string>
+
+    <string name="submit">送信</string>
+    <string name="delete">削除</string>
+    <string name="date">日付</string>
+    <string name="move_to_notes_app">メモアプリへ移動</string>
+    <string name="titel">メモのタイトル</string>
+    <string name="cancel">キャンセル</string>
+    <string name="notes_app">メモアプリ</string>
+    <string name="update">更新</string>
+    <string name="add">追加</string>
+    <string name="changed">変更されました</string>
+    <string name="added">追加されました</string>
+    <string name="message_cancel">メモをキャンセルしますか？</string>
+    <string name="message_delete">メモを削除しますか？</string>
+    <string name="deleted">メモが削除されました</string>
+    <string name="move_to_room_notes">Room Notesへ移動</string>
+    <string name="thanksforbuying">ご購入ありがとうございます: %1$s</string>
+    <string name="resultValue">結果: %1$d</string>
+    <string name="new_chat">新しいチャット</string>
+    <string name="date_example">2026/05/11 14:00:00</string>
+    <string name="connection_failed">接続失敗</string>
+    <string name="failed_message">F.R.O.S.TはそのURLに到達できませんでした。\n\nローカルサーバーが実行されており、IPアドレスが正しいことを確認してください。</string>
+    <string name="try_again">再試行</string>
+    <string name="delete_session">セッションを削除</string>
+    <string name="setup_f_r_o_s_t_ai">F.R.O.S.T AIのセットアップ</string>
+    <string name="please_enter_your_local_ollama_or_api_link_below">以下のローカルOllamaまたはAPIリンクを入力してください:</string>
+    <string name="link_example">http://10.0.2.2:11434</string>
+    <string name="connect">接続</string>
+    <string name="title_frostsession">F.R.O.S.T セッション</string>
+    <string name="new_chat_session">新しいチャットセッション</string>
+    <string name="delete_message">この会話を削除してもよろしいですか？すべてのメッセージは完全に失われます。</string>
+    <string name="this_sms_receiver_app">これはSMSレシーバーアプリです</string>
+    <string name="check_sms_permission">SMS権限を確認する</string>
+    <string name="coming_from">送信元</string>
+    <string name="this_play">メッセージ通知テキスト</string>
+    <string name="incoming_message">新着メッセージ</string>
+    <string name="from">送信者: %1$s</string>
+    <string name="move_to_broadcast_activity">Broadcastアクティビティへ移動</string>
+    <string name="download_file">ポートフォリオをダウンロード</string>
+    <string name="send_notif">通知を送信</string>
+    <string name="notification_title">Learning Droid</string>
+    <string name="notification_message">今すぐ学習しましょう</string>
+    <string name="notification_subtext">リマインダー</string>
+    <string name="move_to_simple_notification">Simple Notificationへ移動</string>
+    <string name="open_detail">詳細を開く</string>
+    <string name="message">メッセージ</string>
+    <string name="one_time_alarm">ワンタイムアラーム</string>
+    <string name="alarm_date">アラームの日付</string>
+    <string name="alarm_time">アラームの時間</string>
+    <string name="alarm_message">アラームのメッセージ</string>
+    <string name="set_one_time_alarm">ワンタイムアラームを設定</string>
+    <string name="repeating_alarm">繰り返しアラーム</string>
+    <string name="cancel_alarm">アラームをキャンセル</string>
+    <string name="set_repeating_alarm">繰り返しアラームを設定</string>
+    <string name="move_to_alarm_manager">Alarm Managerへ移動</string>
+    <string name="move_to_custom_view_activity">Custom Viewアクティビティへ移動</string>
+    <string name="move_to_custom_view">Custom Viewへ移動</string>
+    <string name="done">完了</string>
+    <string name="order_a_cinema_ticket">映画のチケットを注文する</string>
+    <string name="like">いいね</string>
+    <string name="dislike">よくないね</string>
+    <string name="like_or_dislike">いいね、または、よくないね？</string>
+    <string name="web_view_dicoding">Web View Dicoding</string>
+    <string name="hero_image">英雄の画像</string>
+    <string name="hero_name">英雄の名前</string>
+    <string name="detail_hero">キャラクターの詳細な説明がここに入ります…</string>
+    <string name="move_to_main_menu">Main Menuへ移動</string>
+    <string name="journey">あなたのAndroidの旅はここから始まります</string>
+    <string name="start">さあ、始めよう</string>
+    <string name="learning_droid2">Learning Droid</string>
+</resources>
