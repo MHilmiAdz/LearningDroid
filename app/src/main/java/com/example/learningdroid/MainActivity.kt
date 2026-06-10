@@ -2,7 +2,6 @@ package com.example.learningdroid
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.CompoundButton
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
@@ -19,13 +18,19 @@ import com.example.learningdroid.bottomnav.BottomNavActivity
 import com.example.learningdroid.broadcast.BroadcastActivity
 import com.example.learningdroid.customview.CustomViewActivity
 import com.example.learningdroid.databinding.ActivityMainBinding
-import com.example.learningdroid.datapass.*
+import com.example.learningdroid.datapass.MoveActivity
+import com.example.learningdroid.datapass.MoveForResultActivity
+import com.example.learningdroid.datapass.MoveWithDataActivity
+import com.example.learningdroid.datapass.MoveWithObjectActivity
+import com.example.learningdroid.datapass.Persona
+import com.example.learningdroid.datapass.SimplePersona
 import com.example.learningdroid.drawer.DrawerActivity
 import com.example.learningdroid.fileaccess.ReadWriteActivity
 import com.example.learningdroid.fragment.FlexFragments
 import com.example.learningdroid.frost.ChatSessionActivity
 import com.example.learningdroid.likesapp.LikesAppActivity
 import com.example.learningdroid.livedata.LiveDataActivity
+import com.example.learningdroid.mainmenu.MainMenuActivity
 import com.example.learningdroid.navigation.NavigationActivity
 import com.example.learningdroid.notesapp.MyNotesApp
 import com.example.learningdroid.recycle.RecycleActivity
@@ -33,7 +38,11 @@ import com.example.learningdroid.recycle.ScrollingActivity
 import com.example.learningdroid.restoreview.RestoReviewActivity
 import com.example.learningdroid.roomnote.ui.main.RoomNotesActivity
 import com.example.learningdroid.searchbar.SearchBarActivity
-import com.example.learningdroid.settingpref.*
+import com.example.learningdroid.settingpref.MainViewModel
+import com.example.learningdroid.settingpref.SettingPref
+import com.example.learningdroid.settingpref.SettingPreferenceActivity
+import com.example.learningdroid.settingpref.ViewModelFactory
+import com.example.learningdroid.settingpref.dataStore
 import com.example.learningdroid.sharedpref.SharedPrefActivity
 import com.example.learningdroid.simplenotif.SimpleNotifActivity
 import com.example.learningdroid.tablayout.TabLayoutActivity
@@ -89,7 +98,8 @@ class MainActivity : AppCompatActivity() {
             binding.switchTheme.isChecked = isDarkModeActive
         }
 
-        binding.switchTheme.setOnCheckedChangeListener { _: CompoundButton?, isChecked ->
+        binding.switchTheme.setOnClickListener {
+            val isChecked = binding.switchTheme.isChecked
             mainViewModel.saveThemeSetting(isChecked)
         }
     }
@@ -123,6 +133,7 @@ class MainActivity : AppCompatActivity() {
             binding.btnToTicketingActivity to TicketingActivity::class.java,
             binding.btnToLikesAppActivity to LikesAppActivity::class.java,
             binding.btnToWebViewActivity to WebViewActivity::class.java,
+            binding.btnToMainMenuActivity to MainMenuActivity::class.java,
         )
 
         simpleNavMap.forEach { (button, activity) ->

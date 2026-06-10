@@ -317,4 +317,8 @@
     <string name="hero_image">Hero Image</string>
     <string name="hero_name">Hero Name</string>
     <string name="detail_hero">Detailed character description goes here…</string>
+    <string name="move_to_main_menu">Move to Main Menu</string>
+    <string name="journey">Your Android Journey Starts Here</string>
+    <string name="start">Get Started</string>
+    <string name="learning_droid2">Learning Droid</string>
 </resources>

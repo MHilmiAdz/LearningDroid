@@ -54,7 +54,6 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
-    implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.recyclerview)
     implementation(libs.androidx.preference.ktx)
     implementation(libs.androidx.multidex)
@@ -82,4 +81,5 @@ dependencies {
     implementation(libs.androidx.datastore.preferences)
     implementation(libs.androidx.room.runtime)
     ksp(libs.androidx.room.compiler)
+    implementation(libs.androidx.constraintlayout)
 }
