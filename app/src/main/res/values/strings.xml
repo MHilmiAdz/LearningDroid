@@ -321,4 +321,17 @@
     <string name="journey">Your Android Journey Starts Here</string>
     <string name="start">Get Started</string>
     <string name="learning_droid2">Learning Droid</string>
+
+    <string name="start_background_service" translatable="false">Start Background Service</string>
+    <string name="stop_background_service" translatable="false">Stop Background Service</string>
+    <string name="start_foreground_service" translatable="false">Start Foreground Service</string>
+    <string name="stop_foreground_service" translatable="false">Stop Foreground Service</string>
+    <string name="start_bound_service" translatable="false">Start Bound Service</string>
+    <string name="stop_bound_service" translatable="false">Stop Bound Service</string>
+    <string name="move_to_my_services" translatable="false">Move to My Services</string>
+    <string name="background_service" translatable="false">Background Service</string>
+    <string name="start2" translatable="false">Start</string>
+    <string name="stop" translatable="false">Stop</string>
+    <string name="foreground_service" translatable="false">Foreground Service</string>
+    <string name="bound_service" translatable="false">Bound Service</string>
 </resources>

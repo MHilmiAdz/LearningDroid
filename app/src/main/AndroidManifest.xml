@@ -13,11 +13,13 @@
     <uses-permission
         android:name="android.permission.READ_SMS"
         tools:ignore="SmsAndCallLogPolicy" />
-
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE"
+        tools:ignore="ForegroundServicesPolicy" />
 
     <application
         android:name=".mainmenu.ThemeSwitch"
@@ -189,9 +191,30 @@
             android:name=".webview.WebViewActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
-
         <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".services.MyServiceActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <service
+            android:name=".services.MyBackgroundService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".services.MyForegroundService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_TYPE"
+                android:value="This service is used for learning purposes and demonstrates foreground service." />
+        </service>
+        <service
+            android:name=".services.MyBoundService"
+            android:enabled="true"
             android:exported="false" />
     </application>
 

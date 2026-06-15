@@ -38,6 +38,7 @@ import com.example.learningdroid.recycle.ScrollingActivity
 import com.example.learningdroid.restoreview.RestoReviewActivity
 import com.example.learningdroid.roomnote.ui.main.RoomNotesActivity
 import com.example.learningdroid.searchbar.SearchBarActivity
+import com.example.learningdroid.services.MyServiceActivity
 import com.example.learningdroid.settingpref.MainViewModel
 import com.example.learningdroid.settingpref.SettingPref
 import com.example.learningdroid.settingpref.SettingPreferenceActivity
@@ -134,6 +135,7 @@ class MainActivity : AppCompatActivity() {
             binding.btnToLikesAppActivity to LikesAppActivity::class.java,
             binding.btnToWebViewActivity to WebViewActivity::class.java,
             binding.btnToMainMenuActivity to MainMenuActivity::class.java,
+            binding.btnToMyServiceActivity to MyServiceActivity::class.java,
         )
 
         simpleNavMap.forEach { (button, activity) ->
