@@ -16,6 +16,7 @@ import com.example.learningdroid.appbar.AppBarActivity
 import com.example.learningdroid.asynchronous.AsynchronousActivity
 import com.example.learningdroid.bottomnav.BottomNavActivity
 import com.example.learningdroid.broadcast.BroadcastActivity
+import com.example.learningdroid.camera.PhotoViewerActivity
 import com.example.learningdroid.customview.CustomViewActivity
 import com.example.learningdroid.databinding.ActivityMainBinding
 import com.example.learningdroid.datapass.MoveActivity
@@ -46,6 +47,7 @@ import com.example.learningdroid.settingpref.ViewModelFactory
 import com.example.learningdroid.settingpref.dataStore
 import com.example.learningdroid.sharedpref.SharedPrefActivity
 import com.example.learningdroid.simplenotif.SimpleNotifActivity
+import com.example.learningdroid.soundpool.MySoundActivity
 import com.example.learningdroid.tablayout.TabLayoutActivity
 import com.example.learningdroid.ticketing.TicketingActivity
 import com.example.learningdroid.viewmodel.ViewModelActivity
@@ -136,6 +138,8 @@ class MainActivity : AppCompatActivity() {
             binding.btnToWebViewActivity to WebViewActivity::class.java,
             binding.btnToMainMenuActivity to MainMenuActivity::class.java,
             binding.btnToMyServiceActivity to MyServiceActivity::class.java,
+            binding.btnToMySoundActivity to MySoundActivity::class.java,
+            binding.btnToMyCameraActivity to PhotoViewerActivity::class.java,
         )
 
         simpleNavMap.forEach { (button, activity) ->

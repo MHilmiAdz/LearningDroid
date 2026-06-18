@@ -334,4 +334,13 @@
     <string name="stop" translatable="false">Stop</string>
     <string name="foreground_service" translatable="false">Foreground Service</string>
     <string name="bound_service" translatable="false">Bound Service</string>
+    <string name="text_sound_pool" translatable="false">Test Soundpool</string>
+    <string name="btn_text_play" translatable="false">Play</string>
+    <string name="move_to_sound_pool" translatable="false">Move to Sound Pool</string>
+    <string name="text_mediaplayer" translatable="false">Test Media Player</string>
+    <string name="camera" translatable="false">Camera</string>
+    <string name="upload" translatable="false">Upload</string>
+    <string name="gallery" translatable="false">Gallery</string>
+    <string name="camera_x" translatable="false">CameraX</string>
+    <string name="open_camera" translatable="false">Open Camera</string>
 </resources>
