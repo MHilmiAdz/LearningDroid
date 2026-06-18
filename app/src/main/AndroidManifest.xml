@@ -21,10 +21,6 @@
         android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE"
         tools:ignore="ForegroundServicesPolicy" />
 
-    <uses-permission
-        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="28" />
-
     <uses-feature android:name="android.hardware.camera" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"

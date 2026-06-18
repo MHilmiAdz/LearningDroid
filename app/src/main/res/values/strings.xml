@@ -343,4 +343,5 @@
     <string name="gallery" translatable="false">Gallery</string>
     <string name="camera_x" translatable="false">CameraX</string>
     <string name="open_camera" translatable="false">Open Camera</string>
+    <string name="empty_image_warning">No Image Detected</string>
 </resources>

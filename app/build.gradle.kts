@@ -9,7 +9,7 @@ plugins {
 android {
     namespace = "com.example.learningdroid"
     compileSdk {
-        version = release(36)
+        version = release(37)
     }
 
     defaultConfig {
@@ -88,4 +88,5 @@ dependencies {
     implementation(libs.androidx.camera.camera2)
     implementation(libs.camera.lifecycle)
     implementation(libs.camera.view)
+    implementation(libs.androidx.exifinterface)
 }

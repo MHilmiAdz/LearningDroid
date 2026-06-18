@@ -15,9 +15,23 @@ import com.example.learningdroid.camera.Utils.getImageUri
 import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.view.View
 import androidx.core.content.ContextCompat
 import androidx.core.net.toUri
+import androidx.lifecycle.lifecycleScope
+import com.example.learningdroid.R
 import com.example.learningdroid.camera.MyCameraActivity.Companion.CAMERAX_RESULT
+import com.example.learningdroid.camera.Utils.reduceFileImage
+import com.example.learningdroid.camera.Utils.uriToFile
+import com.example.learningdroid.camera.data.api.ApiConfig
+import com.example.learningdroid.camera.data.api.FileUploadResponse
+import com.google.gson.Gson
+import kotlinx.coroutines.launch
+import okhttp3.MediaType.Companion.toMediaType
+import okhttp3.MultipartBody
+import okhttp3.RequestBody.Companion.asRequestBody
+import okhttp3.RequestBody.Companion.toRequestBody
+import retrofit2.HttpException
 
 class PhotoViewerActivity : AppCompatActivity() {
 
@@ -97,7 +111,41 @@ class PhotoViewerActivity : AppCompatActivity() {
     }
 
     private fun uploadImage() {
-        Toast.makeText(this, "This Feature Unavailable", Toast.LENGTH_SHORT).show()
+        currentImageUri?.let { uri ->
+            val imageFile = uriToFile(uri, this).reduceFileImage()
+            Log.d("Image File", "showImage: ${imageFile.path}")
+            val description = "This is Image Description"
+
+            showLoading(true)
+
+            val requestBody = description.toRequestBody("text/plain".toMediaType())
+            val requestImageFile = imageFile.asRequestBody("image/jpeg".toMediaType())
+            val multipartBody = MultipartBody.Part.createFormData(
+                "photo",
+                imageFile.name,
+                requestImageFile
+            )
+            lifecycleScope.launch {
+                try {
+                    val apiService = ApiConfig.getApiService()
+                    val successResponse = apiService.uploadImage(multipartBody, requestBody)
+                    showToast(successResponse.message)
+                    showLoading(false)
+                } catch (e: HttpException) {
+                    val errorBody = e.response()?.errorBody()?.string()
+                    val errorResponse = Gson().fromJson(errorBody, FileUploadResponse::class.java)
+                    showToast(errorResponse.message)
+                    showLoading(false)
+                }
+            }
+        } ?: showToast(getString(R.string.empty_image_warning))
+    }
+
+    private fun showLoading(isLoading: Boolean) {
+        binding.progressIndicator.visibility = if (isLoading) View.VISIBLE else View.GONE
+    }
+    private fun showToast(message: String) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 
     private fun startGallery() {
