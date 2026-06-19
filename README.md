@@ -19,6 +19,9 @@ My personal Android Development learning journal — from zero to MASTER.
 This repository documents my hands-on journey learning Android development. Each feature is built around a specific concept, from basic intents to Room databases and local AI integration.
 
 ## Main Feature
+
+![Main Feature Showcase](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/v30main.png?raw=true)
+
 - **F.R.O.S.T** — an AI feature to support your local-hosted AI model from Ollama.
 - **Learned Features from Simplest to Most Complex**
 - **Connect your Local-hosted LLM usually it looks like this: http://{your host IP}:11434**
@@ -94,9 +97,6 @@ This repository documents my hands-on journey learning Android development. Each
 
 ## 📸 Screenshots - 5 Latest Updates
 
-### v0.3.2 — Simple Notification
-![v0.3.2](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss032.png?raw=true)
-
 ### v0.3.3 — Custom View
 ![v0.3.3](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss033.png?raw=true)
 
@@ -108,6 +108,9 @@ This repository documents my hands-on journey learning Android development. Each
 
 ### v0.3.6 — Motion Layout and Localization
 ![v0.3.6](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss036.png?raw=true)
+
+### v0.3.7 — Camera and Audio
+![v0.3.7](https://github.com/MHilmiAdz/LearningDroid/blob/master/app/src/main/res/drawable/ss037.png?raw=true)
 
 ---
 

@@ -226,7 +226,7 @@
         <Button
             android:id="@+id/btnToWebViewActivity"
             style="@style/Widget.LearningDroid.MenuButton"
-            android:text="@string/web_view_dicoding" />
+            android:text="@string/web_view_portofolio" />
 
         <Button
             android:id="@+id/btnToMainMenuActivity"

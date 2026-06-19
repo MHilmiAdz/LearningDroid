@@ -33,7 +33,7 @@ class WebViewActivity : AppCompatActivity() {
 
         webView.webViewClient = object : WebViewClient() {
             override fun onPageFinished(view: WebView, url: String) {
-                Toast.makeText(this@WebViewActivity, "Dicoding web loaded", Toast.LENGTH_LONG)
+                Toast.makeText(this@WebViewActivity, "Portofolio Web Loaded", Toast.LENGTH_LONG)
                     .show()
 
             }
@@ -47,6 +47,6 @@ class WebViewActivity : AppCompatActivity() {
             }
         }
 
-        webView.loadUrl("https://www.dicoding.com")
+        webView.loadUrl("https://mhilmiadz.github.io/portohealme/")
     }
 }
