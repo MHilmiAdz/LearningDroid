@@ -32,6 +32,7 @@ import com.example.learningdroid.frost.ChatSessionActivity
 import com.example.learningdroid.likesapp.LikesAppActivity
 import com.example.learningdroid.livedata.LiveDataActivity
 import com.example.learningdroid.mainmenu.MainMenuActivity
+import com.example.learningdroid.mapapp.MapsActivity
 import com.example.learningdroid.navigation.NavigationActivity
 import com.example.learningdroid.notesapp.MyNotesApp
 import com.example.learningdroid.recycle.RecycleActivity
@@ -140,6 +141,7 @@ class MainActivity : AppCompatActivity() {
             binding.btnToMyServiceActivity to MyServiceActivity::class.java,
             binding.btnToMySoundActivity to MySoundActivity::class.java,
             binding.btnToMyCameraActivity to PhotoViewerActivity::class.java,
+            binding.btnToMyMapActivity to MapsActivity::class.java,
         )
 
         simpleNavMap.forEach { (button, activity) ->

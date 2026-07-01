@@ -343,6 +343,12 @@
     <string name="gallery" translatable="false">Gallery</string>
     <string name="camera_x" translatable="false">CameraX</string>
     <string name="open_camera" translatable="false">Open Camera</string>
-    <string name="empty_image_warning">No Image Detected</string>
-    <string name="web_view_portofolio">Web View Portofolio</string>
+    <string name="empty_image_warning" translatable="false">No Image Detected</string>
+    <string name="web_view_portofolio" translatable="false">Web View Portofolio</string>
+    <string name="title_activity_maps" translatable="false">MapsActivity</string>
+    <string name="move_to_map_activity" translatable="false">Move to Map Activity</string>
+    <string name="normal_type" translatable="false">Normal</string>
+    <string name="satellite_type" translatable="false">Satelite</string>
+    <string name="terrain_type" translatable="false">Terrrain</string>
+    <string name="hybrid_type" translatable="false">Hybrid</string>
 </resources>

@@ -246,8 +246,13 @@
         <Button
             android:id="@+id/btnToMyCameraActivity"
             style="@style/Widget.LearningDroid.MenuButton"
-            android:layout_marginBottom="32dp"
             android:text="@string/open_camera" />
+
+        <Button
+            android:id="@+id/btnToMyMapActivity"
+            style="@style/Widget.LearningDroid.MenuButton"
+            android:layout_marginBottom="32dp"
+            android:text="@string/move_to_map_activity" />
 
         <TextView
             android:id="@+id/tvResult"
